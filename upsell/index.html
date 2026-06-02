@@ -4,6 +4,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Espera — Uma Oferta Especial Pra Você</title>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1015593400900909');
+fbq('track', 'PageView');
+fbq('track', 'ViewContent', {
+  content_name: 'Kit Complementos Namorados do Liso',
+  content_ids: ['kit-complementos-namorados'],
+  content_type: 'product',
+  value: 27.00,
+  currency: 'BRL'
+});
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1015593400900909&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700;900&family=Courier+Prime:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 <style>
 /* === RESET & BASE === */
@@ -392,7 +416,7 @@ hr.div::before{content:'✦';position:absolute;left:50%;top:50%;transform:transl
         <div class="offer-box__item">Garantia de 7 dias</div>
       </div>
 
-      <a href="https://pay.cakto.com.br/jywgonc_911260" class="btn-yes" target="_blank" rel="noopener">
+      <a href="https://pay.cakto.com.br/jywgonc_911260" class="btn-yes" onclick="fbq('track','InitiateCheckout',{value:27.00,currency:'BRL',content_name:'Kit Complementos Namorados do Liso',num_items:3})" target="_blank" rel="noopener">
         SIM — Quero o Kit Completo por R$27 →
       </a>
       <span class="btn-note">Pagamento seguro · Pix, Cartão, Boleto · Acesso imediato</span>
