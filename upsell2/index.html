@@ -16,6 +16,14 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '1015593400900909');
 fbq('track', 'PageView');
+fbq('track', 'Purchase', {
+  value: 19.00,
+  currency: 'BRL',
+  content_name: 'Roteiro Dia dos Namorados do Liso',
+  content_ids: ['roteiro-namorados-liso'],
+  content_type: 'product',
+  num_items: 1
+});
 fbq('track', 'ViewContent', {
   content_name: 'Ano Inteiro de Encontros do Liso',
   content_ids: ['ano-inteiro-encontros-liso'],
