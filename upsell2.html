@@ -3,6 +3,614 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ESPERE â Uma Ãltima Coisa Antes de Ir</title>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1015593400900909');
+fbq('track', 'PageView');
+(function(){var _e=_fbqEventId('purchase');fbq('track','Purchase',{value:19.00,currency:'BRL',content_name:'Roteiro Dia dos Namorados do Liso',content_ids:['roteiro-namorados-liso'],content_type:'product',num_items:1},{eventID:_e});})();
+fbq('track', 'ViewContent', {
+  content_name: 'Ano Inteiro de Encontros do Liso',
+  content_ids: ['ano-inteiro-encontros-liso'],
+  content_type: 'product',
+  value: 47.00,
+  currency: 'BRL'
+});
+window._fbqEventId=function(p){return p+'_'+Date.now()+'_'+Math.random().toString(36).substr(2,9);};
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1015593400900909&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700;900&family=Courier+Prime:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<style>
+/* === RESET & BASE === */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--paper:#F0EAD6;--black:#1A1A1A;--red:#DC143C;--gold:#C5A945}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--black);font-family:'Courier Prime','Courier New',monospace;font-size:17px;line-height:1.65;overflow-x:hidden;position:relative}
+p{margin-bottom:16px}
+
+/* grain + scanlines */
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.3;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E")}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9998;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,.035) 3px,rgba(0,0,0,.035) 4px)}
+
+/* === TYPOGRAPHY === */
+.display{font-family:'Oswald',Impact,sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:-1px;line-height:.93}
+.script{font-family:'Dancing Script',cursive;font-weight:700}
+
+/* === ANIMATIONS === */
+@keyframes jitter{0%,100%{transform:translate(0,0) rotate(0deg)}10%{transform:translate(-1px,1px) rotate(.3deg)}30%{transform:translate(-2px,0) rotate(.1deg)}50%{transform:translate(-1px,-2px) rotate(.2deg)}70%{transform:translate(-1px,1px) rotate(-.1deg)}90%{transform:translate(0,2px) rotate(-.2deg)}}
+@keyframes glitch{0%,88%,100%{clip-path:none;transform:none}89%{clip-path:inset(0 0 85% 0);transform:translateX(-4px);color:var(--red)}90%{clip-path:inset(50% 0 30% 0);transform:translateX(4px)}91%{clip-path:none;transform:none}}
+@keyframes flicker{0%,100%{opacity:1}48%{opacity:.2}49%{opacity:1}86%{opacity:0}87%{opacity:1}}
+@keyframes scrollLeft{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes pulseGold{0%,100%{box-shadow:0 0 0 0 rgba(197,169,69,.45)}50%{box-shadow:0 0 0 16px rgba(197,169,69,0)}}
+@keyframes pulseRed{0%,100%{box-shadow:0 0 0 0 rgba(220,20,60,.45)}50%{box-shadow:0 0 0 16px rgba(220,20,60,0)}}
+@keyframes stampIn{0%{transform:scale(1.5) rotate(-8deg);opacity:0}70%{transform:scale(.96) rotate(1deg);opacity:1}100%{transform:scale(1) rotate(-2.5deg)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes checkDraw{0%{stroke-dashoffset:50}100%{stroke-dashoffset:0}}
+@keyframes glow{0%,100%{text-shadow:0 0 8px rgba(197,169,69,.4)}50%{text-shadow:0 0 24px rgba(197,169,69,.9)}}
+@keyframes redglow{0%,100%{text-shadow:0 0 8px rgba(220,20,60,.4)}50%{text-shadow:0 0 24px rgba(220,20,60,.9)}}
+@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-5px)}40%{transform:translateX(5px)}60%{transform:translateX(-3px)}80%{transform:translateX(3px)}}
+@keyframes calSlide{0%{transform:translateX(8px) rotate(2deg);opacity:0}100%{transform:translateX(0) rotate(0deg);opacity:1}}
+
+/* === TICKER === */
+.ticker-wrap{overflow:hidden;background:var(--gold);border-top:3px solid var(--black);border-bottom:3px solid var(--black);padding:8px 0;position:relative}
+.ticker-inner{display:flex;white-space:nowrap;animation:scrollLeft 30s linear infinite}
+.ticker-inner span{font-family:'Courier Prime',monospace;font-weight:700;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--black);padding:0 36px}
+.ticker-inner span::after{content:' â¦ ';color:var(--black);opacity:.4}
+
+/* === LAYOUT === */
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+.section-label{font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:10px}
+.section-title{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(30px,6vw,58px);text-transform:uppercase;line-height:.9;margin-bottom:28px}
+.sec-header{text-align:center;margin-bottom:44px}
+
+/* === CONFIRMATION BAR === */
+.confirm-bar{background:var(--black);border-bottom:3px solid var(--gold);padding:18px 20px}
+.confirm-bar .wrap{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
+.confirm-bar__check{width:36px;height:36px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;flex-shrink:0;animation:jitter 4s infinite}
+.confirm-bar__text{font-family:'Courier Prime',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:rgba(240,234,214,.7)}
+.confirm-bar__text strong{color:var(--gold);font-size:14px}
+
+/* === URGENCY BAR === */
+.urgency-bar{background:var(--red);padding:14px 20px;text-align:center}
+.urgency-bar p{font-family:'Courier Prime',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--paper);margin:0;animation:flicker 7s infinite}
+.urgency-bar strong{color:var(--gold)}
+
+/* === HERO === */
+.hero{background:var(--black);padding:80px 20px 64px;text-align:center;position:relative;overflow:hidden;border-bottom:4px solid var(--gold)}
+.hero__bg{position:absolute;font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(130px,32vw,340px);text-transform:uppercase;color:rgba(255,255,255,.018);white-space:nowrap;user-select:none;letter-spacing:-10px;top:50%;left:50%;transform:translate(-50%,-50%);line-height:1;pointer-events:none}
+.hero__eyebrow{display:inline-block;background:var(--gold);color:var(--black);font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:4px;text-transform:uppercase;padding:6px 18px;margin-bottom:28px;animation:jitter 3s infinite;font-weight:700}
+.hero__h1{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(40px,9vw,90px);text-transform:uppercase;line-height:.88;letter-spacing:-2px;color:var(--paper);margin-bottom:20px;animation:glitch 9s infinite}
+.hero__h1 em{color:var(--gold);font-style:normal;display:block;font-size:clamp(26px,5.5vw,56px);margin-top:12px}
+.hero__sub{font-family:'Courier Prime',monospace;font-size:clamp(14px,2.2vw,18px);color:rgba(240,234,214,.72);max-width:520px;margin:0 auto 36px;line-height:1.6}
+.hero__cta-group{display:flex;flex-direction:column;align-items:center;gap:8px;max-width:500px;margin:0 auto}
+
+/* === BRIDGE === */
+.bridge{background:var(--paper);padding:72px 20px}
+.bridge .wrap{max-width:680px}
+.bridge p{font-size:17px;line-height:1.75;margin-bottom:18px}
+.bridge .drop::first-letter{float:left;font-family:'Oswald',sans-serif;font-size:5em;line-height:.75;padding-right:12px;padding-top:8px;color:var(--gold);font-weight:900}
+.big-quote{font-family:'Oswald',sans-serif;font-size:clamp(20px,4vw,32px);font-weight:700;text-transform:uppercase;line-height:1.1;border-left:6px solid var(--gold);padding-left:20px;margin:32px 0;color:var(--black)}
+
+/* === CALENDAR VISUAL === */
+.cal-visual{background:var(--black);padding:64px 20px;overflow:hidden;position:relative}
+.cal-visual .wrap{position:relative;z-index:2;max-width:760px}
+.cal-visual__bg-text{position:absolute;font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(100px,28vw,280px);color:rgba(197,169,69,.04);top:50%;left:-20px;transform:translateY(-50%);line-height:1;pointer-events:none;user-select:none;text-transform:uppercase}
+.cal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin:32px 0}
+@media(max-width:480px){.cal-grid{grid-template-columns:repeat(3,1fr)}}
+.cal-month{background:rgba(240,234,214,.04);border:1px solid rgba(197,169,69,.12);padding:12px 8px;text-align:center;transition:border-color .15s,background .15s;animation:calSlide .5s ease-out both}
+.cal-month:hover{border-color:rgba(197,169,69,.4);background:rgba(197,169,69,.06)}
+.cal-month__num{font-family:'Oswald',sans-serif;font-weight:900;font-size:11px;color:rgba(197,169,69,.4);letter-spacing:2px;display:block;margin-bottom:4px}
+.cal-month__name{font-family:'Courier Prime',monospace;font-size:12px;color:rgba(240,234,214,.55);text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px}
+.cal-month__theme{font-family:'Courier Prime',monospace;font-size:11px;color:var(--gold);line-height:1.3}
+.cal-month--highlight{background:rgba(197,169,69,.08);border-color:rgba(197,169,69,.3)}
+.cal-month--highlight .cal-month__num{color:var(--gold)}
+.cal-month--highlight .cal-month__name{color:rgba(240,234,214,.8)}
+
+/* === MECHANISM === */
+.mech-section{background:var(--paper);padding:64px 20px}
+.mech-section .wrap{max-width:680px}
+.mech-box{background:var(--black);color:var(--paper);padding:36px 32px;position:relative;border-left:5px solid var(--gold)}
+.mech-box::before{content:'MECANISMO';position:absolute;top:-14px;left:20px;background:var(--gold);color:var(--black);font-family:'Oswald',sans-serif;font-weight:900;font-size:10px;letter-spacing:4px;padding:3px 14px}
+.mech-box p{font-size:16px;color:rgba(240,234,214,.8);line-height:1.75;margin:0}
+.mech-box strong{color:var(--gold)}
+
+/* === BULLETS === */
+.bullets-section{background:var(--paper);padding:0 20px 64px}
+.bullets-section .wrap{max-width:680px}
+.bullet-list{list-style:none;display:flex;flex-direction:column;gap:14px}
+.bullet-list li{display:flex;gap:14px;align-items:flex-start;font-size:16px;line-height:1.55}
+.bullet-list li::before{content:'â¦';color:var(--gold);flex-shrink:0;font-size:14px;margin-top:2px}
+
+/* === ANCHOR PRICE === */
+.anchor-section{background:var(--black);color:var(--paper);padding:60px 20px;text-align:center}
+.anchor-section .wrap{max-width:680px}
+.anchor-math{display:flex;justify-content:center;align-items:center;gap:16px;flex-wrap:wrap;margin:28px 0}
+.anchor-math__item{text-align:center}
+.anchor-math__label{font-family:'Courier Prime',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(240,234,214,.4);display:block;margin-bottom:4px}
+.anchor-math__val{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(28px,6vw,48px);color:var(--gold);line-height:1}
+.anchor-math__op{font-family:'Oswald',sans-serif;font-weight:900;font-size:32px;color:rgba(240,234,214,.2)}
+.anchor-math__eq{font-family:'Oswald',sans-serif;font-size:32px;color:rgba(240,234,214,.2)}
+.anchor-note{font-family:'Courier Prime',monospace;font-size:14px;color:rgba(240,234,214,.5);line-height:1.7}
+.anchor-note strong{color:rgba(240,234,214,.8)}
+
+/* === OFFER BOX === */
+.offer-section{background:var(--paper);padding:64px 20px}
+.offer-section .wrap{max-width:680px}
+
+.offer-box{background:var(--black);color:var(--paper);padding:52px 40px;text-align:center;position:relative}
+.offer-box::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.85' numOctaves='4'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='200' filter='url(%23n)' opacity='.14'/%3E%3C/svg%3E");pointer-events:none}
+.offer-box>*{position:relative;z-index:1}
+.offer-box__eyebrow{font-family:'Courier Prime',monospace;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;display:block}
+.offer-box__title{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(22px,4.5vw,40px);text-transform:uppercase;line-height:1;margin-bottom:8px}
+.offer-box__subtitle{font-family:'Courier Prime',monospace;font-size:14px;color:rgba(240,234,214,.5);margin-bottom:28px;display:block}
+.offer-box__was{font-family:'Courier Prime',monospace;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:rgba(240,234,214,.3);margin-bottom:4px;display:block}
+.offer-box__was span{text-decoration:line-through}
+.offer-box__price{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(80px,17vw,130px);color:var(--gold);line-height:1;animation:glow 3s infinite}
+.offer-box__price sup{font-size:36px;color:rgba(197,169,69,.7);vertical-align:super}
+.offer-box__per{font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:rgba(240,234,214,.35);margin-bottom:28px;display:block}
+.offer-box__includes{display:flex;flex-direction:column;gap:8px;margin:24px 0;text-align:left;border-top:1px solid rgba(197,169,69,.15);border-bottom:1px solid rgba(197,169,69,.15);padding:20px 0}
+.offer-box__item{display:flex;gap:10px;align-items:center;font-family:'Courier Prime',monospace;font-size:13px;color:rgba(240,234,214,.7)}
+.offer-box__item::before{content:'â¦';color:var(--gold);flex-shrink:0}
+
+/* === BUTTONS === */
+.btn-yes{display:block;width:100%;background:var(--gold);color:var(--black);font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(16px,3.2vw,22px);text-transform:uppercase;letter-spacing:2px;padding:22px 40px;border:3px solid var(--black);cursor:pointer;text-decoration:none;position:relative;transition:transform .07s,background .07s;animation:pulseGold 2.4s infinite;text-align:center;margin-bottom:8px}
+.btn-yes::after{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='60'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='200' height='60' filter='url(%23n)' opacity='.08'/%3E%3C/svg%3E");pointer-events:none}
+.btn-yes:hover{background:#b89a30;transform:translate(-2px,-2px)}
+.btn-yes__note{display:block;font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(26,26,26,.55);margin-top:8px;font-weight:400}
+
+.btn-no{display:block;width:100%;background:none;border:none;font-family:'Courier Prime',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:rgba(240,234,214,.3);cursor:pointer;padding:16px;text-align:center;text-decoration:none;transition:color .1s}
+.btn-no:hover{color:rgba(240,234,214,.6)}
+
+/* === GUARANTEE === */
+.guarantee-strip{background:var(--paper);padding:40px 20px}
+.guarantee-strip .wrap{max-width:680px;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.guarantee-badge{width:100px;height:100px;border-radius:50%;border:4px solid var(--black);background:var(--black);color:var(--paper);display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;animation:jitter 4s infinite}
+.guarantee-badge__days{font-family:'Oswald',sans-serif;font-weight:900;font-size:38px;color:var(--gold);line-height:1}
+.guarantee-badge__label{font-family:'Courier Prime',monospace;font-size:8px;letter-spacing:2px;text-transform:uppercase;text-align:center;line-height:1.4}
+.guarantee-text{flex:1}
+.guarantee-text h3{font-family:'Oswald',sans-serif;font-weight:900;font-size:22px;text-transform:uppercase;margin-bottom:8px}
+.guarantee-text p{font-size:15px;opacity:.7;margin:0}
+
+/* === PS === */
+.ps-section{background:var(--black);padding:48px 20px}
+.ps-section .wrap{max-width:680px}
+.ps-box{border:2px solid rgba(197,169,69,.2);padding:28px 28px;position:relative}
+.ps-box::before{content:'P.S.';position:absolute;top:-14px;left:20px;background:var(--black);padding:0 10px;font-family:'Oswald',sans-serif;font-weight:900;font-size:18px;color:var(--gold);letter-spacing:3px}
+.ps-box p{font-family:'Courier Prime',monospace;font-size:14px;color:rgba(240,234,214,.7);line-height:1.75;margin:0}
+.ps-box strong{color:var(--gold)}
+
+/* === DIVIDER === */
+hr.div{border:none;height:3px;background:linear-gradient(90deg,var(--gold),var(--black),var(--gold));position:relative;margin:0}
+hr.div::before{content:'â¦';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:var(--paper);padding:0 12px;color:var(--gold);font-size:14px}
+hr.div-dark{border:none;height:3px;background:linear-gradient(90deg,var(--gold),rgba(197,169,69,.1),var(--gold));position:relative;margin:0}
+
+/* === FOOTER === */
+.footer-bar{background:var(--black);color:rgba(240,234,214,.35);font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;text-align:center;padding:20px;border-top:2px solid var(--gold)}
+
+/* === RESPONSIVE === */
+@media(max-width:560px){
+  .offer-box{padding:36px 20px}
+  .guarantee-strip .wrap{flex-direction:column;text-align:center}
+  .cal-grid{grid-template-columns:repeat(3,1fr)}
+  .anchor-math__op,.anchor-math__eq{font-size:22px}
+}
+</style>
+</head>
+<body>
+
+<!-- =========================================================
+     TICKER TOPO â DOURADO
+     ========================================================= -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker-inner">
+    <span>oferta Ãºnica</span><span>sÃ³ aparece agora</span><span>um clique</span><span>nÃ£o aparece de novo</span><span>12 roteiros prontos</span><span>ano inteiro</span><span>sem redigitar o cartÃ£o</span><span>expira quando vocÃª sair</span>
+    <span>oferta Ãºnica</span><span>sÃ³ aparece agora</span><span>um clique</span><span>nÃ£o aparece de novo</span><span>12 roteiros prontos</span><span>ano inteiro</span><span>sem redigitar o cartÃ£o</span><span>expira quando vocÃª sair</span>
+  </div>
+</div>
+
+<!-- =========================================================
+     BARRA DE CONFIRMAÃÃO
+     ========================================================= -->
+<div class="confirm-bar">
+  <div class="wrap">
+    <div class="confirm-bar__check">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+        <path d="M3 9l4.5 4.5L15 5" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="50" stroke-dashoffset="50" style="animation:checkDraw .6s ease-out .3s forwards"/>
+      </svg>
+    </div>
+    <div class="confirm-bar__text">
+      <strong>Compra confirmada!</strong> Seu roteiro jÃ¡ estÃ¡ a caminho do e-mail.
+    </div>
+  </div>
+</div>
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+<section class="hero">
+  <div class="hero__bg" aria-hidden="true">ANO</div>
+
+  <div style="max-width:760px;margin:0 auto;position:relative;z-index:2">
+    <div class="hero__eyebrow">â  espera â nÃ£o feche essa pÃ¡gina ainda</div>
+
+    <h1 class="hero__h1 display">
+      VocÃª salvou o dia 12.
+      <em>E os outros 364 dias do ano?</em>
+    </h1>
+
+    <p class="hero__sub">
+      Temos uma oferta Ãºnica que aparece sÃ³ neste momento â depois que vocÃª sair da pÃ¡gina,
+      ela desaparece pra sempre. Nem e-mail, nem segunda chance.
+    </p>
+
+    <div class="hero__cta-group">
+      <a href="#oferta" class="btn-yes">
+        SIM! Quero o Ano Inteiro de Encontros por R$47
+        <span class="btn-yes__note">â ver a oferta antes de decidir</span>
+      </a>
+      <a href="#recusa" class="btn-no">NÃ£o, obrigado. Prefiro arriscar os outros 11 meses.</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     URGÃNCIA
+     ========================================================= -->
+<div class="urgency-bar">
+  <p>â¡ <strong>Oferta Ãºnica</strong> â esta pÃ¡gina some quando vocÃª fechar ou sair. NÃ£o tem e-mail depois, nÃ£o tem segunda chance.</p>
+</div>
+
+<hr class="div">
+
+<!-- =========================================================
+     BRIDGE â O PROBLEMA QUE CONTINUA DEPOIS DO DIA 12
+     ========================================================= -->
+<section class="bridge">
+  <div class="wrap">
+    <span class="section-label">o problema que ninguÃ©m fala</span>
+    <h2 class="display" style="font-size:clamp(34px,7vw,62px);margin-bottom:32px;">O dia 12 vai ser incrÃ­vel.<br>E o dia 13?</h2>
+
+    <p class="drop">
+      ParabÃ©ns. VocÃª acabou de fazer algo que a maioria dos namorados nÃ£o faz: se planejou.
+      O roteiro do Dia dos Namorados jÃ¡ estÃ¡ a caminho do e-mail â e o dia 12 vai ser diferente de todos os outros.
+    </p>
+
+    <p>
+      Mas tem um problema que nenhum roteiro de Dia dos Namorados resolve sozinho:
+      <strong>o que acontece depois.</strong>
+    </p>
+
+    <p>
+      MarÃ§o chega. Julho passa. O aniversÃ¡rio de namoro vira um jantar de Ãºltima hora.
+      O relacionamento nÃ£o cai na rotina por falta de amor â cai por falta de <em>iniciativa</em>.
+      E iniciativa, todo mundo sabe, precisa de energia que ninguÃ©m tem no fim de um dia longo.
+    </p>
+
+    <div class="big-quote">
+      "Um encontro especial por mÃªs muda tudo. Mas quem tem cabeÃ§a pra planejar 12 encontros diferentes do zero?"
+    </div>
+
+    <p>
+      Ã exatamente esse o problema que o <strong>Ano Inteiro de Encontros do Liso</strong> resolve.
+      NÃ£o Ã© mais um produto â Ã© a continuaÃ§Ã£o natural do que vocÃª acabou de comprar, agora pra o resto do ano.
+    </p>
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- =========================================================
+     CALENDÃRIO â OS 12 ROTEIROS
+     ========================================================= -->
+<section class="cal-visual">
+  <div class="cal-visual__bg-text" aria-hidden="true">CALENDÃRIO</div>
+  <div class="wrap">
+    <div class="sec-header" style="text-align:center">
+      <span class="section-label" style="color:var(--gold)">o que vocÃª leva</span>
+      <h2 class="display" style="color:var(--paper);font-size:clamp(32px,7vw,64px)">12 roteiros.<br>Um por mÃªs.<br><span style="color:var(--gold)">Prontos pra usar.</span></h2>
+      <p style="color:rgba(240,234,214,.6);font-size:16px;max-width:540px;margin:0 auto">Cada mÃªs tem tema prÃ³prio, passo a passo completo e frases prontas â no mesmo estilo do roteiro que vocÃª acabou de comprar.</p>
+    </div>
+
+    <div class="cal-grid">
+      <div class="cal-month" style="animation-delay:.05s">
+        <span class="cal-month__num">01</span>
+        <span class="cal-month__name">Janeiro</span>
+        <span class="cal-month__theme">Virada do Ano â o encontro do recomeÃ§o</span>
+      </div>
+      <div class="cal-month" style="animation-delay:.1s">
+        <span class="cal-month__num">02</span>
+        <span class="cal-month__name">Fevereiro</span>
+        <span class="cal-month__theme">Carnaval em Casa â bloquinho privativo</span>
+      </div>
+      <div class="cal-month cal-month--highlight" style="animation-delay:.15s">
+        <span class="cal-month__num">03</span>
+        <span class="cal-month__name">MarÃ§o</span>
+        <span class="cal-month__theme">Piquenique de Outono â trilha sensorial</span>
+      </div>
+      <div class="cal-month" style="animation-delay:.2s">
+        <span class="cal-month__num">04</span>
+        <span class="cal-month__name">Abril</span>
+        <span class="cal-month__theme">Noite de Cinema Cult â sessÃ£o privativa</span>
+      </div>
+      <div class="cal-month" style="animation-delay:.25s">
+        <span class="cal-month__num">05</span>
+        <span class="cal-month__name">Maio</span>
+        <span class="cal-month__theme">AniversÃ¡rio de Namoro â Protocolo da MemÃ³ria</span>
+      </div>
+      <div class="cal-month cal-month--highlight" style="animation-delay:.3s">
+        <span class="cal-month__num">06</span>
+        <span class="cal-month__name">Junho</span>
+        <span class="cal-month__theme">â¦ Dia dos Namorados â jÃ¡ estÃ¡ com vocÃª</span>
+      </div>
+      <div class="cal-month" style="animation-delay:.35s">
+        <span class="cal-month__num">07</span>
+        <span class="cal-month__name">Julho</span>
+        <span class="cal-month__theme">Noite de Inverno em Casa â do jeito certo</span>
+      </div>
+      <div class="cal-month" style="animation-delay:.4s">
+        <span class="cal-month__num">08</span>
+        <span class="cal-month__name">Agosto</span>
+        <span class="cal-month__theme">Encontro Surpresa â ela conta pras amigas</span>
+      </div>
+      <div class="cal-month" style="animation-delay:.45s">
+        <span class="cal-month__num">09</span>
+        <span class="cal-month__name">Setembro</span>
+        <span class="cal-month__theme">Spa Night â relaxamento sem gastar nada</span>
+      </div>
+      <div class="cal-month cal-month--highlight" style="animation-delay:.5s">
+        <span class="cal-month__num">10</span>
+        <span class="cal-month__name">Outubro</span>
+        <span class="cal-month__theme">Noite GastronÃ´mica â restaurante em casa</span>
+      </div>
+      <div class="cal-month" style="animation-delay:.55s">
+        <span class="cal-month__num">11</span>
+        <span class="cal-month__name">Novembro</span>
+        <span class="cal-month__theme">Aventura RelÃ¢mpago â passeio grÃ¡tis na cidade</span>
+      </div>
+      <div class="cal-month" style="animation-delay:.6s">
+        <span class="cal-month__num">12</span>
+        <span class="cal-month__name">Dezembro</span>
+        <span class="cal-month__theme">RÃ©veillon do Liso â virada que ninguÃ©m esquece</span>
+      </div>
+    </div>
+
+    <p style="text-align:center;font-family:'Courier Prime',monospace;font-size:13px;color:rgba(240,234,214,.4);letter-spacing:2px;text-transform:uppercase;margin-top:8px">â¦ Cada roteiro: passo a passo + frases prontas + ideias baratas â¦</p>
+  </div>
+</section>
+
+<hr class="div-dark">
+
+<!-- =========================================================
+     MECANISMO â CALENDÃRIO DO AMOR
+     ========================================================= -->
+<section class="mech-section">
+  <div class="wrap">
+    <span class="section-label">por que funciona</span>
+    <h2 class="display" style="font-size:clamp(28px,5.5vw,52px);margin-bottom:32px;">O CalendÃ¡rio do Amor</h2>
+
+    <div class="mech-box">
+      <p>
+        O roteiro do Dia dos Namorados cria um <strong>pico na Curva da EmoÃ§Ã£o</strong> â
+        um momento memorÃ¡vel que muda como a pessoa te vÃª. Mas curvas de emoÃ§Ã£o sobem e descem.
+        Sem outros picos ao longo do ano, o relacionamento volta pra linha de base em semanas.
+        <br><br>
+        O <strong>CalendÃ¡rio do Amor</strong> distribui encontros memorÃ¡veis pelos 12 meses â
+        picos regulares que impedem a curva de afundar na rotina.
+        NÃ£o Ã© sobre gastar dinheiro: Ã© sobre aparecer, criar memÃ³ria e mostrar que
+        vocÃª pensa no relacionamento o ano inteiro, nÃ£o sÃ³ nas datas do calendÃ¡rio.
+      </p>
+    </div>
+
+    <p style="margin-top:28px;font-size:15px;opacity:.6;text-align:center;font-family:'Courier Prime',monospace;letter-spacing:1px">
+      Um encontro por mÃªs. Menos de R$4 por roteiro. Zero esforÃ§o criativo.
+    </p>
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- =========================================================
+     BULLETS DE BENEFÃCIO
+     ========================================================= -->
+<section class="bullets-section">
+  <div class="wrap">
+    <div class="sec-header" style="text-align:center;margin-bottom:32px">
+      <span class="section-label" style="text-align:center">o que vocÃª ganha</span>
+      <h2 class="display" style="font-size:clamp(28px,5.5vw,50px)">Tudo incluÃ­do,<br>tudo pronto.</h2>
+    </div>
+
+    <ul class="bullet-list">
+      <li><strong>12 roteiros completos</strong>, um pra cada mÃªs do ano (janeiro a dezembro)</li>
+      <li>Cada roteiro com <strong>tema prÃ³prio</strong> â piquenique, noite de inverno, surpresa, aniversÃ¡rio, spa, gastronÃ´micoâ¦</li>
+      <li><strong>Passo a passo detalhado</strong> + frases prontas pra cada momento do roteiro</li>
+      <li>Tudo no estilo liso: <strong>memorÃ¡vel gastando quase nada</strong></li>
+      <li>Nunca mais passar em branco numa data especial ou num mÃªs qualquer</li>
+      <li>Baixou, abriu, executou â <strong>zero esforÃ§o criativo da sua parte</strong></li>
+      <li>Acesso vitalÃ­cio â vocÃª usa esse ano, e em todos os que vierem depois</li>
+    </ul>
+  </div>
+</section>
+
+<!-- =========================================================
+     ANCORAGEM DE PREÃO
+     ========================================================= -->
+<section class="anchor-section">
+  <div class="wrap">
+    <span class="section-label" style="color:var(--gold);text-align:center;display:block;margin-bottom:28px">quanto custa um encontro sem roteiro</span>
+    <h2 class="display" style="font-size:clamp(28px,5.5vw,52px);color:var(--paper);text-align:center;margin-bottom:8px">
+      R$47 pelo ano inteiro.
+    </h2>
+    <p style="color:rgba(240,234,214,.5);text-align:center;font-family:'Courier Prime',monospace;font-size:14px;margin-bottom:36px">divida por 12 meses:</p>
+
+    <div class="anchor-math">
+      <div class="anchor-math__item">
+        <span class="anchor-math__label">por encontro</span>
+        <span class="anchor-math__val" style="animation:glow 2s infinite">R$3,90</span>
+      </div>
+      <span class="anchor-math__op">&lt;</span>
+      <div class="anchor-math__item">
+        <span class="anchor-math__label">cappuccino</span>
+        <span class="anchor-math__val">R$9</span>
+      </div>
+      <span class="anchor-math__op">&lt;</span>
+      <div class="anchor-math__item">
+        <span class="anchor-math__label">uber de volta</span>
+        <span class="anchor-math__val">R$15</span>
+      </div>
+      <span class="anchor-math__op">&lt;</span>
+      <div class="anchor-math__item">
+        <span class="anchor-math__label">jantar sem plano</span>
+        <span class="anchor-math__val">R$80+</span>
+      </div>
+    </div>
+
+    <p class="anchor-note" style="text-align:center">
+      VocÃª vai gastar <strong>mais que isso</strong> em qualquer encontro improvisado de Ãºltima hora â<br>
+      e vai sair sem ter criado nenhuma memÃ³ria especial.
+    </p>
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- =========================================================
+     OFFER BOX
+     ========================================================= -->
+<section class="offer-section" id="oferta">
+  <div class="wrap">
+    <div class="offer-box">
+      <span class="offer-box__eyebrow">â¦ oferta Ãºnica â expira quando vocÃª sair â¦</span>
+      <h2 class="offer-box__title">Ano Inteiro de<br>Encontros do Liso</h2>
+      <span class="offer-box__subtitle">12 roteiros completos â um por mÃªs, prontos pra usar</span>
+
+      <span class="offer-box__was">de <span>R$97</span></span>
+      <div class="offer-box__price"><sup>R$</sup>47</div>
+      <span class="offer-box__per">menos de R$3,90 por encontro Â· acesso imediato</span>
+
+      <div class="offer-box__includes">
+        <div class="offer-box__item">12 roteiros temÃ¡ticos completos (janeiroâdezembro)</div>
+        <div class="offer-box__item">Passo a passo detalhado + frases prontas em cada roteiro</div>
+        <div class="offer-box__item">Temas variados: surpresa, aniversÃ¡rio, inverno, gastronÃ´mico e mais</div>
+        <div class="offer-box__item">Mesmo estilo do roteiro que vocÃª acabou de comprar</div>
+        <div class="offer-box__item">Acesso imediato â entregue no mesmo e-mail</div>
+        <div class="offer-box__item">Garantia de 7 dias â se nÃ£o gostar, devolvo tudo</div>
+      </div>
+
+      <a href="https://pay.cakto.com.br/wve25yg_911223" class="btn-yes" onclick="(function(){var _e=_fbqEventId('ic');fbq('track','InitiateCheckout',{value:47.00,currency:'BRL',content_name:'Ano Inteiro de Encontros do Liso',num_items:1},{eventID:_e});})()" target="_blank" rel="noopener">
+        SIM! Quero o Ano Inteiro por R$47 â adicionar com 1 clique
+        <span class="btn-yes__note">NÃ£o precisa redigitar o cartÃ£o. Ã um clique sÃ³.</span>
+      </a>
+
+      <a href="#recusa" class="btn-no" id="recusa">NÃ£o, obrigado. Prefiro arriscar voltar pra rotina depois do dia 12.</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     GARANTIA
+     ========================================================= -->
+<section class="guarantee-strip">
+  <div class="wrap">
+    <div class="guarantee-badge">
+      <span class="guarantee-badge__days">7</span>
+      <span class="guarantee-badge__label">dias de<br>garantia</span>
+    </div>
+    <div class="guarantee-text">
+      <h3>Risco zero da sua parte</h3>
+      <p>Se vocÃª pegar o pacote e por qualquer motivo nÃ£o gostar â me manda um e-mail em atÃ© 7 dias e devolvo o valor integralmente, sem perguntas. VocÃª nÃ£o perde nada testando.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- =========================================================
+     P.S.
+     ========================================================= -->
+<section class="ps-section">
+  <div class="wrap">
+    <div class="ps-box">
+      <p>
+        Ã <strong>um clique sÃ³</strong> â seu cartÃ£o jÃ¡ estÃ¡ salvo do produto principal, nÃ£o precisa redigitar nada.
+        <br><br>
+        Esta oferta nÃ£o vai aparecer no seu e-mail depois. NÃ£o vai ter popup de "ops, vocÃª esqueceu".
+        Quando vocÃª sair desta pÃ¡gina, <strong>ela some pra sempre</strong>.
+        <br><br>
+        VocÃª jÃ¡ tomou a decisÃ£o certa comprando o roteiro. Esta Ã© sÃ³ a continuaÃ§Ã£o natural.
+        O roteiro resolve o dia 12. O Ano Inteiro resolve os outros 364.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     TICKER FINAL
+     ========================================================= -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker-inner">
+    <span>oferta Ãºnica</span><span>sÃ³ aparece agora</span><span>um clique</span><span>nÃ£o aparece de novo</span><span>12 roteiros prontos</span><span>ano inteiro</span><span>sem redigitar o cartÃ£o</span><span>expira quando vocÃª sair</span>
+    <span>oferta Ãºnica</span><span>sÃ³ aparece agora</span><span>um clique</span><span>nÃ£o aparece de novo</span><span>12 roteiros prontos</span><span>ano inteiro</span><span>sem redigitar o cartÃ£o</span><span>expira quando vocÃª sair</span>
+  </div>
+</div>
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+<div class="footer-bar">
+  <p>Â© 2026 Dia dos Namorados do Liso Â· Suporte: [seu-email@dominio.com] Â· Todos os direitos reservados</p>
+</div>
+
+<script>
+// Fade-up ao scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.mech-box, .bullet-list li, .cal-month, .offer-box').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity .5s ease, transform .5s ease';
+  observer.observe(el);
+});
+
+// Esconde botÃ£o "nÃ£o" atÃ© scroll chegar nele
+document.querySelectorAll('.btn-no').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    const confirmMsg = this.closest('.offer-box')
+      ? 'Tem certeza? Esta oferta desaparece quando vocÃª sair da pÃ¡gina.'
+      : null;
+    if (!confirmMsg || confirm(confirmMsg)) {
+      window.location.href = this.href !== '#recusa' ? this.href : 'javascript:history.back()';
+    }
+  });
+});
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ESPERE — Uma Última Coisa Antes de Ir</title>
 <!-- Meta Pixel Code -->
 <script>
