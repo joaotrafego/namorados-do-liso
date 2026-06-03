@@ -16,14 +16,7 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '1015593400900909');
 fbq('track', 'PageView');
-fbq('track', 'Purchase', {
-  value: 19.00,
-  currency: 'BRL',
-  content_name: 'Roteiro Dia dos Namorados do Liso',
-  content_ids: ['roteiro-namorados-liso'],
-  content_type: 'product',
-  num_items: 1
-});
+(function(){var _e=_fbqEventId('purchase');fbq('track','Purchase',{value:19.00,currency:'BRL',content_name:'Roteiro Dia dos Namorados do Liso',content_ids:['roteiro-namorados-liso'],content_type:'product',num_items:1},{eventID:_e});})();
 fbq('track', 'ViewContent', {
   content_name: 'Ano Inteiro de Encontros do Liso',
   content_ids: ['ano-inteiro-encontros-liso'],
@@ -31,6 +24,7 @@ fbq('track', 'ViewContent', {
   value: 47.00,
   currency: 'BRL'
 });
+window._fbqEventId=function(p){return p+'_'+Date.now()+'_'+Math.random().toString(36).substr(2,9);};
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1015593400900909&ev=PageView&noscript=1"
@@ -513,7 +507,7 @@ hr.div-dark{border:none;height:3px;background:linear-gradient(90deg,var(--gold),
         <div class="offer-box__item">Garantia de 7 dias — se não gostar, devolvo tudo</div>
       </div>
 
-      <a href="https://pay.cakto.com.br/wve25yg_911223" class="btn-yes" onclick="fbq('track','InitiateCheckout',{value:47.00,currency:'BRL',content_name:'Ano Inteiro de Encontros do Liso',num_items:1})" target="_blank" rel="noopener">
+      <a href="https://pay.cakto.com.br/wve25yg_911223" class="btn-yes" onclick="(function(){var _e=_fbqEventId('ic');fbq('track','InitiateCheckout',{value:47.00,currency:'BRL',content_name:'Ano Inteiro de Encontros do Liso',num_items:1},{eventID:_e});})()" target="_blank" rel="noopener">
         SIM! Quero o Ano Inteiro por R$47 — adicionar com 1 clique
         <span class="btn-yes__note">Não precisa redigitar o cartão. É um clique só.</span>
       </a>
