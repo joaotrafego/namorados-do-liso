@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dia dos Namorados do Liso — Seu Roteiro Completo</title>
+<title>ESPERE — Uma Última Coisa Antes de Ir</title>
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -16,1149 +16,592 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '1015593400900909');
 fbq('track', 'PageView');
+(function(){var _e=_fbqEventId('purchase');fbq('track','Purchase',{value:19.00,currency:'BRL',content_name:'Roteiro Dia dos Namorados do Liso',content_ids:['roteiro-namorados-liso'],content_type:'product',num_items:1},{eventID:_e});})();
+fbq('track', 'ViewContent', {
+  content_name: 'Ano Inteiro de Encontros do Liso',
+  content_ids: ['ano-inteiro-encontros-liso'],
+  content_type: 'product',
+  value: 47.00,
+  currency: 'BRL'
+});
+window._fbqEventId=function(p){return p+'_'+Date.now()+'_'+Math.random().toString(36).substr(2,9);};
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1015593400900909&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700;900&family=Courier+Prime:wght@400;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700;900&family=Courier+Prime:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 <style>
-/* === RESET === */
+/* === RESET & BASE === */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--paper:#F0EAD6;--black:#1A1A1A;--red:#DC143C;--gold:#C5A945;--night:#0f0f0f;--card:#232323}
+:root{--paper:#F0EAD6;--black:#1A1A1A;--red:#DC143C;--gold:#C5A945}
 html{scroll-behavior:smooth}
-body{background:var(--night);color:var(--paper);font-family:'Courier Prime','Courier New',monospace;font-size:16px;line-height:1.7;overflow-x:hidden;max-width:520px;margin:0 auto}
-p{margin-bottom:14px}
-strong{color:var(--paper)}
-em{color:var(--gold);font-style:normal}
+body{background:var(--paper);color:var(--black);font-family:'Courier Prime','Courier New',monospace;font-size:17px;line-height:1.65;overflow-x:hidden;position:relative}
+p{margin-bottom:16px}
 
-body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.2;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E")}
+/* grain + scanlines */
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.3;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E")}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9998;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,.035) 3px,rgba(0,0,0,.035) 4px)}
 
 /* === TYPOGRAPHY === */
-.display{font-family:'Oswald',Impact,sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:-1px;line-height:.92}
+.display{font-family:'Oswald',Impact,sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:-1px;line-height:.93}
 .script{font-family:'Dancing Script',cursive;font-weight:700}
-.label{font-family:'Courier Prime',monospace;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--red);display:block;margin-bottom:8px}
 
 /* === ANIMATIONS === */
-@keyframes jitter{0%,100%{transform:translate(0,0)}20%{transform:translate(-1px,1px)}60%{transform:translate(1px,-1px)}}
+@keyframes jitter{0%,100%{transform:translate(0,0) rotate(0deg)}10%{transform:translate(-1px,1px) rotate(.3deg)}30%{transform:translate(-2px,0) rotate(.1deg)}50%{transform:translate(-1px,-2px) rotate(.2deg)}70%{transform:translate(-1px,1px) rotate(-.1deg)}90%{transform:translate(0,2px) rotate(-.2deg)}}
+@keyframes glitch{0%,88%,100%{clip-path:none;transform:none}89%{clip-path:inset(0 0 85% 0);transform:translateX(-4px);color:var(--red)}90%{clip-path:inset(50% 0 30% 0);transform:translateX(4px)}91%{clip-path:none;transform:none}}
 @keyframes flicker{0%,100%{opacity:1}48%{opacity:.2}49%{opacity:1}86%{opacity:0}87%{opacity:1}}
-@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
-@keyframes fadeIn{from{opacity:0}to{opacity:1}}
-@keyframes fadeOut{from{opacity:1}to{opacity:0}}
-@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(220,20,60,.4)}50%{box-shadow:0 0 0 12px rgba(220,20,60,0)}}
-@keyframes glow{0%,100%{text-shadow:0 0 8px rgba(197,169,69,.4)}50%{text-shadow:0 0 20px rgba(197,169,69,.9)}}
-@keyframes wavebar{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.4)}}
-@keyframes slideUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
-@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
-@keyframes checkIn{from{transform:scale(0) rotate(-20deg);opacity:0}to{transform:scale(1) rotate(0deg);opacity:1}}
+@keyframes scrollLeft{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes pulseGold{0%,100%{box-shadow:0 0 0 0 rgba(197,169,69,.45)}50%{box-shadow:0 0 0 16px rgba(197,169,69,0)}}
+@keyframes pulseRed{0%,100%{box-shadow:0 0 0 0 rgba(220,20,60,.45)}50%{box-shadow:0 0 0 16px rgba(220,20,60,0)}}
+@keyframes stampIn{0%{transform:scale(1.5) rotate(-8deg);opacity:0}70%{transform:scale(.96) rotate(1deg);opacity:1}100%{transform:scale(1) rotate(-2.5deg)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes checkDraw{0%{stroke-dashoffset:50}100%{stroke-dashoffset:0}}
+@keyframes glow{0%,100%{text-shadow:0 0 8px rgba(197,169,69,.4)}50%{text-shadow:0 0 24px rgba(197,169,69,.9)}}
+@keyframes redglow{0%,100%{text-shadow:0 0 8px rgba(220,20,60,.4)}50%{text-shadow:0 0 24px rgba(220,20,60,.9)}}
+@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-5px)}40%{transform:translateX(5px)}60%{transform:translateX(-3px)}80%{transform:translateX(3px)}}
+@keyframes calSlide{0%{transform:translateX(8px) rotate(2deg);opacity:0}100%{transform:translateX(0) rotate(0deg);opacity:1}}
 
-/* =============================================
-   QUIZ OVERLAY
-   ============================================= */
-#quiz-overlay{
-  position:fixed;inset:0;z-index:10000;
-  background:var(--night);
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  padding:32px 28px;
-  transition:opacity .6s ease;
+/* === TICKER === */
+.ticker-wrap{overflow:hidden;background:var(--gold);border-top:3px solid var(--black);border-bottom:3px solid var(--black);padding:8px 0;position:relative}
+.ticker-inner{display:flex;white-space:nowrap;animation:scrollLeft 30s linear infinite}
+.ticker-inner span{font-family:'Courier Prime',monospace;font-weight:700;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--black);padding:0 36px}
+.ticker-inner span::after{content:' ✦ ';color:var(--black);opacity:.4}
+
+/* === LAYOUT === */
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+.section-label{font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:10px}
+.section-title{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(30px,6vw,58px);text-transform:uppercase;line-height:.9;margin-bottom:28px}
+.sec-header{text-align:center;margin-bottom:44px}
+
+/* === CONFIRMATION BAR === */
+.confirm-bar{background:var(--black);border-bottom:3px solid var(--gold);padding:18px 20px}
+.confirm-bar .wrap{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
+.confirm-bar__check{width:36px;height:36px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;flex-shrink:0;animation:jitter 4s infinite}
+.confirm-bar__text{font-family:'Courier Prime',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:rgba(240,234,214,.7)}
+.confirm-bar__text strong{color:var(--gold);font-size:14px}
+
+/* === URGENCY BAR === */
+.urgency-bar{background:var(--red);padding:14px 20px;text-align:center}
+.urgency-bar p{font-family:'Courier Prime',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--paper);margin:0;animation:flicker 7s infinite}
+.urgency-bar strong{color:var(--gold)}
+
+/* === HERO === */
+.hero{background:var(--black);padding:80px 20px 64px;text-align:center;position:relative;overflow:hidden;border-bottom:4px solid var(--gold)}
+.hero__bg{position:absolute;font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(130px,32vw,340px);text-transform:uppercase;color:rgba(255,255,255,.018);white-space:nowrap;user-select:none;letter-spacing:-10px;top:50%;left:50%;transform:translate(-50%,-50%);line-height:1;pointer-events:none}
+.hero__eyebrow{display:inline-block;background:var(--gold);color:var(--black);font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:4px;text-transform:uppercase;padding:6px 18px;margin-bottom:28px;animation:jitter 3s infinite;font-weight:700}
+.hero__h1{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(40px,9vw,90px);text-transform:uppercase;line-height:.88;letter-spacing:-2px;color:var(--paper);margin-bottom:20px;animation:glitch 9s infinite}
+.hero__h1 em{color:var(--gold);font-style:normal;display:block;font-size:clamp(26px,5.5vw,56px);margin-top:12px}
+.hero__sub{font-family:'Courier Prime',monospace;font-size:clamp(14px,2.2vw,18px);color:rgba(240,234,214,.72);max-width:520px;margin:0 auto 36px;line-height:1.6}
+.hero__cta-group{display:flex;flex-direction:column;align-items:center;gap:8px;max-width:500px;margin:0 auto}
+
+/* === BRIDGE === */
+.bridge{background:var(--paper);padding:72px 20px}
+.bridge .wrap{max-width:680px}
+.bridge p{font-size:17px;line-height:1.75;margin-bottom:18px}
+.bridge .drop::first-letter{float:left;font-family:'Oswald',sans-serif;font-size:5em;line-height:.75;padding-right:12px;padding-top:8px;color:var(--gold);font-weight:900}
+.big-quote{font-family:'Oswald',sans-serif;font-size:clamp(20px,4vw,32px);font-weight:700;text-transform:uppercase;line-height:1.1;border-left:6px solid var(--gold);padding-left:20px;margin:32px 0;color:var(--black)}
+
+/* === CALENDAR VISUAL === */
+.cal-visual{background:var(--black);padding:64px 20px;overflow:hidden;position:relative}
+.cal-visual .wrap{position:relative;z-index:2;max-width:760px}
+.cal-visual__bg-text{position:absolute;font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(100px,28vw,280px);color:rgba(197,169,69,.04);top:50%;left:-20px;transform:translateY(-50%);line-height:1;pointer-events:none;user-select:none;text-transform:uppercase}
+.cal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin:32px 0}
+@media(max-width:480px){.cal-grid{grid-template-columns:repeat(3,1fr)}}
+.cal-month{background:rgba(240,234,214,.04);border:1px solid rgba(197,169,69,.12);padding:12px 8px;text-align:center;transition:border-color .15s,background .15s;animation:calSlide .5s ease-out both}
+.cal-month:hover{border-color:rgba(197,169,69,.4);background:rgba(197,169,69,.06)}
+.cal-month__num{font-family:'Oswald',sans-serif;font-weight:900;font-size:11px;color:rgba(197,169,69,.4);letter-spacing:2px;display:block;margin-bottom:4px}
+.cal-month__name{font-family:'Courier Prime',monospace;font-size:12px;color:rgba(240,234,214,.55);text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px}
+.cal-month__theme{font-family:'Courier Prime',monospace;font-size:11px;color:var(--gold);line-height:1.3}
+.cal-month--highlight{background:rgba(197,169,69,.08);border-color:rgba(197,169,69,.3)}
+.cal-month--highlight .cal-month__num{color:var(--gold)}
+.cal-month--highlight .cal-month__name{color:rgba(240,234,214,.8)}
+
+/* === MECHANISM === */
+.mech-section{background:var(--paper);padding:64px 20px}
+.mech-section .wrap{max-width:680px}
+.mech-box{background:var(--black);color:var(--paper);padding:36px 32px;position:relative;border-left:5px solid var(--gold)}
+.mech-box::before{content:'MECANISMO';position:absolute;top:-14px;left:20px;background:var(--gold);color:var(--black);font-family:'Oswald',sans-serif;font-weight:900;font-size:10px;letter-spacing:4px;padding:3px 14px}
+.mech-box p{font-size:16px;color:rgba(240,234,214,.8);line-height:1.75;margin:0}
+.mech-box strong{color:var(--gold)}
+
+/* === BULLETS === */
+.bullets-section{background:var(--paper);padding:0 20px 64px}
+.bullets-section .wrap{max-width:680px}
+.bullet-list{list-style:none;display:flex;flex-direction:column;gap:14px}
+.bullet-list li{display:flex;gap:14px;align-items:flex-start;font-size:16px;line-height:1.55}
+.bullet-list li::before{content:'✦';color:var(--gold);flex-shrink:0;font-size:14px;margin-top:2px}
+
+/* === ANCHOR PRICE === */
+.anchor-section{background:var(--black);color:var(--paper);padding:60px 20px;text-align:center}
+.anchor-section .wrap{max-width:680px}
+.anchor-math{display:flex;justify-content:center;align-items:center;gap:16px;flex-wrap:wrap;margin:28px 0}
+.anchor-math__item{text-align:center}
+.anchor-math__label{font-family:'Courier Prime',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(240,234,214,.4);display:block;margin-bottom:4px}
+.anchor-math__val{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(28px,6vw,48px);color:var(--gold);line-height:1}
+.anchor-math__op{font-family:'Oswald',sans-serif;font-weight:900;font-size:32px;color:rgba(240,234,214,.2)}
+.anchor-math__eq{font-family:'Oswald',sans-serif;font-size:32px;color:rgba(240,234,214,.2)}
+.anchor-note{font-family:'Courier Prime',monospace;font-size:14px;color:rgba(240,234,214,.5);line-height:1.7}
+.anchor-note strong{color:rgba(240,234,214,.8)}
+
+/* === OFFER BOX === */
+.offer-section{background:var(--paper);padding:64px 20px}
+.offer-section .wrap{max-width:680px}
+
+.offer-box{background:var(--black);color:var(--paper);padding:52px 40px;text-align:center;position:relative}
+.offer-box::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.85' numOctaves='4'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='200' filter='url(%23n)' opacity='.14'/%3E%3C/svg%3E");pointer-events:none}
+.offer-box>*{position:relative;z-index:1}
+.offer-box__eyebrow{font-family:'Courier Prime',monospace;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;display:block}
+.offer-box__title{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(22px,4.5vw,40px);text-transform:uppercase;line-height:1;margin-bottom:8px}
+.offer-box__subtitle{font-family:'Courier Prime',monospace;font-size:14px;color:rgba(240,234,214,.5);margin-bottom:28px;display:block}
+.offer-box__was{font-family:'Courier Prime',monospace;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:rgba(240,234,214,.3);margin-bottom:4px;display:block}
+.offer-box__was span{text-decoration:line-through}
+.offer-box__price{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(80px,17vw,130px);color:var(--gold);line-height:1;animation:glow 3s infinite}
+.offer-box__price sup{font-size:36px;color:rgba(197,169,69,.7);vertical-align:super}
+.offer-box__per{font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:rgba(240,234,214,.35);margin-bottom:28px;display:block}
+.offer-box__includes{display:flex;flex-direction:column;gap:8px;margin:24px 0;text-align:left;border-top:1px solid rgba(197,169,69,.15);border-bottom:1px solid rgba(197,169,69,.15);padding:20px 0}
+.offer-box__item{display:flex;gap:10px;align-items:center;font-family:'Courier Prime',monospace;font-size:13px;color:rgba(240,234,214,.7)}
+.offer-box__item::before{content:'✦';color:var(--gold);flex-shrink:0}
+
+/* === BUTTONS === */
+.btn-yes{display:block;width:100%;background:var(--gold);color:var(--black);font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(16px,3.2vw,22px);text-transform:uppercase;letter-spacing:2px;padding:22px 40px;border:3px solid var(--black);cursor:pointer;text-decoration:none;position:relative;transition:transform .07s,background .07s;animation:pulseGold 2.4s infinite;text-align:center;margin-bottom:8px}
+.btn-yes::after{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='60'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='200' height='60' filter='url(%23n)' opacity='.08'/%3E%3C/svg%3E");pointer-events:none}
+.btn-yes:hover{background:#b89a30;transform:translate(-2px,-2px)}
+.btn-yes__note{display:block;font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(26,26,26,.55);margin-top:8px;font-weight:400}
+
+.btn-no{display:block;width:100%;background:none;border:none;font-family:'Courier Prime',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:rgba(240,234,214,.3);cursor:pointer;padding:16px;text-align:center;text-decoration:none;transition:color .1s}
+.btn-no:hover{color:rgba(240,234,214,.6)}
+
+/* === GUARANTEE === */
+.guarantee-strip{background:var(--paper);padding:40px 20px}
+.guarantee-strip .wrap{max-width:680px;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.guarantee-badge{width:100px;height:100px;border-radius:50%;border:4px solid var(--black);background:var(--black);color:var(--paper);display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;animation:jitter 4s infinite}
+.guarantee-badge__days{font-family:'Oswald',sans-serif;font-weight:900;font-size:38px;color:var(--gold);line-height:1}
+.guarantee-badge__label{font-family:'Courier Prime',monospace;font-size:8px;letter-spacing:2px;text-transform:uppercase;text-align:center;line-height:1.4}
+.guarantee-text{flex:1}
+.guarantee-text h3{font-family:'Oswald',sans-serif;font-weight:900;font-size:22px;text-transform:uppercase;margin-bottom:8px}
+.guarantee-text p{font-size:15px;opacity:.7;margin:0}
+
+/* === PS === */
+.ps-section{background:var(--black);padding:48px 20px}
+.ps-section .wrap{max-width:680px}
+.ps-box{border:2px solid rgba(197,169,69,.2);padding:28px 28px;position:relative}
+.ps-box::before{content:'P.S.';position:absolute;top:-14px;left:20px;background:var(--black);padding:0 10px;font-family:'Oswald',sans-serif;font-weight:900;font-size:18px;color:var(--gold);letter-spacing:3px}
+.ps-box p{font-family:'Courier Prime',monospace;font-size:14px;color:rgba(240,234,214,.7);line-height:1.75;margin:0}
+.ps-box strong{color:var(--gold)}
+
+/* === DIVIDER === */
+hr.div{border:none;height:3px;background:linear-gradient(90deg,var(--gold),var(--black),var(--gold));position:relative;margin:0}
+hr.div::before{content:'✦';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:var(--paper);padding:0 12px;color:var(--gold);font-size:14px}
+hr.div-dark{border:none;height:3px;background:linear-gradient(90deg,var(--gold),rgba(197,169,69,.1),var(--gold));position:relative;margin:0}
+
+/* === FOOTER === */
+.footer-bar{background:var(--black);color:rgba(240,234,214,.35);font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;text-align:center;padding:20px;border-top:2px solid var(--gold)}
+
+/* === RESPONSIVE === */
+@media(max-width:560px){
+  .offer-box{padding:36px 20px}
+  .guarantee-strip .wrap{flex-direction:column;text-align:center}
+  .cal-grid{grid-template-columns:repeat(3,1fr)}
+  .anchor-math__op,.anchor-math__eq{font-size:22px}
 }
-#quiz-overlay.hiding{opacity:0;pointer-events:none}
-
-.quiz-logo{font-family:'Oswald',sans-serif;font-weight:900;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:32px;animation:flicker 5s infinite}
-
-/* progress dots */
-.quiz-dots{display:flex;gap:8px;margin-bottom:36px}
-.quiz-dot{width:8px;height:8px;border-radius:50%;background:rgba(240,234,214,.15);transition:background .3s}
-.quiz-dot.active{background:var(--red)}
-.quiz-dot.done{background:var(--gold)}
-
-/* step */
-.quiz-step{width:100%;max-width:360px;display:none;animation:slideUp .4s ease-out both}
-.quiz-step.visible{display:block}
-
-.quiz-eyebrow{font-family:'Courier Prime',monospace;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:rgba(240,234,214,.4);margin-bottom:12px}
-.quiz-question{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(26px,7vw,38px);text-transform:uppercase;color:var(--paper);line-height:.95;margin-bottom:8px}
-.quiz-sub{font-size:14px;color:rgba(240,234,214,.5);margin-bottom:32px;line-height:1.5}
-
-/* option cards */
-.quiz-options{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.quiz-card{
-  background:rgba(240,234,214,.04);
-  border:2px solid rgba(240,234,214,.1);
-  padding:24px 16px;
-  text-align:center;
-  cursor:pointer;
-  transition:border-color .15s,background .15s,transform .1s;
-  position:relative;
-  overflow:hidden;
-}
-.quiz-card:hover{border-color:var(--red);background:rgba(220,20,60,.07);transform:translateY(-2px)}
-.quiz-card.selected{border-color:var(--red);background:rgba(220,20,60,.12)}
-.quiz-card__icon{font-size:40px;display:block;margin-bottom:12px;line-height:1}
-.quiz-card__label{font-family:'Oswald',sans-serif;font-weight:900;font-size:18px;text-transform:uppercase;color:var(--paper);display:block;margin-bottom:4px}
-.quiz-card__sub{font-family:'Courier Prime',monospace;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:rgba(240,234,214,.4);display:block}
-.quiz-card::after{
-  content:'✓';position:absolute;top:8px;right:10px;
-  font-family:'Oswald',sans-serif;font-weight:900;font-size:14px;color:var(--red);
-  opacity:0;transition:opacity .2s;
-}
-.quiz-card.selected::after{opacity:1}
-
-/* loading screen */
-#quiz-loading{
-  position:fixed;inset:0;z-index:10001;
-  background:var(--night);
-  display:none;flex-direction:column;align-items:center;justify-content:center;
-  padding:32px;
-}
-#quiz-loading.visible{display:flex}
-.loading-heart{animation:pulse 1.2s infinite}
-.loading-label{font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--red);margin-top:24px;animation:flicker 1.5s infinite}
-.loading-sub{font-family:'Dancing Script',cursive;font-size:22px;color:var(--gold);margin-top:12px;animation:glow 2s infinite;text-align:center}
-
-/* =============================================
-   GUIDE (hidden until quiz done)
-   ============================================= */
-#guide-content{opacity:0;transition:opacity .8s ease}
-#guide-content.visible{opacity:1}
-
-/* =============================================
-   COVER
-   ============================================= */
-.cover{background:var(--black);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 28px 48px;position:relative;overflow:hidden;border-bottom:3px solid var(--red)}
-.cover__bg{position:absolute;font-family:'Oswald',sans-serif;font-weight:900;font-size:260px;color:rgba(255,255,255,.018);text-transform:uppercase;top:50%;left:50%;transform:translate(-50%,-50%);line-height:1;pointer-events:none;user-select:none;white-space:nowrap}
-.cover__date{font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--red);margin-bottom:20px;animation:flicker 6s infinite}
-.cover__heart{margin:0 auto 24px;display:block}
-.cover__title{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(38px,10vw,64px);text-transform:uppercase;line-height:.9;color:var(--paper);margin-bottom:8px}
-.cover__title span{color:var(--red)}
-.cover__sub{font-family:'Dancing Script',cursive;font-size:clamp(22px,6vw,32px);color:var(--gold);margin-bottom:28px;animation:glow 3s infinite}
-.cover__tag{display:inline-block;background:var(--red);color:var(--paper);font-family:'Courier Prime',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;padding:6px 16px;border:1px solid rgba(240,234,214,.2);margin-bottom:32px}
-.cover__welcome{font-size:15px;color:rgba(240,234,214,.7);max-width:340px;margin:0 auto 36px;line-height:1.65}
-.cover__scroll{font-family:'Courier Prime',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(240,234,214,.3);animation:jitter 2s infinite;text-decoration:none;display:inline-block}
-
-/* === PROFILE BADGE (shown after quiz) === */
-.profile-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(240,234,214,.05);border:1px solid rgba(240,234,214,.12);padding:8px 16px;margin-bottom:20px;font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(240,234,214,.5)}
-.profile-badge span{color:var(--gold)}
-
-/* =============================================
-   CURVA INTRO
-   ============================================= */
-.curva-section{background:var(--card);padding:44px 24px;border-bottom:2px solid rgba(220,20,60,.25)}
-.curva-title{font-family:'Oswald',sans-serif;font-weight:900;font-size:28px;text-transform:uppercase;color:var(--paper);margin-bottom:12px;line-height:1}
-.curva-text{font-size:15px;color:rgba(240,234,214,.75);line-height:1.65;margin-bottom:20px}
-.curva-quote{font-family:'Dancing Script',cursive;font-size:22px;color:var(--gold);border-left:3px solid var(--red);padding-left:16px;margin:20px 0;display:block}
-.timeline-strip{display:flex;align-items:flex-start;gap:0;overflow-x:auto;padding:20px 0 8px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
-.timeline-strip::-webkit-scrollbar{display:none}
-.tl-item{display:flex;flex-direction:column;align-items:center;flex-shrink:0}
-.tl-dot{width:14px;height:14px;border-radius:50%;background:var(--red);border:2px solid var(--paper);z-index:2;flex-shrink:0}
-.tl-dot.peak{width:18px;height:18px;background:var(--gold);animation:pulse 2s infinite}
-.tl-line{width:36px;height:2px;background:rgba(220,20,60,.35);flex-shrink:0;align-self:flex-start;margin-top:6px}
-.tl-label{font-family:'Courier Prime',monospace;font-size:9px;letter-spacing:1px;text-transform:uppercase;color:rgba(240,234,214,.45);margin-top:8px;text-align:center;line-height:1.3;width:48px}
-
-/* =============================================
-   CHAPTERS
-   ============================================= */
-.chapter{padding:0}
-.chapter__header{padding:32px 24px 24px;position:relative;overflow:hidden;border-bottom:2px solid rgba(220,20,60,.2)}
-.chapter__header--dark{background:var(--black)}
-.chapter__header--card{background:var(--card)}
-.chapter__bg-num{position:absolute;right:-10px;top:50%;transform:translateY(-50%);font-family:'Oswald',sans-serif;font-weight:900;font-size:130px;color:rgba(220,20,60,.07);line-height:1;pointer-events:none;user-select:none}
-.chapter__num{font-family:'Oswald',sans-serif;font-weight:900;font-size:13px;letter-spacing:3px;color:var(--red);text-transform:uppercase;margin-bottom:8px;display:block}
-.chapter__time{font-family:'Courier Prime',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(240,234,214,.4);margin-bottom:10px;display:flex;align-items:center;gap:8px}
-.chapter__time::before{content:'◉';font-size:8px;color:var(--red)}
-.chapter__title{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(26px,7vw,36px);text-transform:uppercase;color:var(--paper);line-height:.95;margin-bottom:12px}
-.chapter__desc{font-size:15px;color:rgba(240,234,214,.7);line-height:1.65}
-.content{padding:24px}
-.content p{font-size:15px;color:rgba(240,234,214,.8);line-height:1.7}
-
-/* =============================================
-   COMPONENT STYLES
-   ============================================= */
-.steps{list-style:none;margin:16px 0}
-.steps li{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid rgba(240,234,214,.06);font-size:15px;color:rgba(240,234,214,.8);align-items:flex-start}
-.steps li:last-child{border-bottom:none}
-.step-num{background:var(--red);color:var(--paper);font-family:'Oswald',sans-serif;font-weight:900;font-size:14px;min-width:28px;height:28px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;animation:jitter 5s infinite}
-
-.template{background:#0a0a0a;border:1px solid rgba(220,20,60,.3);border-left:4px solid var(--red);padding:20px 18px;margin:16px 0;position:relative;font-size:15px;line-height:1.75;color:rgba(240,234,214,.85)}
-.template__label{font-family:'Courier Prime',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:12px;display:block}
-.template .blank{background:rgba(220,20,60,.15);color:var(--gold);padding:0 6px;border-bottom:1px dashed rgba(197,169,69,.5);font-family:'Dancing Script',cursive;font-size:17px}
-.template .sent{font-family:'Courier Prime',monospace;color:rgba(240,234,214,.5);font-size:12px;text-align:right;margin-top:10px;display:block}
-
-.tip{background:rgba(197,169,69,.07);border-left:3px solid var(--gold);padding:14px 16px;margin:14px 0;font-size:14px;color:rgba(240,234,214,.7);display:flex;gap:12px;align-items:flex-start}
-.tip-icon{font-size:18px;flex-shrink:0;margin-top:-2px}
-.warn{background:rgba(220,20,60,.08);border-left:3px solid var(--red);padding:14px 16px;margin:14px 0;font-size:14px;color:rgba(240,234,214,.75);display:flex;gap:12px;align-items:flex-start}
-.warn-icon{font-size:18px;flex-shrink:0;margin-top:-2px}
-
-/* distance-only / together-only tips */
-.tip-distance{display:none}
-.tip-together{display:flex}
-
-.chapter-divider{height:6px;background:linear-gradient(90deg,var(--red),rgba(220,20,60,.1));margin:0}
-.band-red{background:var(--red);padding:10px 24px}
-.band-red .band-inner{font-family:'Oswald',sans-serif;font-weight:900;font-size:13px;letter-spacing:4px;text-transform:uppercase;color:var(--paper);display:flex;align-items:center;gap:10px}
-.band-red .band-inner::before,.band-red .band-inner::after{content:'';flex:1;height:1px;background:rgba(240,234,214,.3)}
-
-.bilhetes-grid{display:flex;flex-direction:column;gap:12px;margin:16px 0}
-.bilhete{background:#0a0a0a;border:1px solid rgba(240,234,214,.08);padding:18px 16px;position:relative;font-family:'Dancing Script',cursive;font-size:17px;color:rgba(240,234,214,.85);line-height:1.6}
-.bilhete__num{font-family:'Courier Prime',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:8px;display:block}
-.bilhete__local{font-family:'Courier Prime',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(240,234,214,.3);margin-top:10px;display:flex;align-items:center;gap:6px}
-.bilhete__local::before{content:'📍';font-size:10px}
-
-.audio-script{background:#0a0a0a;border:2px solid rgba(220,20,60,.25);padding:24px 20px;margin:16px 0;position:relative}
-.audio-script__wave{display:flex;align-items:center;gap:3px;margin-bottom:16px}
-.wave-bar{width:3px;background:var(--red);border-radius:2px;animation:wavebar 1.2s ease-in-out infinite}
-.wave-bar:nth-child(2){height:16px;animation-delay:.1s}
-.wave-bar:nth-child(3){height:24px;animation-delay:.2s}
-.wave-bar:nth-child(4){height:18px;animation-delay:.3s}
-.wave-bar:nth-child(5){height:28px;animation-delay:.4s}
-.wave-bar:nth-child(6){height:14px;animation-delay:.5s}
-.wave-bar:nth-child(7){height:20px;animation-delay:.6s}
-.wave-bar:nth-child(1){height:12px}
-.audio-label{font-family:'Courier Prime',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:14px;display:block}
-.audio-text{font-size:16px;color:rgba(240,234,214,.88);line-height:1.8;font-family:'Courier Prime',monospace}
-.audio-text .blank{color:var(--gold);font-family:'Dancing Script',cursive;font-size:19px}
-.audio-timer{font-family:'Courier Prime',monospace;font-size:10px;color:rgba(240,234,214,.3);letter-spacing:2px;margin-top:12px;display:block;text-align:right}
-
-.items-list{list-style:none;margin:14px 0}
-.items-list li{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid rgba(240,234,214,.06);font-size:14px;color:rgba(240,234,214,.8);align-items:flex-start}
-.items-list li:last-child{border-bottom:none}
-.item-bullet{color:var(--gold);font-size:16px;flex-shrink:0}
-.item-free{font-family:'Courier Prime',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;background:rgba(197,169,69,.15);color:var(--gold);padding:1px 6px;margin-left:auto;flex-shrink:0;align-self:center}
-
-.menu-section{margin:16px 0}
-.menu-course{background:#0a0a0a;border-top:2px solid var(--red);padding:18px 16px;margin-bottom:10px}
-.menu-course__label{font-family:'Courier Prime',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:6px;display:block}
-.menu-course__name{font-family:'Oswald',sans-serif;font-weight:700;font-size:20px;text-transform:uppercase;color:var(--paper);margin-bottom:10px}
-.menu-course__text{font-size:14px;color:rgba(240,234,214,.7);line-height:1.6}
-.menu-course__cost{font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:2px;color:var(--gold);margin-top:10px;display:block}
-.recipe-toggle{background:none;border:1px solid rgba(220,20,60,.3);color:var(--red);font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:8px 14px;cursor:pointer;margin-top:10px;width:100%;text-align:left;transition:background .1s}
-.recipe-toggle:hover{background:rgba(220,20,60,.1)}
-.recipe-content{display:none;margin-top:12px;padding-top:12px;border-top:1px dashed rgba(240,234,214,.1)}
-.recipe-content.open{display:block}
-.recipe-step{display:flex;gap:10px;padding:8px 0;font-size:13px;color:rgba(240,234,214,.75);line-height:1.55}
-.recipe-step-num{color:var(--red);font-weight:700;flex-shrink:0;font-family:'Oswald',sans-serif;font-size:14px}
-.ingredients{margin-bottom:12px;padding-bottom:12px;border-bottom:1px dashed rgba(240,234,214,.08)}
-.ingredient-tag{display:inline-block;background:rgba(197,169,69,.1);color:var(--gold);font-size:12px;padding:3px 10px;margin:3px 3px 3px 0;font-family:'Courier Prime',monospace}
-.total-cost{background:rgba(220,20,60,.1);border:1px solid rgba(220,20,60,.3);padding:14px 16px;display:flex;justify-content:space-between;align-items:center;margin-top:14px}
-.total-cost__label{font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(240,234,214,.5)}
-.total-cost__price{font-family:'Oswald',sans-serif;font-weight:900;font-size:28px;color:var(--red)}
-
-.carta{background:#0a0a0a;border:1px solid rgba(240,234,214,.08);padding:28px 22px;margin:16px 0;font-family:'Dancing Script',cursive;font-size:18px;line-height:1.85;color:rgba(240,234,214,.88);position:relative}
-.carta .carta-inner{position:relative;z-index:1}
-.carta .blank{color:var(--gold);border-bottom:1px dashed rgba(197,169,69,.5);font-size:20px}
-.carta .greeting{color:var(--red);font-size:22px;display:block;margin-bottom:12px}
-.carta .sign{color:var(--red);font-size:22px;display:block;margin-top:20px;text-align:right}
-.carta .date{font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(240,234,214,.3);display:block;margin-bottom:20px}
-
-.fechamento{background:var(--black);padding:32px 24px;border-top:2px solid rgba(197,169,69,.2)}
-.ritual-steps{display:flex;flex-direction:column;gap:16px;margin:20px 0}
-.ritual-step{display:flex;gap:16px;align-items:flex-start}
-.ritual-dot{width:36px;height:36px;border-radius:50%;border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Oswald',sans-serif;font-weight:900;font-size:14px;color:var(--gold)}
-.ritual-content strong{font-family:'Oswald',sans-serif;font-size:15px;text-transform:uppercase;letter-spacing:.5px;display:block;margin-bottom:4px;color:var(--paper)}
-.ritual-content p{font-size:14px;color:rgba(240,234,214,.65);margin:0;line-height:1.6}
-
-.bonus-section-page{background:var(--card);border-top:4px solid var(--gold);padding:32px 24px}
-.bonus-badge{display:inline-block;background:var(--gold);color:var(--black);font-family:'Oswald',sans-serif;font-weight:900;font-size:11px;letter-spacing:3px;text-transform:uppercase;padding:4px 14px;margin-bottom:14px}
-.bonus-title{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(22px,6vw,30px);text-transform:uppercase;color:var(--paper);line-height:1;margin-bottom:16px}
-
-/* === ORDER BUMPS === */
-.ob-section{background:#000;border-top:4px solid var(--gold);padding:36px 24px;position:relative}
-.ob-section::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(197,169,69,.05) 1px,transparent 1px);background-size:16px 16px;pointer-events:none}
-.ob-header{margin-bottom:24px;position:relative;z-index:1}
-.ob-eyebrow{font-family:'Courier Prime',monospace;font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:8px}
-.ob-title{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(22px,6vw,30px);text-transform:uppercase;color:var(--paper);line-height:.95;margin-bottom:8px}
-.ob-sub{font-size:13px;color:rgba(240,234,214,.5);line-height:1.55}
-.ob-card{background:rgba(240,234,214,.03);border:1px solid rgba(197,169,69,.2);padding:20px 18px;margin-bottom:12px;display:flex;flex-direction:column;position:relative;z-index:1;transition:border-color .15s}
-.ob-card:hover{border-color:rgba(197,169,69,.55)}
-.ob-card__row{display:flex;align-items:flex-start;gap:14px;margin-bottom:12px}
-.ob-card__icon{font-size:32px;flex-shrink:0;line-height:1;margin-top:2px}
-.ob-card__meta{flex:1}
-.ob-card__tag{font-family:'Courier Prime',monospace;font-size:8px;letter-spacing:3px;text-transform:uppercase;color:rgba(197,169,69,.5);display:block;margin-bottom:4px}
-.ob-card__title{font-family:'Oswald',sans-serif;font-weight:900;font-size:18px;text-transform:uppercase;color:var(--paper);line-height:1;margin-bottom:4px}
-.ob-card__mechanism{display:inline-block;background:rgba(197,169,69,.1);color:var(--gold);font-family:'Courier Prime',monospace;font-size:8px;letter-spacing:2px;text-transform:uppercase;padding:2px 7px}
-.ob-card__text{font-size:13px;color:rgba(240,234,214,.6);line-height:1.6;margin-bottom:14px}
-.ob-card__connects{font-family:'Courier Prime',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(220,20,60,.55);margin-bottom:14px;display:flex;align-items:center;gap:5px}
-.ob-card__connects::before{content:'↳';color:var(--red);font-size:11px}
-.ob-card__footer{border-top:1px solid rgba(197,169,69,.12);padding-top:14px;display:flex;align-items:center;justify-content:space-between;gap:10px}
-.ob-card__price{font-family:'Oswald',sans-serif;font-weight:900;font-size:30px;color:var(--gold);line-height:1}
-.ob-card__price sup{font-size:13px;vertical-align:super;opacity:.7}
-.ob-btn{display:inline-block;background:rgba(197,169,69,.1);border:1px solid var(--gold);color:var(--gold);font-family:'Oswald',sans-serif;font-weight:900;font-size:12px;letter-spacing:2px;text-transform:uppercase;padding:10px 18px;cursor:pointer;text-decoration:none;transition:background .1s,color .1s;flex-shrink:0}
-.ob-btn:hover,.ob-btn:active{background:var(--gold);color:var(--black)}
-.ob-total{background:rgba(197,169,69,.06);border:1px solid rgba(197,169,69,.2);padding:18px;display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:8px;flex-wrap:wrap;position:relative;z-index:1}
-.ob-total__label{font-family:'Courier Prime',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(240,234,214,.45)}
-.ob-total__price{font-family:'Oswald',sans-serif;font-weight:900;font-size:34px;color:var(--gold)}
-.ob-total__note{font-family:'Courier Prime',monospace;font-size:9px;letter-spacing:1px;text-transform:uppercase;color:rgba(240,234,214,.3);display:block;margin-top:2px}
-
-.guide-footer{background:#000;border-top:2px solid var(--red);padding:32px 24px;text-align:center}
-.guide-footer__title{font-family:'Oswald',sans-serif;font-weight:900;font-size:28px;text-transform:uppercase;color:var(--red);margin-bottom:8px}
-.guide-footer__sub{font-family:'Dancing Script',cursive;font-size:20px;color:var(--gold);margin-bottom:20px}
-.guide-footer__text{font-size:13px;color:rgba(240,234,214,.35);letter-spacing:1px;line-height:1.6}
-
-.nav-bar{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:520px;background:rgba(10,10,10,.96);border-top:2px solid rgba(220,20,60,.3);display:none;justify-content:space-around;padding:10px 0;z-index:1000;backdrop-filter:blur(8px)}
-.nav-bar.visible{display:flex}
-.nav-item{display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;padding:0 8px;opacity:.45;transition:opacity .15s;text-decoration:none}
-.nav-item.active{opacity:1}
-.nav-item svg{width:20px;height:20px}
-.nav-item span{font-family:'Courier Prime',monospace;font-size:8px;letter-spacing:1px;text-transform:uppercase;color:var(--paper)}
-
-.progress-bar{position:fixed;top:0;left:0;width:0%;height:3px;background:var(--red);z-index:9998;transition:width .1s;display:none}
-.progress-bar.visible{display:block}
-
-.spacer{height:80px}
 </style>
 </head>
 <body>
 
-<!-- =============================================
-     QUIZ OVERLAY
-     ============================================= -->
-<div id="quiz-overlay">
-
-  <div class="quiz-logo">Dia dos Namorados do Liso</div>
-
-  <!-- dots -->
-  <div class="quiz-dots">
-    <div class="quiz-dot active" id="dot-1"></div>
-    <div class="quiz-dot" id="dot-2"></div>
+<!-- =========================================================
+     TICKER TOPO — DOURADO
+     ========================================================= -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker-inner">
+    <span>oferta única</span><span>só aparece agora</span><span>um clique</span><span>não aparece de novo</span><span>12 roteiros prontos</span><span>ano inteiro</span><span>sem redigitar o cartão</span><span>expira quando você sair</span>
+    <span>oferta única</span><span>só aparece agora</span><span>um clique</span><span>não aparece de novo</span><span>12 roteiros prontos</span><span>ano inteiro</span><span>sem redigitar o cartão</span><span>expira quando você sair</span>
   </div>
-
-  <!-- PASSO 1: gênero do parceiro -->
-  <div class="quiz-step visible" id="step-1">
-    <div class="quiz-eyebrow">// diagnóstico — passo 1 de 2</div>
-    <h2 class="quiz-question display">Seu amor<br>é...</h2>
-    <p class="quiz-sub">Vou adaptar todas as mensagens, pronomes e dicas pra você.</p>
-    <div class="quiz-options">
-      <div class="quiz-card" onclick="selectGender('f')">
-        <span class="quiz-card__icon">♀</span>
-        <span class="quiz-card__label">Mulher</span>
-        <span class="quiz-card__sub">namorada / esposa</span>
-      </div>
-      <div class="quiz-card" onclick="selectGender('m')">
-        <span class="quiz-card__icon">♂</span>
-        <span class="quiz-card__label">Homem</span>
-        <span class="quiz-card__sub">namorado / marido</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- PASSO 2: moram juntos? -->
-  <div class="quiz-step" id="step-2">
-    <div class="quiz-eyebrow">// diagnóstico — passo 2 de 2</div>
-    <h2 class="quiz-question display">Vocês<br>moram...</h2>
-    <p class="quiz-sub">Vou destacar as dicas certas pro seu caso.</p>
-    <div class="quiz-options">
-      <div class="quiz-card" onclick="selectLiving('together')">
-        <span class="quiz-card__icon">🏠</span>
-        <span class="quiz-card__label">Juntos</span>
-        <span class="quiz-card__sub">mesma casa / cidade</span>
-      </div>
-      <div class="quiz-card" onclick="selectLiving('distance')">
-        <span class="quiz-card__icon">📍</span>
-        <span class="quiz-card__label">À distância</span>
-        <span class="quiz-card__sub">cidades diferentes</span>
-      </div>
-    </div>
-  </div>
-
 </div>
 
-<!-- =============================================
-     LOADING SCREEN
-     ============================================= -->
-<div id="quiz-loading">
-  <svg class="loading-heart" width="72" height="64" viewBox="0 0 72 64" fill="none">
-    <path d="M36 60S6 44 6 22A16 16 0 0 1 36 10a16 16 0 0 1 30 12c0 22-30 38-30 38z" fill="rgba(220,20,60,.3)" stroke="#DC143C" stroke-width="2"/>
-  </svg>
-  <div class="loading-label">Personalizando seu roteiro...</div>
-  <div class="loading-sub script">Tudo certo. Vamos lá.</div>
+<!-- =========================================================
+     BARRA DE CONFIRMAÇÃO
+     ========================================================= -->
+<div class="confirm-bar">
+  <div class="wrap">
+    <div class="confirm-bar__check">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+        <path d="M3 9l4.5 4.5L15 5" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="50" stroke-dashoffset="50" style="animation:checkDraw .6s ease-out .3s forwards"/>
+      </svg>
+    </div>
+    <div class="confirm-bar__text">
+      <strong>Compra confirmada!</strong> Seu roteiro já está a caminho do e-mail.
+    </div>
+  </div>
 </div>
 
-<!-- =============================================
-     GUIA (conteúdo principal)
-     ============================================= -->
-<div id="guide-content">
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+<section class="hero">
+  <div class="hero__bg" aria-hidden="true">ANO</div>
 
-<!-- Progress bar -->
-<div class="progress-bar" id="progressBar"></div>
+  <div style="max-width:760px;margin:0 auto;position:relative;z-index:2">
+    <div class="hero__eyebrow">⚠ espera — não feche essa página ainda</div>
 
-<!-- CAPA -->
-<section class="cover" id="capa">
-  <div class="cover__bg" aria-hidden="true">LISO</div>
-  <div class="cover__date">12 de junho · Dia dos Namorados</div>
+    <h1 class="hero__h1 display">
+      Você salvou o dia 12.
+      <em>E os outros 364 dias do ano?</em>
+    </h1>
 
-  <svg class="cover__heart" width="80" height="72" viewBox="0 0 80 72" fill="none" style="animation:jitter 3s infinite">
-    <path d="M40 68S4 48 4 24A18 18 0 0 1 40 12a18 18 0 0 1 36 12c0 24-36 44-36 44z" fill="rgba(220,20,60,.25)" stroke="#DC143C" stroke-width="2"/>
-    <path d="M62 18l1.5 3 3 .4-2.2 2.2.5 3-2.8-1.5-2.8 1.5.5-3-2.2-2.2 3-.4z" fill="#C5A945" opacity=".8"/>
-    <path d="M20 14l1 2 2 .3-1.5 1.5.4 2-1.9-1-1.9 1 .4-2-1.5-1.5 2-.3z" fill="#C5A945" opacity=".6"/>
-  </svg>
-
-  <!-- profile badge personalizado -->
-  <div class="profile-badge" id="profile-badge">
-    roteiro para · <span id="badge-text">seu amor</span>
-  </div>
-
-  <h1 class="cover__title display">Dia dos<br>Namorados<br><span>do Liso</span></h1>
-  <div class="cover__sub script">Seu Roteiro Completo</div>
-  <div class="cover__tag">7 momentos · do amanhecer à meia-noite</div>
-  <p class="cover__welcome">
-    Tudo que você precisa está aqui. Siga passo a passo, use os modelos prontos e prepare-se pra <span id="cover-desc">o</span> Dia dos Namorados mais inesquecível que vocês já tiveram.
-  </p>
-  <a href="#momento-1" class="cover__scroll">▼ começar o roteiro ▼</a>
-</section>
-
-<!-- CURVA INTRO -->
-<section class="curva-section" id="intro">
-  <span class="label">// antes de começar</span>
-  <div class="curva-title display">A Curva da Emoção</div>
-  <p class="curva-text">
-    Este roteiro foi construído em torno de um método chamado <strong>Curva da Emoção</strong>: em vez de um único gesto caro, você distribui <em>7 micro-momentos</em> ao longo do dia — cada um subindo um pouco a temperatura emocional.
-  </p>
-  <span class="curva-quote">"Dinheiro compra um momento.<br>A Curva compra o dia inteiro."</span>
-  <p class="curva-text" style="margin-bottom:4px">Siga a ordem. Cada momento foi calibrado para o horário certo. Não pule etapas — cada uma prepara o terreno para a próxima.</p>
-  <div class="timeline-strip">
-    <div class="tl-item"><div class="tl-dot"></div><div class="tl-label">manhã<br>bom dia</div></div>
-    <div class="tl-line"></div>
-    <div class="tl-item"><div class="tl-dot"></div><div class="tl-label">dia<br>bilhetes</div></div>
-    <div class="tl-line"></div>
-    <div class="tl-item"><div class="tl-dot"></div><div class="tl-label">tarde<br>áudio</div></div>
-    <div class="tl-line"></div>
-    <div class="tl-item"><div class="tl-dot"></div><div class="tl-label">17h<br>ambiente</div></div>
-    <div class="tl-line"></div>
-    <div class="tl-item"><div class="tl-dot"></div><div class="tl-label">jantar<br>chef</div></div>
-    <div class="tl-line"></div>
-    <div class="tl-item"><div class="tl-dot"></div><div class="tl-label">noite<br>carta</div></div>
-    <div class="tl-line"></div>
-    <div class="tl-item"><div class="tl-dot peak"></div><div class="tl-label">00:00<br>pico</div></div>
-  </div>
-</section>
-
-<!-- =============================================
-     MOMENTO 1
-     ============================================= -->
-<section class="chapter" id="momento-1">
-  <div class="chapter__header chapter__header--dark">
-    <div class="chapter__bg-num" aria-hidden="true">1</div>
-    <span class="chapter__num">Momento 01</span>
-    <div class="chapter__time">6h — 8h da manhã · antes <span class="gn" data-f="dela" data-m="dele">dela</span> acordar</div>
-    <h2 class="chapter__title display">O Bom Dia<br>que Desarma</h2>
-    <p class="chapter__desc">O dia começa antes <span class="gn" data-f="dela" data-m="dele">dela</span> abrir os olhos. Uma mensagem no celular que vai fazer <span class="gn" data-f="ela" data-m="ele">ela</span> sorrir sem entender por quê ainda.</p>
-  </div>
-  <div class="content">
-    <span class="label">// o que fazer</span>
-    <ul class="steps">
-      <li><div class="step-num">1</div>Programe ou acorde antes <span class="gn" data-f="dela" data-m="dele">dela</span> — mande a mensagem antes que <span class="gn" data-f="ela" data-m="ele">ela</span> veja o celular pela primeira vez.</li>
-      <li><div class="step-num">2</div>Não mencione "Dia dos Namorados" ainda. Deixe parecer um bom dia normal — só muito mais caloroso.</li>
-      <li class="tip-together"><div class="step-num">3</div>Se morar junto: deixe uma anotação no lugar onde <span class="gn" data-f="ela" data-m="ele">ela</span> costuma pegar o celular ou no espelho do banheiro.</li>
-    </ul>
-
-    <span class="label">// mensagem modelo — copie e adapte</span>
-    <div class="template">
-      <span class="template__label">modelo · WhatsApp / mensagem de texto</span>
-      Bom dia, <span class="blank">[nome <span class="gn" data-f="dela" data-m="dele">dela</span>]</span>. ☀️<br><br>
-      Acordei hoje pensando que sou <span class="gn" data-f="a pessoa mais sortuda" data-m="o cara mais sortudo">a pessoa mais sortuda</span> do mundo por ter você. Não é todo dia que isso passa pela minha cabeça de um jeito tão claro — mas hoje passou.<br><br>
-      Boa sorte tentando ter um dia normal depois de ler isso. 😏<br><br>
-      Te amo.
-      <span class="sent">enviado · 06:47</span>
-    </div>
-
-    <div class="tip">
-      <span class="tip-icon">💡</span>
-      <span>Personalize com algo que é de vocês — um lugar, um momento, uma lembrança. Uma frase específica vale 10x mais que qualquer texto genérico.</span>
-    </div>
-    <div class="tip">
-      <span class="tip-icon">📞</span>
-      <span><strong>Versão ligação:</strong> ligue assim que <span class="gn" data-f="ela" data-m="ele">ela</span> acordar. Diga "Só liguei pra te dar bom dia de verdade hoje." E desliga. <span class="gn" data-f="Ela" data-m="Ele">Ela</span> vai sorrir o dia todo.</span>
-    </div>
-  </div>
-</section>
-
-<div class="chapter-divider"></div>
-
-<!-- =============================================
-     MOMENTO 2
-     ============================================= -->
-<section class="chapter" id="momento-2">
-  <div class="chapter__header chapter__header--card">
-    <div class="chapter__bg-num" aria-hidden="true">2</div>
-    <span class="chapter__num">Momento 02</span>
-    <div class="chapter__time">manhã e tarde · ao longo do dia</div>
-    <h2 class="chapter__title display">A Caça<br>aos Bilhetes</h2>
-    <p class="chapter__desc">Cinco bilhetinhos — escondidos pela casa ou enviados digitalmente. <span class="gn" data-f="Ela" data-m="Ele">Ela</span> vai passando o dia encontrando pedacinhos de você.</p>
-  </div>
-  <div class="content">
-
-    <div class="tip-together">
-      <div class="tip" style="margin:0 0 16px;width:100%">
-        <span class="tip-icon">🏠</span>
-        <span><strong>Vocês moram juntos:</strong> esconda os bilhetes físicos antes de <span class="gn" data-f="ela" data-m="ele">ela</span> acordar.</span>
-      </div>
-    </div>
-    <div class="tip-distance">
-      <div class="tip" style="margin:0 0 16px;width:100%">
-        <span class="tip-icon">📱</span>
-        <span><strong>À distância:</strong> agende o envio de cada bilhete como mensagem, espaçado em 1h30. Use rascunhos no WhatsApp.</span>
-      </div>
-    </div>
-
-    <span class="label tip-together">// onde esconder (morando junto)</span>
-    <ul class="items-list tip-together">
-      <li><span class="item-bullet">→</span><span><strong>Bilhete 1</strong> — dentro da xícara de café ou embaixo da chaleira</span></li>
-      <li><span class="item-bullet">→</span><span><strong>Bilhete 2</strong> — na bolsa <span class="gn" data-f="dela" data-m="dele">dela</span> (dentro de um bolsinho que <span class="gn" data-f="ela" data-m="ele">ela</span> usa)</span></li>
-      <li><span class="item-bullet">→</span><span><strong>Bilhete 3</strong> — no espelho do banheiro com fita crepe</span></li>
-      <li><span class="item-bullet">→</span><span><strong>Bilhete 4</strong> — no bolso de uma roupa que <span class="gn" data-f="ela" data-m="ele">ela</span> vai usar hoje</span></li>
-      <li><span class="item-bullet">→</span><span><strong>Bilhete 5</strong> — embaixo do travesseiro <span class="gn" data-f="dela" data-m="dele">dela</span> — pra encontrar à noite</span></li>
-    </ul>
-
-    <span class="label">// 5 modelos prontos — imprima ou escreva à mão</span>
-    <div class="bilhetes-grid">
-      <div class="bilhete">
-        <span class="bilhete__num">Bilhete 01 · abertura</span>
-        Hoje tem um segredo se desdobrando só pra você.<br>Fique de olho. O dia inteiro. 🔍
-        <div class="bilhete__local tip-together">xícara de café / chaleira</div>
-        <div class="bilhete__local tip-distance" style="display:none">enviar às 8h</div>
-      </div>
-      <div class="bilhete">
-        <span class="bilhete__num">Bilhete 02 · memória</span>
-        Lembra quando a gente <span class="blank">[memória específica de vocês]</span>?<br>Eu lembro. E toda vez que lembro, sorrio igual a um idiota. 💛
-        <div class="bilhete__local tip-together">bolsa / bolso</div>
-        <div class="bilhete__local tip-distance" style="display:none">enviar às 9h30</div>
-      </div>
-      <div class="bilhete">
-        <span class="bilhete__num">Bilhete 03 · declaração</span>
-        Você já <span class="gn" data-f="se olhou" data-m="se olhou">se olhou</span> no espelho hoje?<br>Então você já viu minha parte favorita do dia. 🖤
-        <div class="bilhete__local tip-together">espelho do banheiro</div>
-        <div class="bilhete__local tip-distance" style="display:none">enviar às 11h</div>
-      </div>
-      <div class="bilhete">
-        <span class="bilhete__num">Bilhete 04 · antecipação</span>
-        Ainda tem mais. Muito mais.<br>Te encontro hoje. Deixa o restante do dia comigo. ❤️
-        <div class="bilhete__local tip-together">armário / bolso de roupa</div>
-        <div class="bilhete__local tip-distance" style="display:none">enviar às 13h</div>
-      </div>
-      <div class="bilhete">
-        <span class="bilhete__num">Bilhete 05 · noite</span>
-        Chegou até aqui.<br>O melhor ainda está por vir.<br>Feliz Dia dos Namorados, <span class="blank">[nome <span class="gn" data-f="dela" data-m="dele">dela</span>]</span>. 🌙
-        <div class="bilhete__local tip-together">travesseiro · encontrar à noite</div>
-        <div class="bilhete__local tip-distance" style="display:none">enviar às 22h</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="band-red"><div class="band-inner">Subindo a temperatura</div></div>
-
-<!-- =============================================
-     MOMENTO 3
-     ============================================= -->
-<section class="chapter" id="momento-3">
-  <div class="chapter__header chapter__header--dark">
-    <div class="chapter__bg-num" aria-hidden="true">3</div>
-    <span class="chapter__num">Momento 03</span>
-    <div class="chapter__time">14h — 16h · ápice da tarde</div>
-    <h2 class="chapter__title display">A Declaração<br>de Áudio</h2>
-    <p class="chapter__desc">Sua voz fazendo o que nenhum texto consegue. Um áudio gravado com calma, usando este script — vai chegar no momento certo.</p>
-  </div>
-  <div class="content">
-    <span class="label">// como gravar</span>
-    <ul class="steps">
-      <li><div class="step-num">1</div>Vá pra um lugar silencioso — banheiro, carro, qualquer canto com pouco ruído.</li>
-      <li><div class="step-num">2</div>Leia o script uma vez antes de gravar e personalize os colchetes.</li>
-      <li><div class="step-num">3</div>Grave devagar. Não precisa ser perfeito — a voz com emoção real vale mais que qualquer coisa ensaiada.</li>
-      <li><div class="step-num">4</div>Mande sem aviso prévio. A surpresa faz parte.</li>
-    </ul>
-
-    <span class="label">// script completo — palavra por palavra</span>
-    <div class="audio-script">
-      <div class="audio-script__wave">
-        <div class="wave-bar" style="height:10px"></div>
-        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
-        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
-        <div class="wave-bar" style="height:10px"></div>
-      </div>
-      <span class="audio-label">▶ script · grave este texto</span>
-      <div class="audio-text">
-        <span class="blank">[nome <span class="gn" data-f="dela" data-m="dele">dela</span>]</span>...<br><br>
-        Eu podia ter mandado uma mensagem de texto. Mas texto não tem a minha voz. E hoje eu queria que você ouvisse a minha voz.<br><br>
-        Eu não sou bom de palavras. Mas tem uma coisa que eu sei:<br><br>
-        Você não é só <span class="gn" data-f="a pessoa" data-m="a pessoa">a pessoa</span> que eu amo. Você é o motivo pelo qual o dia tem sentido. É a primeira coisa que eu penso quando acordo, e a última antes de dormir.<br><br>
-        <span class="blank">[acrescente uma memória específica de vocês]</span>.<br><br>
-        Eu me lembro disso sempre. E cada vez que lembro, eu penso: que sorte a minha.<br><br>
-        Hoje eu quero que o dia inteiro fale por mim. Fica de olho.<br><br>
-        Te amo.
-      </div>
-      <span class="audio-timer">duração estimada: ~55 segundos</span>
-    </div>
-    <div class="tip">
-      <span class="tip-icon">🎙️</span>
-      <span>Não refaça mais de 3 vezes. A naturalidade do primeiro ou segundo take é o que <span class="gn" data-f="ela" data-m="ele">ela</span> vai sentir. Imperfeições são parte da emoção.</span>
-    </div>
-  </div>
-</section>
-
-<div class="chapter-divider"></div>
-
-<!-- =============================================
-     MOMENTO 4
-     ============================================= -->
-<section class="chapter" id="momento-4">
-  <div class="chapter__header chapter__header--card">
-    <div class="chapter__bg-num" aria-hidden="true">4</div>
-    <span class="chapter__num">Momento 04</span>
-    <div class="chapter__time">17h — 18h30 · antes <span class="gn" data-f="dela" data-m="dele">dela</span> chegar</div>
-    <h2 class="chapter__title display">A Transformação<br>do Ambiente</h2>
-    <p class="chapter__desc">Qualquer cômodo vira um lugar especial. O truque não é gastar — é criar atmosfera com o que você já tem.</p>
-  </div>
-  <div class="content">
-    <span class="label">// itens de casa — custo zero</span>
-    <ul class="items-list">
-      <li><span class="item-bullet">✦</span><span>Velas ou luzinhas de natal guardadas em algum canto</span><span class="item-free">GRÁTIS</span></li>
-      <li><span class="item-bullet">✦</span><span>Lençol limpo — trocar o lençol já transforma o quarto</span><span class="item-free">GRÁTIS</span></li>
-      <li><span class="item-bullet">✦</span><span>Apague as luzes do teto — só abajur ou velas</span><span class="item-free">GRÁTIS</span></li>
-      <li><span class="item-bullet">✦</span><span>Playlist no Spotify no fundo (coloque antes <span class="gn" data-f="dela" data-m="dele">dela</span> chegar)</span><span class="item-free">GRÁTIS</span></li>
-      <li><span class="item-bullet">✦</span><span>Flores de jardim ou ervas frescas num copo</span><span class="item-free">GRÁTIS</span></li>
-    </ul>
-
-    <span class="label tip-together">// passo a passo da montagem</span>
-    <ul class="steps tip-together">
-      <li><div class="step-num">1</div>Apague a luz do teto. Posicione 3 a 5 velas em lugares seguros.</li>
-      <li><div class="step-num">2</div>Mesa do jantar: duas velas no centro, toalha de pano, dois copos iguais.</li>
-      <li><div class="step-num">3</div>Abra uma janela 10 minutos antes <span class="gn" data-f="dela" data-m="dele">dela</span> chegar — o ar fresco é subestimado.</li>
-      <li><div class="step-num">4</div>Playlist: "Bossa Nova Romântica" ou "Lo-fi Romance" no repeat antes <span class="gn" data-f="dela" data-m="dele">dele</span> entrar pela porta.</li>
-    </ul>
-
-    <div class="tip-distance">
-      <div class="warn" style="margin-top:8px">
-        <span class="warn-icon">📸</span>
-        <span>À distância: monte o ambiente mesmo assim e <strong>mande uma foto</strong> pra <span class="gn" data-f="ela" data-m="ele">ela</span> com a mensagem: "Montei isso aqui pensando em quando você estiver aqui de novo."</span>
-      </div>
-    </div>
-
-    <div class="tip" style="margin-top:14px">
-      <span class="tip-icon">🕯️</span>
-      <span><strong>Regra de ouro:</strong> menos luz elétrica = mais intimidade. Só isso já transforma qualquer espaço.</span>
-    </div>
-  </div>
-</section>
-
-<div class="band-red"><div class="band-inner">O pico se aproxima</div></div>
-
-<!-- =============================================
-     MOMENTO 5
-     ============================================= -->
-<section class="chapter" id="momento-5">
-  <div class="chapter__header chapter__header--dark">
-    <div class="chapter__bg-num" aria-hidden="true">5</div>
-    <span class="chapter__num">Momento 05</span>
-    <div class="chapter__time">19h — 21h · o jantar completo</div>
-    <h2 class="chapter__title display">O Jantar<br>Engana-Chef</h2>
-    <p class="chapter__desc">Entrada, prato e sobremesa — parece de restaurante, sai por menos de R$30. Receitas passo a passo, sem mistério.</p>
-  </div>
-  <div class="content">
-
-    <div class="tip-distance">
-      <div class="warn" style="margin-bottom:16px">
-        <span class="warn-icon">📹</span>
-        <span>À distância: combine de jantarem no mesmo horário em videochamada. Cada um prepara o seu — mas juntos, na mesma "mesa".</span>
-      </div>
-    </div>
-
-    <div class="menu-section">
-      <div class="menu-course">
-        <span class="menu-course__label">Entrada</span>
-        <div class="menu-course__name">Bruschetta de Alho e Tomate</div>
-        <p class="menu-course__text">Elegante, fácil e inesperada. Em 10 minutos tá pronto.</p>
-        <span class="menu-course__cost">≈ R$5–6</span>
-        <button class="recipe-toggle" onclick="toggleRecipe(this)">▶ Ver receita completa</button>
-        <div class="recipe-content">
-          <div class="ingredients">
-            <span class="ingredient-tag">4 fatias de pão italiano</span><span class="ingredient-tag">2 tomates</span><span class="ingredient-tag">3 dentes de alho</span><span class="ingredient-tag">azeite</span><span class="ingredient-tag">sal e pimenta</span><span class="ingredient-tag">orégano</span>
-          </div>
-          <div class="recipe-step"><span class="recipe-step-num">1</span><span>Corte os tomates em cubinhos. Tempere com sal, pimenta e azeite. Deixe marinar 10 minutos.</span></div>
-          <div class="recipe-step"><span class="recipe-step-num">2</span><span>Torre as fatias de pão na frigideira até dourar.</span></div>
-          <div class="recipe-step"><span class="recipe-step-num">3</span><span>Esfregue o alho cru sobre o pão quente — isso faz toda a diferença.</span></div>
-          <div class="recipe-step"><span class="recipe-step-num">4</span><span>Coloque os tomates por cima, regue com azeite e polvilhe orégano. Sirva imediatamente.</span></div>
-        </div>
-      </div>
-
-      <div class="menu-course">
-        <span class="menu-course__label">Prato Principal</span>
-        <div class="menu-course__name">Frango ao Mel e Mostarda com Arroz de Açafrão</div>
-        <p class="menu-course__text">O prato que todo mundo acha que deu trabalho. Não deu. 25 minutos.</p>
-        <span class="menu-course__cost">≈ R$14–16</span>
-        <button class="recipe-toggle" onclick="toggleRecipe(this)">▶ Ver receita completa</button>
-        <div class="recipe-content">
-          <div class="ingredients">
-            <span class="ingredient-tag">2 filés de frango</span><span class="ingredient-tag">2 col. mel</span><span class="ingredient-tag">1 col. mostarda</span><span class="ingredient-tag">alho</span><span class="ingredient-tag">manteiga</span><span class="ingredient-tag">1 xíc. arroz</span><span class="ingredient-tag">açafrão ou cúrcuma</span>
-          </div>
-          <div class="recipe-step"><span class="recipe-step-num">1</span><span>Tempere o frango com sal, pimenta e alho. Deixe 15 minutos.</span></div>
-          <div class="recipe-step"><span class="recipe-step-num">2</span><span>Misture o mel com a mostarda — o molho está pronto.</span></div>
-          <div class="recipe-step"><span class="recipe-step-num">3</span><span>Sele o frango na frigideira com manteiga — 4 min de cada lado até dourar.</span></div>
-          <div class="recipe-step"><span class="recipe-step-num">4</span><span>Baixe o fogo, despeje o molho e tampe por 5 minutos.</span></div>
-          <div class="recipe-step"><span class="recipe-step-num">5</span><span>Arroz: cozinhe com uma pitada de açafrão ou cúrcuma na água — fica dourado e elegante.</span></div>
-        </div>
-      </div>
-
-      <div class="menu-course">
-        <span class="menu-course__label">Sobremesa</span>
-        <div class="menu-course__name">Mousse de Chocolate de 3 Ingredientes</div>
-        <p class="menu-course__text">Faça de manhã, fica na geladeira, serve gelado à noite. Impossível errar.</p>
-        <span class="menu-course__cost">≈ R$6–8</span>
-        <button class="recipe-toggle" onclick="toggleRecipe(this)">▶ Ver receita completa</button>
-        <div class="recipe-content">
-          <div class="ingredients">
-            <span class="ingredient-tag">200g chocolate meio amargo</span><span class="ingredient-tag">3 ovos</span><span class="ingredient-tag">1 col. açúcar</span>
-          </div>
-          <div class="recipe-step"><span class="recipe-step-num">1</span><span>Derreta o chocolate em banho-maria ou micro-ondas (30s + mexe + 30s).</span></div>
-          <div class="recipe-step"><span class="recipe-step-num">2</span><span>Separe claras das gemas. Misture as gemas no chocolate derretido.</span></div>
-          <div class="recipe-step"><span class="recipe-step-num">3</span><span>Bata as claras em neve com o açúcar até ficar firme.</span></div>
-          <div class="recipe-step"><span class="recipe-step-num">4</span><span>Incorpore as claras ao chocolate <strong>delicadamente</strong>, mexendo de baixo pra cima. Divida em duas taças e leve à geladeira por 3 horas.</span></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="total-cost">
-      <span class="total-cost__label">Total estimado</span>
-      <span class="total-cost__price">≈ R$28</span>
-    </div>
-  </div>
-</section>
-
-<div class="chapter-divider"></div>
-
-<!-- =============================================
-     MOMENTO 6
-     ============================================= -->
-<section class="chapter" id="momento-6">
-  <div class="chapter__header chapter__header--card">
-    <div class="chapter__bg-num" aria-hidden="true">6</div>
-    <span class="chapter__num">Momento 06</span>
-    <div class="chapter__time">durante ou após o jantar</div>
-    <h2 class="chapter__title display">A Carta</h2>
-    <p class="chapter__desc"><span class="gn" data-f="Ela" data-m="Ele">Ela</span> vai guardar essa carta pra sempre. Um papel. Uma caneta. Suas palavras — com este modelo.</p>
-  </div>
-  <div class="content">
-    <span class="label">// modelo — escreva à mão nos espaços</span>
-    <div class="carta">
-      <div class="carta-inner">
-        <span class="carta date">12 de junho</span>
-        <span class="carta greeting">Para <span class="blank">[nome <span class="gn" data-f="dela" data-m="dele">dela</span>]</span>,</span>
-        Tem coisas que eu penso sobre você que nunca saem direito quando eu tento falar. Hoje eu quis tentar escrever.<br><br>
-        Eu me lembro do dia que <span class="blank">[primeira memória marcante entre vocês]</span>. Esse foi um dos dias mais importantes da minha vida.<br><br>
-        O que eu mais gosto em você é <span class="blank">[algo específico — jeito de rir, de cuidar, de olhar]</span>. Você provavelmente não faz ideia de quanto isso importa pra mim.<br><br>
-        Com você, eu aprendi <span class="blank">[algo que <span class="gn" data-f="ela" data-m="ele">ela</span> te ensinou ou que aprenderam juntos]</span>. E isso fica comigo pra sempre.<br><br>
-        Obrigado por existir no mesmo mundo que eu.<br>
-        <span class="carta sign">Com amor, <span class="blank">[seu nome]</span></span>
-      </div>
-    </div>
-    <div class="warn">
-      <span class="warn-icon">✏️</span>
-      <span>Não copie literalmente. Mude pelo menos dois trechos com algo que é genuinamente de vocês. A especificidade é o que transforma texto em emoção.</span>
-    </div>
-
-    <div class="tip-distance">
-      <div class="tip" style="margin-top:0">
-        <span class="tip-icon">📷</span>
-        <span>À distância: escreva à mão, fotografe e mande. O impacto é o mesmo — e <span class="gn" data-f="ela" data-m="ele">ela</span> vai salvar a foto.</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="band-red"><div class="band-inner">O fechamento que ficará pra sempre</div></div>
-
-<!-- =============================================
-     MOMENTO 7
-     ============================================= -->
-<section class="chapter" id="momento-7">
-  <div class="chapter__header chapter__header--dark">
-    <div class="chapter__bg-num" aria-hidden="true">7</div>
-    <span class="chapter__num">Momento 07</span>
-    <div class="chapter__time">00:00 · meia-noite exata</div>
-    <h2 class="chapter__title display">O Fechamento<br>à Meia-Noite</h2>
-    <p class="chapter__desc">Este é o pico da Curva. Um ritual simples que vai gravar na memória dos dois — pra sempre.</p>
-  </div>
-  <div class="fechamento">
-    <span class="label">// o ritual</span>
-    <div class="ritual-steps">
-      <div class="ritual-step">
-        <div class="ritual-dot">1</div>
-        <div class="ritual-content">
-          <strong>23h50 — posicione</strong>
-          <p>Fique com <span class="gn" data-f="ela" data-m="ele">ela</span> num cômodo quieto. Sem celular. Playlist no baixo.</p>
-        </div>
-      </div>
-      <div class="ritual-step">
-        <div class="ritual-dot">2</div>
-        <div class="ritual-content">
-          <strong>23h57 — olho no olho</strong>
-          <p>Vire pra <span class="gn" data-f="ela" data-m="ele">ela</span>. Olhe nos olhos de verdade — o olhar de quem está presente. Segure a mão.</p>
-        </div>
-      </div>
-      <div class="ritual-step">
-        <div class="ritual-dot">3</div>
-        <div class="ritual-content">
-          <strong>Meia-noite — as três perguntas</strong>
-          <p>Diga: <em>"Antes do dia acabar, eu quero te perguntar três coisas."</em></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="template" style="margin-top:0">
-      <span class="template__label">as três perguntas — diga em voz alta</span>
-      <strong style="color:var(--red)">1.</strong> "Qual foi o momento do dia que mais te tocou?"<br><br>
-      <strong style="color:var(--red)">2.</strong> "O que você ainda quer viver comigo?"<br><br>
-      <strong style="color:var(--red)">3.</strong> "Tem alguma coisa que você queria que eu soubesse?"
-    </div>
-
-    <div class="tip">
-      <span class="tip-icon">🌙</span>
-      <span>Não tenha pressa pra preencher o silêncio. Deixe <span class="gn" data-f="ela" data-m="ele">ela</span> falar. Ouça de verdade. Esse é o presente mais raro que existe.</span>
-    </div>
-
-    <div class="template" style="margin-top:16px">
-      <span class="template__label">frase de encerramento</span>
-      "Hoje eu quis que o dia todo dissesse o que às vezes eu não sei como falar.<br>Você é o melhor que já aconteceu pra mim."
-    </div>
-
-    <div class="tip-distance">
-      <div class="tip" style="margin-top:0">
-        <span class="tip-icon">📱</span>
-        <span>À distância: abre a videochamada às 23h55. Faz as três perguntas pelo celular. Durmam na chamada se quiserem.</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- =============================================
-     BÔNUS 1 — VERSÃO À DISTÂNCIA
-     ============================================= -->
-<section class="bonus-section-page" id="bonus-distancia">
-  <div class="bonus-badge">Bônus 1</div>
-  <h2 class="bonus-title display">Versão<br>à Distância</h2>
-  <p style="font-size:15px;color:rgba(240,234,214,.75);margin-bottom:20px;line-height:1.65">
-    Cada momento do roteiro foi adaptado para funcionar por celular e videochamada — com a mesma carga emocional, ou mais.
-  </p>
-  <ul class="steps">
-    <li><div class="step-num">1</div>Bom Dia: áudio curto logo ao acordar. Mais pessoal que texto.</li>
-    <li><div class="step-num">2</div>Bilhetes: mensagens agendadas, uma a cada 1h30. Desligue as notificações de leitura.</li>
-    <li><div class="step-num">3</div>Áudio: funciona igual. Mande sem aviso às 15h.</li>
-    <li><div class="step-num">4</div>Ambiente: monte e mande uma foto com a mensagem "montei isso pra quando você estiver aqui."</li>
-    <li><div class="step-num">5</div>Jantar: combinem o horário e jantam em videochamada ao mesmo tempo.</li>
-    <li><div class="step-num">6</div>Carta: fotografe e mande. <span class="gn" data-f="Ela" data-m="Ele">Ela</span> vai salvar a foto.</li>
-    <li><div class="step-num">7</div>Meia-noite: videochamada. As três perguntas pela tela. Olho no olho ainda é olho no olho.</li>
-  </ul>
-</section>
-
-<!-- =============================================
-     BÔNUS 2 — EMERGÊNCIA
-     ============================================= -->
-<section class="bonus-section-page" id="bonus-emergencia" style="border-top-color:var(--red)">
-  <div class="bonus-badge" style="background:var(--red);color:var(--paper)">Bônus 2</div>
-  <h2 class="bonus-title display">Kit de<br>Emergência<br>do Liso</h2>
-  <p style="font-size:15px;color:rgba(240,234,214,.75);margin-bottom:20px;line-height:1.65">
-    <strong>Acordou no dia 12 sem ter feito nada?</strong> Este é o plano de resgate em <em>1 hora</em>.
-  </p>
-  <ul class="steps">
-    <li><div class="step-num">9h</div><span><strong>Mande o bom dia agora.</strong> Use o modelo do Momento 1. Mande já.</span></li>
-    <li><div class="step-num">9h15</div><span><strong>Compre o básico:</strong> 1 flor ou chocolate. Até R$15. Qualquer mercado.</span></li>
-    <li><div class="step-num">9h30</div><span><strong>Escreva a carta.</strong> 10 minutos. Modelo no Momento 6. Prioridade máxima.</span></li>
-    <li><div class="step-num">9h45</div><span><strong>Grave o áudio.</strong> Script no Momento 3. Mande com: "Precisava te falar isso hoje."</span></li>
-    <li><div class="step-num">10h</div><span><strong>Prepare o ambiente:</strong> velas, luz baixa, playlist. 15 minutos e o espaço está transformado.</span></li>
-  </ul>
-  <div class="template" style="margin-top:8px">
-    <span class="template__label">mensagem de emergência — mande agora</span>
-    Bom dia, <span class="blank">[nome <span class="gn" data-f="dela" data-m="dele">dela</span>]</span>. Hoje é nosso dia. E hoje eu quero que você saiba que não existe ninguém que eu prefira amar. Aguarda — hoje vai ter coisa. ❤️
-    <span class="sent">enviado · agora</span>
-  </div>
-</section>
-
-<!-- =============================================
-     ORDER BUMPS
-     ============================================= -->
-<section class="ob-section" id="complementos">
-  <div class="ob-header">
-    <span class="ob-eyebrow">// gostou do roteiro? tem mais</span>
-    <h2 class="ob-title display">Complementos<br><span style="color:var(--gold)">do Roteiro</span></h2>
-    <p class="ob-sub">Cada item encaixa direto em um momento específico do seu dia. Compre separado, no seu ritmo.</p>
-  </div>
-
-  <!-- OB 1 -->
-  <div class="ob-card">
-    <div class="ob-card__row">
-      <span class="ob-card__icon">💌</span>
-      <div class="ob-card__meta">
-        <span class="ob-card__tag">Complemento 01</span>
-        <div class="ob-card__title">Pacote Cartas<br>que Derretem</div>
-        <span class="ob-card__mechanism">Estrutura 4 Camadas</span>
-      </div>
-    </div>
-    <p class="ob-card__text">
-      20 modelos prontos de cartas e declarações — é só preencher o nome e a memória. Mata de vez o medo de "não sei escrever".
+    <p class="hero__sub">
+      Temos uma oferta única que aparece só neste momento — depois que você sair da página,
+      ela desaparece pra sempre. Nem e-mail, nem segunda chance.
     </p>
-    <div class="ob-card__connects">complementa o Momento 6 · A Carta</div>
-    <div class="ob-card__footer">
-      <div class="ob-card__price"><sup>R$</sup>9</div>
-      <a href="https://pay.cakto.com.br/jywgonc_911260" class="ob-btn" target="_blank" rel="noopener">Adicionar →</a>
-    </div>
-  </div>
 
-  <!-- OB 2 -->
-  <div class="ob-card">
-    <div class="ob-card__row">
-      <span class="ob-card__icon">🎟️</span>
-      <div class="ob-card__meta">
-        <span class="ob-card__tag">Complemento 02</span>
-        <div class="ob-card__title">Talão de Vales<br>do Amor</div>
-        <span class="ob-card__mechanism">Sistema de Vales</span>
-      </div>
+    <div class="hero__cta-group">
+      <a href="#oferta" class="btn-yes">
+        SIM! Quero o Ano Inteiro de Encontros por R$47
+        <span class="btn-yes__note">↓ ver a oferta antes de decidir</span>
+      </a>
+      <a href="#recusa" class="btn-no">Não, obrigado. Prefiro arriscar os outros 11 meses.</a>
     </div>
-    <p class="ob-card__text">
-      Vales imprimíveis prontos — café na cama, massagem, "um dia inteiro do seu jeito". O presente físico que dura o ano todo, não só o dia 12.
-    </p>
-    <div class="ob-card__connects">presente físico do roteiro completo</div>
-    <div class="ob-card__footer">
-      <div class="ob-card__price"><sup>R$</sup>9</div>
-      <a href="https://pay.cakto.com.br/jywgonc_911260" class="ob-btn" target="_blank" rel="noopener">Adicionar →</a>
-    </div>
-  </div>
-
-  <!-- OB 3 -->
-  <div class="ob-card">
-    <div class="ob-card__row">
-      <span class="ob-card__icon">🍽️</span>
-      <div class="ob-card__meta">
-        <span class="ob-card__tag">Complemento 03</span>
-        <div class="ob-card__title">Cardápio<br>Engana-Chef</div>
-        <span class="ob-card__mechanism">Truque do Prato Caro</span>
-      </div>
-    </div>
-    <p class="ob-card__text">
-      5 jantares românticos completos — entrada, prato, sobremesa e drink — que parecem de restaurante e saem por até R$15. Lista de compras pronta e truque de emplatamento inclusos.
-    </p>
-    <div class="ob-card__connects">expande o Momento 5 · Jantar Engana-Chef</div>
-    <div class="ob-card__footer">
-      <div class="ob-card__price"><sup>R$</sup>12</div>
-      <a href="https://pay.cakto.com.br/jywgonc_911260" class="ob-btn" target="_blank" rel="noopener">Adicionar →</a>
-    </div>
-  </div>
-
-  <!-- Levar os 3 -->
-  <div class="ob-total">
-    <div>
-      <span class="ob-total__label">Os 3 complementos juntos</span>
-      <div class="ob-total__price"><sup style="font-size:15px;opacity:.6">R$</sup>30</div>
-      <span class="ob-total__note">tudo por menos que um buquê</span>
-    </div>
-    <a href="https://pay.cakto.com.br/jywgonc_911260" class="ob-btn" style="padding:14px 20px;font-size:13px" target="_blank" rel="noopener">Levar os 3 →</a>
   </div>
 </section>
 
-<!-- FOOTER -->
-<div class="guide-footer">
-  <div class="guide-footer__title display">Dia dos Namorados do Liso</div>
-  <div class="guide-footer__sub script">Feito com intenção. Não com dinheiro.</div>
-  <p class="guide-footer__text">
-    Agora vai lá. O dia 12 espera.<br><br>✦ Feliz Dia dos Namorados ✦
-  </p>
+<!-- =========================================================
+     URGÊNCIA
+     ========================================================= -->
+<div class="urgency-bar">
+  <p>⚡ <strong>Oferta única</strong> — esta página some quando você fechar ou sair. Não tem e-mail depois, não tem segunda chance.</p>
 </div>
 
-<div class="spacer"></div>
+<hr class="div">
 
-</div><!-- /guide-content -->
+<!-- =========================================================
+     BRIDGE — O PROBLEMA QUE CONTINUA DEPOIS DO DIA 12
+     ========================================================= -->
+<section class="bridge">
+  <div class="wrap">
+    <span class="section-label">o problema que ninguém fala</span>
+    <h2 class="display" style="font-size:clamp(34px,7vw,62px);margin-bottom:32px;">O dia 12 vai ser incrível.<br>E o dia 13?</h2>
 
-<!-- NAV BAR -->
-<nav class="nav-bar" id="navBar" role="navigation">
-  <a class="nav-item active" href="#momento-1">
-    <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="5" stroke="currentColor" stroke-width="1.5"/><line x1="10" y1="1" x2="10" y2="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="10" y1="16" x2="10" y2="19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="10" x2="4" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="16" y1="10" x2="19" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-    <span>Manhã</span>
-  </a>
-  <a class="nav-item" href="#momento-3">
-    <svg viewBox="0 0 20 20" fill="none"><rect x="6" y="3" width="8" height="12" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 11c0 3.3 2.7 6 6 6s6-2.7 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/><line x1="10" y1="17" x2="10" y2="19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-    <span>Áudio</span>
-  </a>
-  <a class="nav-item" href="#momento-5">
-    <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="12" r="6" stroke="currentColor" stroke-width="1.5"/><line x1="10" y1="6" x2="10" y2="2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-    <span>Jantar</span>
-  </a>
-  <a class="nav-item" href="#momento-7">
-    <svg viewBox="0 0 20 20" fill="none"><path d="M10 17C4 17 2 10 2 7a5 5 0 0 1 10 0 5 5 0 0 1 6 2.7c0 3-4 7.3-8 7.3z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
-    <span>Final</span>
-  </a>
-  <a class="nav-item" href="#bonus-emergencia">
-    <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M10 4l-2 8h4L8 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
-    <span>SOS</span>
-  </a>
-</nav>
+    <p class="drop">
+      Parabéns. Você acabou de fazer algo que a maioria dos namorados não faz: se planejou.
+      O roteiro do Dia dos Namorados já está a caminho do e-mail — e o dia 12 vai ser diferente de todos os outros.
+    </p>
 
-<!-- =============================================
-     JAVASCRIPT
-     ============================================= -->
+    <p>
+      Mas tem um problema que nenhum roteiro de Dia dos Namorados resolve sozinho:
+      <strong>o que acontece depois.</strong>
+    </p>
+
+    <p>
+      Março chega. Julho passa. O aniversário de namoro vira um jantar de última hora.
+      O relacionamento não cai na rotina por falta de amor — cai por falta de <em>iniciativa</em>.
+      E iniciativa, todo mundo sabe, precisa de energia que ninguém tem no fim de um dia longo.
+    </p>
+
+    <div class="big-quote">
+      "Um encontro especial por mês muda tudo. Mas quem tem cabeça pra planejar 12 encontros diferentes do zero?"
+    </div>
+
+    <p>
+      É exatamente esse o problema que o <strong>Ano Inteiro de Encontros do Liso</strong> resolve.
+      Não é mais um produto — é a continuação natural do que você acabou de comprar, agora pra o resto do ano.
+    </p>
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- =========================================================
+     CALENDÁRIO — OS 12 ROTEIROS
+     ========================================================= -->
+<section class="cal-visual">
+  <div class="cal-visual__bg-text" aria-hidden="true">CALENDÁRIO</div>
+  <div class="wrap">
+    <div class="sec-header" style="text-align:center">
+      <span class="section-label" style="color:var(--gold)">o que você leva</span>
+      <h2 class="display" style="color:var(--paper);font-size:clamp(32px,7vw,64px)">12 roteiros.<br>Um por mês.<br><span style="color:var(--gold)">Prontos pra usar.</span></h2>
+      <p style="color:rgba(240,234,214,.6);font-size:16px;max-width:540px;margin:0 auto">Cada mês tem tema próprio, passo a passo completo e frases prontas — no mesmo estilo do roteiro que você acabou de comprar.</p>
+    </div>
+
+    <div class="cal-grid">
+      <div class="cal-month" style="animation-delay:.05s">
+        <span class="cal-month__num">01</span>
+        <span class="cal-month__name">Janeiro</span>
+        <span class="cal-month__theme">Virada do Ano — o encontro do recomeço</span>
+      </div>
+      <div class="cal-month" style="animation-delay:.1s">
+        <span class="cal-month__num">02</span>
+        <span class="cal-month__name">Fevereiro</span>
+        <span class="cal-month__theme">Carnaval em Casa — bloquinho privativo</span>
+      </div>
+      <div class="cal-month cal-month--highlight" style="animation-delay:.15s">
+        <span class="cal-month__num">03</span>
+        <span class="cal-month__name">Março</span>
+        <span class="cal-month__theme">Piquenique de Outono — trilha sensorial</span>
+      </div>
+      <div class="cal-month" style="animation-delay:.2s">
+        <span class="cal-month__num">04</span>
+        <span class="cal-month__name">Abril</span>
+        <span class="cal-month__theme">Noite de Cinema Cult — sessão privativa</span>
+      </div>
+      <div class="cal-month" style="animation-delay:.25s">
+        <span class="cal-month__num">05</span>
+        <span class="cal-month__name">Maio</span>
+        <span class="cal-month__theme">Aniversário de Namoro — Protocolo da Memória</span>
+      </div>
+      <div class="cal-month cal-month--highlight" style="animation-delay:.3s">
+        <span class="cal-month__num">06</span>
+        <span class="cal-month__name">Junho</span>
+        <span class="cal-month__theme">✦ Dia dos Namorados — já está com você</span>
+      </div>
+      <div class="cal-month" style="animation-delay:.35s">
+        <span class="cal-month__num">07</span>
+        <span class="cal-month__name">Julho</span>
+        <span class="cal-month__theme">Noite de Inverno em Casa — do jeito certo</span>
+      </div>
+      <div class="cal-month" style="animation-delay:.4s">
+        <span class="cal-month__num">08</span>
+        <span class="cal-month__name">Agosto</span>
+        <span class="cal-month__theme">Encontro Surpresa — ela conta pras amigas</span>
+      </div>
+      <div class="cal-month" style="animation-delay:.45s">
+        <span class="cal-month__num">09</span>
+        <span class="cal-month__name">Setembro</span>
+        <span class="cal-month__theme">Spa Night — relaxamento sem gastar nada</span>
+      </div>
+      <div class="cal-month cal-month--highlight" style="animation-delay:.5s">
+        <span class="cal-month__num">10</span>
+        <span class="cal-month__name">Outubro</span>
+        <span class="cal-month__theme">Noite Gastronômica — restaurante em casa</span>
+      </div>
+      <div class="cal-month" style="animation-delay:.55s">
+        <span class="cal-month__num">11</span>
+        <span class="cal-month__name">Novembro</span>
+        <span class="cal-month__theme">Aventura Relâmpago — passeio grátis na cidade</span>
+      </div>
+      <div class="cal-month" style="animation-delay:.6s">
+        <span class="cal-month__num">12</span>
+        <span class="cal-month__name">Dezembro</span>
+        <span class="cal-month__theme">Réveillon do Liso — virada que ninguém esquece</span>
+      </div>
+    </div>
+
+    <p style="text-align:center;font-family:'Courier Prime',monospace;font-size:13px;color:rgba(240,234,214,.4);letter-spacing:2px;text-transform:uppercase;margin-top:8px">✦ Cada roteiro: passo a passo + frases prontas + ideias baratas ✦</p>
+  </div>
+</section>
+
+<hr class="div-dark">
+
+<!-- =========================================================
+     MECANISMO — CALENDÁRIO DO AMOR
+     ========================================================= -->
+<section class="mech-section">
+  <div class="wrap">
+    <span class="section-label">por que funciona</span>
+    <h2 class="display" style="font-size:clamp(28px,5.5vw,52px);margin-bottom:32px;">O Calendário do Amor</h2>
+
+    <div class="mech-box">
+      <p>
+        O roteiro do Dia dos Namorados cria um <strong>pico na Curva da Emoção</strong> —
+        um momento memorável que muda como a pessoa te vê. Mas curvas de emoção sobem e descem.
+        Sem outros picos ao longo do ano, o relacionamento volta pra linha de base em semanas.
+        <br><br>
+        O <strong>Calendário do Amor</strong> distribui encontros memoráveis pelos 12 meses —
+        picos regulares que impedem a curva de afundar na rotina.
+        Não é sobre gastar dinheiro: é sobre aparecer, criar memória e mostrar que
+        você pensa no relacionamento o ano inteiro, não só nas datas do calendário.
+      </p>
+    </div>
+
+    <p style="margin-top:28px;font-size:15px;opacity:.6;text-align:center;font-family:'Courier Prime',monospace;letter-spacing:1px">
+      Um encontro por mês. Menos de R$4 por roteiro. Zero esforço criativo.
+    </p>
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- =========================================================
+     BULLETS DE BENEFÍCIO
+     ========================================================= -->
+<section class="bullets-section">
+  <div class="wrap">
+    <div class="sec-header" style="text-align:center;margin-bottom:32px">
+      <span class="section-label" style="text-align:center">o que você ganha</span>
+      <h2 class="display" style="font-size:clamp(28px,5.5vw,50px)">Tudo incluído,<br>tudo pronto.</h2>
+    </div>
+
+    <ul class="bullet-list">
+      <li><strong>12 roteiros completos</strong>, um pra cada mês do ano (janeiro a dezembro)</li>
+      <li>Cada roteiro com <strong>tema próprio</strong> — piquenique, noite de inverno, surpresa, aniversário, spa, gastronômico…</li>
+      <li><strong>Passo a passo detalhado</strong> + frases prontas pra cada momento do roteiro</li>
+      <li>Tudo no estilo liso: <strong>memorável gastando quase nada</strong></li>
+      <li>Nunca mais passar em branco numa data especial ou num mês qualquer</li>
+      <li>Baixou, abriu, executou — <strong>zero esforço criativo da sua parte</strong></li>
+      <li>Acesso vitalício — você usa esse ano, e em todos os que vierem depois</li>
+    </ul>
+  </div>
+</section>
+
+<!-- =========================================================
+     ANCORAGEM DE PREÇO
+     ========================================================= -->
+<section class="anchor-section">
+  <div class="wrap">
+    <span class="section-label" style="color:var(--gold);text-align:center;display:block;margin-bottom:28px">quanto custa um encontro sem roteiro</span>
+    <h2 class="display" style="font-size:clamp(28px,5.5vw,52px);color:var(--paper);text-align:center;margin-bottom:8px">
+      R$47 pelo ano inteiro.
+    </h2>
+    <p style="color:rgba(240,234,214,.5);text-align:center;font-family:'Courier Prime',monospace;font-size:14px;margin-bottom:36px">divida por 12 meses:</p>
+
+    <div class="anchor-math">
+      <div class="anchor-math__item">
+        <span class="anchor-math__label">por encontro</span>
+        <span class="anchor-math__val" style="animation:glow 2s infinite">R$3,90</span>
+      </div>
+      <span class="anchor-math__op">&lt;</span>
+      <div class="anchor-math__item">
+        <span class="anchor-math__label">cappuccino</span>
+        <span class="anchor-math__val">R$9</span>
+      </div>
+      <span class="anchor-math__op">&lt;</span>
+      <div class="anchor-math__item">
+        <span class="anchor-math__label">uber de volta</span>
+        <span class="anchor-math__val">R$15</span>
+      </div>
+      <span class="anchor-math__op">&lt;</span>
+      <div class="anchor-math__item">
+        <span class="anchor-math__label">jantar sem plano</span>
+        <span class="anchor-math__val">R$80+</span>
+      </div>
+    </div>
+
+    <p class="anchor-note" style="text-align:center">
+      Você vai gastar <strong>mais que isso</strong> em qualquer encontro improvisado de última hora —<br>
+      e vai sair sem ter criado nenhuma memória especial.
+    </p>
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- =========================================================
+     OFFER BOX
+     ========================================================= -->
+<section class="offer-section" id="oferta">
+  <div class="wrap">
+    <div class="offer-box">
+      <span class="offer-box__eyebrow">✦ oferta única — expira quando você sair ✦</span>
+      <h2 class="offer-box__title">Ano Inteiro de<br>Encontros do Liso</h2>
+      <span class="offer-box__subtitle">12 roteiros completos — um por mês, prontos pra usar</span>
+
+      <span class="offer-box__was">de <span>R$97</span></span>
+      <div class="offer-box__price"><sup>R$</sup>47</div>
+      <span class="offer-box__per">menos de R$3,90 por encontro · acesso imediato</span>
+
+      <div class="offer-box__includes">
+        <div class="offer-box__item">12 roteiros temáticos completos (janeiro–dezembro)</div>
+        <div class="offer-box__item">Passo a passo detalhado + frases prontas em cada roteiro</div>
+        <div class="offer-box__item">Temas variados: surpresa, aniversário, inverno, gastronômico e mais</div>
+        <div class="offer-box__item">Mesmo estilo do roteiro que você acabou de comprar</div>
+        <div class="offer-box__item">Acesso imediato — entregue no mesmo e-mail</div>
+        <div class="offer-box__item">Garantia de 7 dias — se não gostar, devolvo tudo</div>
+      </div>
+
+      <a href="https://pay.cakto.com.br/wve25yg_911223" class="btn-yes" onclick="(function(){var _e=_fbqEventId('ic');fbq('track','InitiateCheckout',{value:47.00,currency:'BRL',content_name:'Ano Inteiro de Encontros do Liso',num_items:1},{eventID:_e});})()" target="_blank" rel="noopener">
+        SIM! Quero o Ano Inteiro por R$47 — adicionar com 1 clique
+        <span class="btn-yes__note">Não precisa redigitar o cartão. É um clique só.</span>
+      </a>
+
+      <a href="#recusa" class="btn-no" id="recusa">Não, obrigado. Prefiro arriscar voltar pra rotina depois do dia 12.</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     GARANTIA
+     ========================================================= -->
+<section class="guarantee-strip">
+  <div class="wrap">
+    <div class="guarantee-badge">
+      <span class="guarantee-badge__days">7</span>
+      <span class="guarantee-badge__label">dias de<br>garantia</span>
+    </div>
+    <div class="guarantee-text">
+      <h3>Risco zero da sua parte</h3>
+      <p>Se você pegar o pacote e por qualquer motivo não gostar — me manda um e-mail em até 7 dias e devolvo o valor integralmente, sem perguntas. Você não perde nada testando.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- =========================================================
+     P.S.
+     ========================================================= -->
+<section class="ps-section">
+  <div class="wrap">
+    <div class="ps-box">
+      <p>
+        É <strong>um clique só</strong> — seu cartão já está salvo do produto principal, não precisa redigitar nada.
+        <br><br>
+        Esta oferta não vai aparecer no seu e-mail depois. Não vai ter popup de "ops, você esqueceu".
+        Quando você sair desta página, <strong>ela some pra sempre</strong>.
+        <br><br>
+        Você já tomou a decisão certa comprando o roteiro. Esta é só a continuação natural.
+        O roteiro resolve o dia 12. O Ano Inteiro resolve os outros 364.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     TICKER FINAL
+     ========================================================= -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker-inner">
+    <span>oferta única</span><span>só aparece agora</span><span>um clique</span><span>não aparece de novo</span><span>12 roteiros prontos</span><span>ano inteiro</span><span>sem redigitar o cartão</span><span>expira quando você sair</span>
+    <span>oferta única</span><span>só aparece agora</span><span>um clique</span><span>não aparece de novo</span><span>12 roteiros prontos</span><span>ano inteiro</span><span>sem redigitar o cartão</span><span>expira quando você sair</span>
+  </div>
+</div>
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+<div class="footer-bar">
+  <p>© 2026 Dia dos Namorados do Liso · Suporte: [seu-email@dominio.com] · Todos os direitos reservados</p>
+</div>
+
 <script>
-// ── State ──────────────────────────────────────
-let gender  = null; // 'f' | 'm'
-let living  = null; // 'together' | 'distance'
-
-// ── Quiz: Step 1 — Gênero ──────────────────────
-function selectGender(g) {
-  gender = g;
-  document.querySelectorAll('#step-1 .quiz-card').forEach(c => c.classList.remove('selected'));
-  event.currentTarget.classList.add('selected');
-
-  // avança para passo 2 após breve pausa
-  setTimeout(() => {
-    document.getElementById('dot-1').classList.remove('active');
-    document.getElementById('dot-1').classList.add('done');
-    document.getElementById('dot-2').classList.add('active');
-
-    document.getElementById('step-1').classList.remove('visible');
-    setTimeout(() => {
-      document.getElementById('step-2').classList.add('visible');
-    }, 200);
-  }, 350);
-}
-
-// ── Quiz: Step 2 — Moradia ─────────────────────
-function selectLiving(l) {
-  living = l;
-  document.querySelectorAll('#step-2 .quiz-card').forEach(c => c.classList.remove('selected'));
-  event.currentTarget.classList.add('selected');
-
-  setTimeout(() => {
-    document.getElementById('dot-2').classList.remove('active');
-    document.getElementById('dot-2').classList.add('done');
-    showLoading();
-  }, 350);
-}
-
-// ── Loading → Guide ────────────────────────────
-function showLoading() {
-  const overlay  = document.getElementById('quiz-overlay');
-  const loading  = document.getElementById('quiz-loading');
-  const guide    = document.getElementById('guide-content');
-
-  overlay.classList.add('hiding');
-
-  setTimeout(() => {
-    overlay.style.display = 'none';
-    loading.classList.add('visible');
-
-    setTimeout(() => {
-      applyGender();
-      applyLiving();
-
-      loading.style.opacity = '0';
-      loading.style.transition = 'opacity .5s';
-
-      setTimeout(() => {
-        loading.style.display = 'none';
-        guide.classList.add('visible');
-        document.getElementById('navBar').classList.add('visible');
-        document.getElementById('progressBar').classList.add('visible');
-        initScroll();
-      }, 500);
-    }, 1600);
-  }, 600);
-}
-
-// ── Gender replacement ─────────────────────────
-const GENDER = {
-  f: {
-    pronoun:    'ela',
-    pronoun_c:  'Ela',
-    poss:       'dela',
-    poss_c:     'Dela',
-    title:      'namorada',
-    title_c:    'Namorada',
-    art:        'a',
-    art_c:      'A',
-    sortudo:    'a pessoa mais sortuda',
-    badge:      'sua namorada ♀',
-  },
-  m: {
-    pronoun:    'ele',
-    pronoun_c:  'Ele',
-    poss:       'dele',
-    poss_c:     'Dele',
-    title:      'namorado',
-    title_c:    'Namorado',
-    art:        'o',
-    art_c:      'O',
-    sortudo:    'o cara mais sortudo',
-    badge:      'seu namorado ♂',
-  }
-};
-
-function applyGender() {
-  const G = GENDER[gender];
-
-  // Replace all .gn spans using data attributes
-  document.querySelectorAll('.gn').forEach(el => {
-    const key = gender === 'f' ? el.dataset.f : el.dataset.m;
-    if (key !== undefined) el.textContent = key;
+// Fade-up ao scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+      observer.unobserve(e.target);
+    }
   });
+}, { threshold: 0.1 });
 
-  // Profile badge
-  document.getElementById('badge-text').textContent = G.badge;
-}
+document.querySelectorAll('.mech-box, .bullet-list li, .cal-month, .offer-box').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity .5s ease, transform .5s ease';
+  observer.observe(el);
+});
 
-// ── Living replacement ─────────────────────────
-function applyLiving() {
-  if (living === 'distance') {
-    // show distance tips, hide together-only
-    document.querySelectorAll('.tip-distance').forEach(el => {
-      el.style.display = 'flex';
-    });
-    document.querySelectorAll('.tip-together').forEach(el => {
-      el.style.display = 'none';
-    });
-    // Bilhete locals: show distance version
-    document.querySelectorAll('.bilhete__local.tip-distance').forEach(el => {
-      el.style.display = 'flex';
-    });
-    document.querySelectorAll('.bilhete__local.tip-together').forEach(el => {
-      el.style.display = 'none';
-    });
-  }
-  // 'together' is the default (already visible)
-}
-
-// ── Scroll behaviours ──────────────────────────
-function initScroll() {
-  const bar = document.getElementById('progressBar');
-  const sections = ['momento-1','momento-3','momento-5','momento-7','bonus-emergencia'];
-  const navItems = document.querySelectorAll('.nav-item');
-
-  window.addEventListener('scroll', () => {
-    const max = document.body.scrollHeight - window.innerHeight;
-    bar.style.width = (window.scrollY / max * 100) + '%';
-
-    let cur = 0;
-    sections.forEach((id, i) => {
-      const el = document.getElementById(id);
-      if (el && window.scrollY >= el.offsetTop - 200) cur = i;
-    });
-    navItems.forEach((n, i) => n.classList.toggle('active', i === cur));
+// Esconde botão "não" até scroll chegar nele
+document.querySelectorAll('.btn-no').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    const confirmMsg = this.closest('.offer-box')
+      ? 'Tem certeza? Esta oferta desaparece quando você sair da página.'
+      : null;
+    if (!confirmMsg || confirm(confirmMsg)) {
+      window.location.href = this.href !== '#recusa' ? this.href : 'javascript:history.back()';
+    }
   });
-
-  // Fade-up observer
-  const fadeEls = document.querySelectorAll('.chapter, .bonus-section-page, .bilhete, .template, .audio-script, .carta, .menu-course');
-  const obs = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.style.animation = 'fadeUp 0.45s ease-out both';
-        obs.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.08 });
-  fadeEls.forEach(el => { el.style.opacity = '0'; obs.observe(el); });
-}
-
-// ── Recipe toggle ──────────────────────────────
-function toggleRecipe(btn) {
-  const content = btn.nextElementSibling;
-  const open = content.classList.toggle('open');
-  btn.textContent = open ? '▼ Fechar receita' : '▶ Ver receita completa';
-}
+});
 </script>
 
 </body>
