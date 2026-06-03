@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Espera — Uma Oferta Especial Pra Você</title>
+<title>Dia dos Namorados do Liso â Seu Roteiro Completo</title>
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -16,502 +16,1149 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '1015593400900909');
 fbq('track', 'PageView');
-fbq('track', 'ViewContent', {
-  content_name: 'Kit Complementos Namorados do Liso',
-  content_ids: ['kit-complementos-namorados'],
-  content_type: 'product',
-  value: 27.00,
-  currency: 'BRL'
-});
-window._fbqEventId=function(p){return p+'_'+Date.now()+'_'+Math.random().toString(36).substr(2,9);};
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1015593400900909&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700;900&family=Courier+Prime:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700;900&family=Courier+Prime:wght@400;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 <style>
-/* === RESET & BASE === */
+/* === RESET === */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--paper:#F0EAD6;--black:#1A1A1A;--red:#DC143C;--gold:#C5A945}
+:root{--paper:#F0EAD6;--black:#1A1A1A;--red:#DC143C;--gold:#C5A945;--night:#0f0f0f;--card:#232323}
 html{scroll-behavior:smooth}
-body{background:var(--paper);color:var(--black);font-family:'Courier Prime','Courier New',monospace;font-size:17px;line-height:1.65;overflow-x:hidden;position:relative}
-p{margin-bottom:16px}
+body{background:var(--night);color:var(--paper);font-family:'Courier Prime','Courier New',monospace;font-size:16px;line-height:1.7;overflow-x:hidden;max-width:520px;margin:0 auto}
+p{margin-bottom:14px}
+strong{color:var(--paper)}
+em{color:var(--gold);font-style:normal}
 
-/* grain + scanlines */
-body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.3;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E")}
-body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9998;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,.035) 3px,rgba(0,0,0,.035) 4px)}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.2;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E")}
 
 /* === TYPOGRAPHY === */
-.display{font-family:'Oswald',Impact,sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:-1px;line-height:.93}
+.display{font-family:'Oswald',Impact,sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:-1px;line-height:.92}
 .script{font-family:'Dancing Script',cursive;font-weight:700}
+.label{font-family:'Courier Prime',monospace;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--red);display:block;margin-bottom:8px}
 
 /* === ANIMATIONS === */
-@keyframes jitter{0%,100%{transform:translate(0,0) rotate(0deg)}10%{transform:translate(-1px,1px) rotate(.3deg)}30%{transform:translate(-2px,0) rotate(.1deg)}50%{transform:translate(-1px,-2px) rotate(.2deg)}70%{transform:translate(-1px,1px) rotate(-.1deg)}90%{transform:translate(0,2px) rotate(-.2deg)}}
-@keyframes glitch{0%,88%,100%{clip-path:none;transform:none}89%{clip-path:inset(0 0 85% 0);transform:translateX(-4px);color:var(--red)}90%{clip-path:inset(50% 0 30% 0);transform:translateX(4px)}91%{clip-path:none;transform:none}}
+@keyframes jitter{0%,100%{transform:translate(0,0)}20%{transform:translate(-1px,1px)}60%{transform:translate(1px,-1px)}}
 @keyframes flicker{0%,100%{opacity:1}48%{opacity:.2}49%{opacity:1}86%{opacity:0}87%{opacity:1}}
-@keyframes scrollLeft{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-@keyframes pulseRed{0%,100%{box-shadow:0 0 0 0 rgba(220,20,60,.45)}50%{box-shadow:0 0 0 16px rgba(220,20,60,0)}}
-@keyframes pulseGold{0%,100%{box-shadow:0 0 0 0 rgba(197,169,69,.45)}50%{box-shadow:0 0 0 16px rgba(197,169,69,0)}}
-@keyframes stampIn{0%{transform:scale(1.5) rotate(-8deg);opacity:0}70%{transform:scale(.96) rotate(1deg);opacity:1}100%{transform:scale(1) rotate(-2.5deg)}}
-@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-@keyframes checkDraw{0%{stroke-dashoffset:50}100%{stroke-dashoffset:0}}
-@keyframes glow{0%,100%{text-shadow:0 0 8px rgba(197,169,69,.4)}50%{text-shadow:0 0 24px rgba(197,169,69,.9)}}
-@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-5px)}40%{transform:translateX(5px)}60%{transform:translateX(-3px)}80%{transform:translateX(3px)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes fadeOut{from{opacity:1}to{opacity:0}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(220,20,60,.4)}50%{box-shadow:0 0 0 12px rgba(220,20,60,0)}}
+@keyframes glow{0%,100%{text-shadow:0 0 8px rgba(197,169,69,.4)}50%{text-shadow:0 0 20px rgba(197,169,69,.9)}}
+@keyframes wavebar{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.4)}}
+@keyframes slideUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes checkIn{from{transform:scale(0) rotate(-20deg);opacity:0}to{transform:scale(1) rotate(0deg);opacity:1}}
 
-/* === TICKER === */
-.ticker-wrap{overflow:hidden;background:var(--gold);border-top:3px solid var(--black);border-bottom:3px solid var(--black);padding:8px 0;position:relative}
-.ticker-inner{display:flex;white-space:nowrap;animation:scrollLeft 28s linear infinite}
-.ticker-inner span{font-family:'Courier Prime',monospace;font-weight:700;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--black);padding:0 36px}
-.ticker-inner span::after{content:' ✦ ';color:var(--red)}
-
-/* === LAYOUT === */
-.wrap{max-width:760px;margin:0 auto;padding:0 20px}
-.section-label{font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--red);display:block;margin-bottom:10px}
-.section-title{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(30px,6vw,58px);text-transform:uppercase;line-height:.9;margin-bottom:28px}
-.sec-header{text-align:center;margin-bottom:44px}
-
-/* === CONFIRMATION BAR === */
-.confirm-bar{background:var(--black);border-bottom:3px solid var(--gold);padding:18px 20px}
-.confirm-bar .wrap{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
-.confirm-bar__check{width:36px;height:36px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;flex-shrink:0;animation:jitter 4s infinite}
-.confirm-bar__text{font-family:'Courier Prime',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:rgba(240,234,214,.7)}
-.confirm-bar__text strong{color:var(--gold);font-size:14px}
-
-/* === HERO UPSELL === */
-.hero{background:var(--black);padding:80px 20px 60px;text-align:center;position:relative;overflow:hidden;border-bottom:3px solid var(--gold)}
-.hero__bg{position:absolute;font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(130px,32vw,340px);text-transform:uppercase;color:rgba(255,255,255,.018);white-space:nowrap;user-select:none;letter-spacing:-10px;top:50%;left:50%;transform:translate(-50%,-50%);line-height:1;pointer-events:none}
-.hero__eyebrow{display:inline-block;background:var(--gold);color:var(--black);font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:4px;text-transform:uppercase;padding:6px 18px;margin-bottom:28px;animation:jitter 3s infinite;font-weight:700}
-.hero__h1{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(34px,8vw,80px);text-transform:uppercase;line-height:.88;letter-spacing:-2px;color:var(--paper);margin-bottom:20px;animation:glitch 9s infinite}
-.hero__h1 em{color:var(--gold);font-style:normal;display:block;font-size:clamp(48px,12vw,110px)}
-.hero__sub{font-family:'Courier Prime',monospace;font-size:clamp(14px,2.2vw,18px);color:rgba(240,234,214,.75);max-width:540px;margin:0 auto 36px;line-height:1.6}
-
-/* === BRIDGE === */
-.bridge{background:var(--paper);padding:60px 20px}
-.bridge .wrap{max-width:680px}
-.bridge p{font-size:17px;line-height:1.75;margin-bottom:18px}
-.bridge .drop::first-letter{float:left;font-family:'Oswald',sans-serif;font-size:5em;line-height:.75;padding-right:12px;padding-top:8px;color:var(--gold);font-weight:900}
-.big-quote{font-family:'Oswald',sans-serif;font-size:clamp(20px,4vw,32px);font-weight:700;text-transform:uppercase;line-height:1.1;border-left:6px solid var(--gold);padding-left:20px;margin:32px 0;color:var(--black)}
-
-/* === OFFER ITEMS === */
-.items-section{background:var(--black);color:var(--paper);padding:80px 20px;position:relative;overflow:hidden}
-.items-section .wrap{position:relative;z-index:2}
-.items-section .bg-word{position:absolute;font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(140px,32vw,320px);color:rgba(197,169,69,.04);top:50%;right:-30px;transform:translateY(-50%);line-height:1;pointer-events:none;user-select:none;text-transform:uppercase}
-
-.item-card{border:2px solid rgba(197,169,69,.2);padding:28px 24px;margin-bottom:16px;position:relative;background:rgba(240,234,214,.03);transition:border-color .15s}
-.item-card:hover{border-color:rgba(197,169,69,.5)}
-.item-card__tag{position:absolute;top:-13px;left:20px;background:var(--gold);color:var(--black);font-family:'Oswald',sans-serif;font-weight:900;font-size:11px;letter-spacing:3px;text-transform:uppercase;padding:3px 14px}
-.item-card__layout{display:flex;gap:20px;align-items:flex-start}
-.item-card__icon{font-size:44px;flex-shrink:0;line-height:1;animation:jitter 5s infinite}
-.item-card__body{flex:1}
-.item-card__mech{font-family:'Courier Prime',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(197,169,69,.5);margin-bottom:6px;display:block}
-.item-card__title{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(20px,4vw,26px);text-transform:uppercase;color:var(--paper);line-height:1;margin-bottom:10px}
-.item-card__text{font-size:15px;color:rgba(240,234,214,.7);line-height:1.65}
-.item-card__price-line{display:flex;align-items:center;gap:12px;margin-top:14px;padding-top:14px;border-top:1px solid rgba(197,169,69,.12)}
-.item-card__price-strike{font-family:'Oswald',sans-serif;font-size:20px;color:rgba(240,234,214,.25);text-decoration:line-through;font-weight:700}
-.item-card__price-real{font-family:'Oswald',sans-serif;font-size:28px;color:var(--gold);font-weight:900;line-height:1}
-.item-card__price-real sup{font-size:14px;vertical-align:super;opacity:.7}
-.item-card__tag-inc{font-family:'Courier Prime',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;background:rgba(197,169,69,.12);color:var(--gold);padding:3px 8px;margin-left:auto}
-
-/* === VALUE STACK === */
-.value-section{background:var(--paper);padding:80px 20px}
-.value-section .wrap{max-width:680px}
-.value-table{width:100%;border-collapse:collapse;margin:24px 0}
-.value-table td{padding:14px 0;border-bottom:1px solid rgba(26,26,26,.08);font-size:16px}
-.value-table td:first-child{color:rgba(26,26,26,.7)}
-.value-table td:last-child{text-align:right;font-family:'Oswald',sans-serif;font-weight:700;font-size:18px;color:var(--black)}
-.value-table .strike td:last-child{text-decoration:line-through;opacity:.3}
-.value-table .total-row td{border-bottom:none;padding-top:18px}
-.value-table .total-row td:first-child{font-family:'Oswald',sans-serif;font-weight:900;font-size:18px;text-transform:uppercase}
-.value-table .total-row td:last-child{font-size:32px;color:var(--red);text-decoration:none;opacity:1}
-
-/* === OFFER BOX === */
-.offer-section{background:var(--paper);padding:0 20px 80px}
-.offer-section .wrap{max-width:680px}
-
-.offer-box{background:var(--black);color:var(--paper);padding:48px 36px;text-align:center;position:relative}
-.offer-box::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.85' numOctaves='4'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='200' filter='url(%23n)' opacity='.14'/%3E%3C/svg%3E");pointer-events:none}
-.offer-box>*{position:relative;z-index:1}
-.offer-box__eyebrow{font-family:'Courier Prime',monospace;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:block}
-.offer-box__title{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(20px,4.5vw,38px);text-transform:uppercase;line-height:1;margin-bottom:20px}
-.offer-box__was{font-family:'Courier Prime',monospace;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:rgba(240,234,214,.35);margin-bottom:4px;display:block}
-.offer-box__was span{text-decoration:line-through}
-.offer-box__price{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(80px,17vw,130px);color:var(--gold);line-height:1;animation:glow 3s infinite}
-.offer-box__price sup{font-size:36px;color:rgba(197,169,69,.7);vertical-align:super}
-.offer-box__includes{display:flex;flex-direction:column;gap:8px;margin:24px 0;text-align:left;border-top:1px solid rgba(197,169,69,.15);border-bottom:1px solid rgba(197,169,69,.15);padding:20px 0}
-.offer-box__item{display:flex;gap:10px;align-items:center;font-family:'Courier Prime',monospace;font-size:13px;color:rgba(240,234,214,.7)}
-.offer-box__item::before{content:'✦';color:var(--gold);flex-shrink:0}
-
-/* === BUTTONS === */
-.btn-yes{display:block;width:100%;background:var(--gold);color:var(--black);font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(18px,3.5vw,24px);text-transform:uppercase;letter-spacing:2px;padding:22px 40px;border:3px solid var(--black);cursor:pointer;text-decoration:none;position:relative;transition:transform .07s,background .07s;animation:pulseGold 2.4s infinite;text-align:center;margin-bottom:12px}
-.btn-yes::after{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='60'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='200' height='60' filter='url(%23n)' opacity='.08'/%3E%3C/svg%3E");pointer-events:none}
-.btn-yes:hover{background:#b89a30;transform:translate(-2px,-2px)}
-
-.btn-no{display:block;width:100%;background:none;border:none;font-family:'Courier Prime',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:rgba(240,234,214,.3);cursor:pointer;padding:14px;text-align:center;text-decoration:none;transition:color .1s}
-.btn-no:hover{color:rgba(240,234,214,.6)}
-
-.btn-note{display:block;font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(240,234,214,.35);margin-top:10px;text-align:center}
-
-/* === URGENCY === */
-.urgency-bar{background:var(--red);padding:14px 20px;text-align:center}
-.urgency-bar p{font-family:'Courier Prime',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--paper);margin:0;animation:flicker 7s infinite}
-.urgency-bar strong{color:var(--gold)}
-
-/* === GUARANTEE === */
-.guarantee-strip{background:var(--paper);padding:40px 20px}
-.guarantee-strip .wrap{max-width:680px;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
-.guarantee-badge{width:100px;height:100px;border-radius:50%;border:4px solid var(--black);background:var(--black);color:var(--paper);display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;animation:jitter 4s infinite}
-.guarantee-badge__days{font-family:'Oswald',sans-serif;font-weight:900;font-size:38px;color:var(--gold);line-height:1}
-.guarantee-badge__label{font-family:'Courier Prime',monospace;font-size:8px;letter-spacing:2px;text-transform:uppercase;text-align:center;line-height:1.4}
-.guarantee-text{flex:1}
-.guarantee-text h3{font-family:'Oswald',sans-serif;font-weight:900;font-size:22px;text-transform:uppercase;margin-bottom:8px}
-.guarantee-text p{font-size:15px;opacity:.7;margin:0}
-
-/* === DIVIDER === */
-hr.div{border:none;height:3px;background:linear-gradient(90deg,var(--gold),var(--black),var(--gold));position:relative;margin:0}
-hr.div::before{content:'✦';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:var(--paper);padding:0 12px;color:var(--gold);font-size:14px}
-
-/* === FOOTER === */
-.footer-bar{background:var(--black);color:rgba(240,234,214,.35);font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;text-align:center;padding:20px;border-top:2px solid var(--gold)}
-
-/* === RESPONSIVE === */
-@media(max-width:560px){
-  .item-card__layout{flex-direction:column;gap:12px}
-  .guarantee-strip .wrap{flex-direction:column;text-align:center}
+/* =============================================
+   QUIZ OVERLAY
+   ============================================= */
+#quiz-overlay{
+  position:fixed;inset:0;z-index:10000;
+  background:var(--night);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:32px 28px;
+  transition:opacity .6s ease;
 }
+#quiz-overlay.hiding{opacity:0;pointer-events:none}
+
+.quiz-logo{font-family:'Oswald',sans-serif;font-weight:900;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:32px;animation:flicker 5s infinite}
+
+/* progress dots */
+.quiz-dots{display:flex;gap:8px;margin-bottom:36px}
+.quiz-dot{width:8px;height:8px;border-radius:50%;background:rgba(240,234,214,.15);transition:background .3s}
+.quiz-dot.active{background:var(--red)}
+.quiz-dot.done{background:var(--gold)}
+
+/* step */
+.quiz-step{width:100%;max-width:360px;display:none;animation:slideUp .4s ease-out both}
+.quiz-step.visible{display:block}
+
+.quiz-eyebrow{font-family:'Courier Prime',monospace;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:rgba(240,234,214,.4);margin-bottom:12px}
+.quiz-question{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(26px,7vw,38px);text-transform:uppercase;color:var(--paper);line-height:.95;margin-bottom:8px}
+.quiz-sub{font-size:14px;color:rgba(240,234,214,.5);margin-bottom:32px;line-height:1.5}
+
+/* option cards */
+.quiz-options{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.quiz-card{
+  background:rgba(240,234,214,.04);
+  border:2px solid rgba(240,234,214,.1);
+  padding:24px 16px;
+  text-align:center;
+  cursor:pointer;
+  transition:border-color .15s,background .15s,transform .1s;
+  position:relative;
+  overflow:hidden;
+}
+.quiz-card:hover{border-color:var(--red);background:rgba(220,20,60,.07);transform:translateY(-2px)}
+.quiz-card.selected{border-color:var(--red);background:rgba(220,20,60,.12)}
+.quiz-card__icon{font-size:40px;display:block;margin-bottom:12px;line-height:1}
+.quiz-card__label{font-family:'Oswald',sans-serif;font-weight:900;font-size:18px;text-transform:uppercase;color:var(--paper);display:block;margin-bottom:4px}
+.quiz-card__sub{font-family:'Courier Prime',monospace;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:rgba(240,234,214,.4);display:block}
+.quiz-card::after{
+  content:'â';position:absolute;top:8px;right:10px;
+  font-family:'Oswald',sans-serif;font-weight:900;font-size:14px;color:var(--red);
+  opacity:0;transition:opacity .2s;
+}
+.quiz-card.selected::after{opacity:1}
+
+/* loading screen */
+#quiz-loading{
+  position:fixed;inset:0;z-index:10001;
+  background:var(--night);
+  display:none;flex-direction:column;align-items:center;justify-content:center;
+  padding:32px;
+}
+#quiz-loading.visible{display:flex}
+.loading-heart{animation:pulse 1.2s infinite}
+.loading-label{font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--red);margin-top:24px;animation:flicker 1.5s infinite}
+.loading-sub{font-family:'Dancing Script',cursive;font-size:22px;color:var(--gold);margin-top:12px;animation:glow 2s infinite;text-align:center}
+
+/* =============================================
+   GUIDE (hidden until quiz done)
+   ============================================= */
+#guide-content{opacity:0;transition:opacity .8s ease}
+#guide-content.visible{opacity:1}
+
+/* =============================================
+   COVER
+   ============================================= */
+.cover{background:var(--black);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 28px 48px;position:relative;overflow:hidden;border-bottom:3px solid var(--red)}
+.cover__bg{position:absolute;font-family:'Oswald',sans-serif;font-weight:900;font-size:260px;color:rgba(255,255,255,.018);text-transform:uppercase;top:50%;left:50%;transform:translate(-50%,-50%);line-height:1;pointer-events:none;user-select:none;white-space:nowrap}
+.cover__date{font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--red);margin-bottom:20px;animation:flicker 6s infinite}
+.cover__heart{margin:0 auto 24px;display:block}
+.cover__title{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(38px,10vw,64px);text-transform:uppercase;line-height:.9;color:var(--paper);margin-bottom:8px}
+.cover__title span{color:var(--red)}
+.cover__sub{font-family:'Dancing Script',cursive;font-size:clamp(22px,6vw,32px);color:var(--gold);margin-bottom:28px;animation:glow 3s infinite}
+.cover__tag{display:inline-block;background:var(--red);color:var(--paper);font-family:'Courier Prime',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;padding:6px 16px;border:1px solid rgba(240,234,214,.2);margin-bottom:32px}
+.cover__welcome{font-size:15px;color:rgba(240,234,214,.7);max-width:340px;margin:0 auto 36px;line-height:1.65}
+.cover__scroll{font-family:'Courier Prime',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(240,234,214,.3);animation:jitter 2s infinite;text-decoration:none;display:inline-block}
+
+/* === PROFILE BADGE (shown after quiz) === */
+.profile-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(240,234,214,.05);border:1px solid rgba(240,234,214,.12);padding:8px 16px;margin-bottom:20px;font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(240,234,214,.5)}
+.profile-badge span{color:var(--gold)}
+
+/* =============================================
+   CURVA INTRO
+   ============================================= */
+.curva-section{background:var(--card);padding:44px 24px;border-bottom:2px solid rgba(220,20,60,.25)}
+.curva-title{font-family:'Oswald',sans-serif;font-weight:900;font-size:28px;text-transform:uppercase;color:var(--paper);margin-bottom:12px;line-height:1}
+.curva-text{font-size:15px;color:rgba(240,234,214,.75);line-height:1.65;margin-bottom:20px}
+.curva-quote{font-family:'Dancing Script',cursive;font-size:22px;color:var(--gold);border-left:3px solid var(--red);padding-left:16px;margin:20px 0;display:block}
+.timeline-strip{display:flex;align-items:flex-start;gap:0;overflow-x:auto;padding:20px 0 8px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.timeline-strip::-webkit-scrollbar{display:none}
+.tl-item{display:flex;flex-direction:column;align-items:center;flex-shrink:0}
+.tl-dot{width:14px;height:14px;border-radius:50%;background:var(--red);border:2px solid var(--paper);z-index:2;flex-shrink:0}
+.tl-dot.peak{width:18px;height:18px;background:var(--gold);animation:pulse 2s infinite}
+.tl-line{width:36px;height:2px;background:rgba(220,20,60,.35);flex-shrink:0;align-self:flex-start;margin-top:6px}
+.tl-label{font-family:'Courier Prime',monospace;font-size:9px;letter-spacing:1px;text-transform:uppercase;color:rgba(240,234,214,.45);margin-top:8px;text-align:center;line-height:1.3;width:48px}
+
+/* =============================================
+   CHAPTERS
+   ============================================= */
+.chapter{padding:0}
+.chapter__header{padding:32px 24px 24px;position:relative;overflow:hidden;border-bottom:2px solid rgba(220,20,60,.2)}
+.chapter__header--dark{background:var(--black)}
+.chapter__header--card{background:var(--card)}
+.chapter__bg-num{position:absolute;right:-10px;top:50%;transform:translateY(-50%);font-family:'Oswald',sans-serif;font-weight:900;font-size:130px;color:rgba(220,20,60,.07);line-height:1;pointer-events:none;user-select:none}
+.chapter__num{font-family:'Oswald',sans-serif;font-weight:900;font-size:13px;letter-spacing:3px;color:var(--red);text-transform:uppercase;margin-bottom:8px;display:block}
+.chapter__time{font-family:'Courier Prime',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(240,234,214,.4);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.chapter__time::before{content:'â';font-size:8px;color:var(--red)}
+.chapter__title{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(26px,7vw,36px);text-transform:uppercase;color:var(--paper);line-height:.95;margin-bottom:12px}
+.chapter__desc{font-size:15px;color:rgba(240,234,214,.7);line-height:1.65}
+.content{padding:24px}
+.content p{font-size:15px;color:rgba(240,234,214,.8);line-height:1.7}
+
+/* =============================================
+   COMPONENT STYLES
+   ============================================= */
+.steps{list-style:none;margin:16px 0}
+.steps li{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid rgba(240,234,214,.06);font-size:15px;color:rgba(240,234,214,.8);align-items:flex-start}
+.steps li:last-child{border-bottom:none}
+.step-num{background:var(--red);color:var(--paper);font-family:'Oswald',sans-serif;font-weight:900;font-size:14px;min-width:28px;height:28px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;animation:jitter 5s infinite}
+
+.template{background:#0a0a0a;border:1px solid rgba(220,20,60,.3);border-left:4px solid var(--red);padding:20px 18px;margin:16px 0;position:relative;font-size:15px;line-height:1.75;color:rgba(240,234,214,.85)}
+.template__label{font-family:'Courier Prime',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:12px;display:block}
+.template .blank{background:rgba(220,20,60,.15);color:var(--gold);padding:0 6px;border-bottom:1px dashed rgba(197,169,69,.5);font-family:'Dancing Script',cursive;font-size:17px}
+.template .sent{font-family:'Courier Prime',monospace;color:rgba(240,234,214,.5);font-size:12px;text-align:right;margin-top:10px;display:block}
+
+.tip{background:rgba(197,169,69,.07);border-left:3px solid var(--gold);padding:14px 16px;margin:14px 0;font-size:14px;color:rgba(240,234,214,.7);display:flex;gap:12px;align-items:flex-start}
+.tip-icon{font-size:18px;flex-shrink:0;margin-top:-2px}
+.warn{background:rgba(220,20,60,.08);border-left:3px solid var(--red);padding:14px 16px;margin:14px 0;font-size:14px;color:rgba(240,234,214,.75);display:flex;gap:12px;align-items:flex-start}
+.warn-icon{font-size:18px;flex-shrink:0;margin-top:-2px}
+
+/* distance-only / together-only tips */
+.tip-distance{display:none}
+.tip-together{display:flex}
+
+.chapter-divider{height:6px;background:linear-gradient(90deg,var(--red),rgba(220,20,60,.1));margin:0}
+.band-red{background:var(--red);padding:10px 24px}
+.band-red .band-inner{font-family:'Oswald',sans-serif;font-weight:900;font-size:13px;letter-spacing:4px;text-transform:uppercase;color:var(--paper);display:flex;align-items:center;gap:10px}
+.band-red .band-inner::before,.band-red .band-inner::after{content:'';flex:1;height:1px;background:rgba(240,234,214,.3)}
+
+.bilhetes-grid{display:flex;flex-direction:column;gap:12px;margin:16px 0}
+.bilhete{background:#0a0a0a;border:1px solid rgba(240,234,214,.08);padding:18px 16px;position:relative;font-family:'Dancing Script',cursive;font-size:17px;color:rgba(240,234,214,.85);line-height:1.6}
+.bilhete__num{font-family:'Courier Prime',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:8px;display:block}
+.bilhete__local{font-family:'Courier Prime',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(240,234,214,.3);margin-top:10px;display:flex;align-items:center;gap:6px}
+.bilhete__local::before{content:'ð';font-size:10px}
+
+.audio-script{background:#0a0a0a;border:2px solid rgba(220,20,60,.25);padding:24px 20px;margin:16px 0;position:relative}
+.audio-script__wave{display:flex;align-items:center;gap:3px;margin-bottom:16px}
+.wave-bar{width:3px;background:var(--red);border-radius:2px;animation:wavebar 1.2s ease-in-out infinite}
+.wave-bar:nth-child(2){height:16px;animation-delay:.1s}
+.wave-bar:nth-child(3){height:24px;animation-delay:.2s}
+.wave-bar:nth-child(4){height:18px;animation-delay:.3s}
+.wave-bar:nth-child(5){height:28px;animation-delay:.4s}
+.wave-bar:nth-child(6){height:14px;animation-delay:.5s}
+.wave-bar:nth-child(7){height:20px;animation-delay:.6s}
+.wave-bar:nth-child(1){height:12px}
+.audio-label{font-family:'Courier Prime',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:14px;display:block}
+.audio-text{font-size:16px;color:rgba(240,234,214,.88);line-height:1.8;font-family:'Courier Prime',monospace}
+.audio-text .blank{color:var(--gold);font-family:'Dancing Script',cursive;font-size:19px}
+.audio-timer{font-family:'Courier Prime',monospace;font-size:10px;color:rgba(240,234,214,.3);letter-spacing:2px;margin-top:12px;display:block;text-align:right}
+
+.items-list{list-style:none;margin:14px 0}
+.items-list li{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid rgba(240,234,214,.06);font-size:14px;color:rgba(240,234,214,.8);align-items:flex-start}
+.items-list li:last-child{border-bottom:none}
+.item-bullet{color:var(--gold);font-size:16px;flex-shrink:0}
+.item-free{font-family:'Courier Prime',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;background:rgba(197,169,69,.15);color:var(--gold);padding:1px 6px;margin-left:auto;flex-shrink:0;align-self:center}
+
+.menu-section{margin:16px 0}
+.menu-course{background:#0a0a0a;border-top:2px solid var(--red);padding:18px 16px;margin-bottom:10px}
+.menu-course__label{font-family:'Courier Prime',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:6px;display:block}
+.menu-course__name{font-family:'Oswald',sans-serif;font-weight:700;font-size:20px;text-transform:uppercase;color:var(--paper);margin-bottom:10px}
+.menu-course__text{font-size:14px;color:rgba(240,234,214,.7);line-height:1.6}
+.menu-course__cost{font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:2px;color:var(--gold);margin-top:10px;display:block}
+.recipe-toggle{background:none;border:1px solid rgba(220,20,60,.3);color:var(--red);font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:8px 14px;cursor:pointer;margin-top:10px;width:100%;text-align:left;transition:background .1s}
+.recipe-toggle:hover{background:rgba(220,20,60,.1)}
+.recipe-content{display:none;margin-top:12px;padding-top:12px;border-top:1px dashed rgba(240,234,214,.1)}
+.recipe-content.open{display:block}
+.recipe-step{display:flex;gap:10px;padding:8px 0;font-size:13px;color:rgba(240,234,214,.75);line-height:1.55}
+.recipe-step-num{color:var(--red);font-weight:700;flex-shrink:0;font-family:'Oswald',sans-serif;font-size:14px}
+.ingredients{margin-bottom:12px;padding-bottom:12px;border-bottom:1px dashed rgba(240,234,214,.08)}
+.ingredient-tag{display:inline-block;background:rgba(197,169,69,.1);color:var(--gold);font-size:12px;padding:3px 10px;margin:3px 3px 3px 0;font-family:'Courier Prime',monospace}
+.total-cost{background:rgba(220,20,60,.1);border:1px solid rgba(220,20,60,.3);padding:14px 16px;display:flex;justify-content:space-between;align-items:center;margin-top:14px}
+.total-cost__label{font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(240,234,214,.5)}
+.total-cost__price{font-family:'Oswald',sans-serif;font-weight:900;font-size:28px;color:var(--red)}
+
+.carta{background:#0a0a0a;border:1px solid rgba(240,234,214,.08);padding:28px 22px;margin:16px 0;font-family:'Dancing Script',cursive;font-size:18px;line-height:1.85;color:rgba(240,234,214,.88);position:relative}
+.carta .carta-inner{position:relative;z-index:1}
+.carta .blank{color:var(--gold);border-bottom:1px dashed rgba(197,169,69,.5);font-size:20px}
+.carta .greeting{color:var(--red);font-size:22px;display:block;margin-bottom:12px}
+.carta .sign{color:var(--red);font-size:22px;display:block;margin-top:20px;text-align:right}
+.carta .date{font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(240,234,214,.3);display:block;margin-bottom:20px}
+
+.fechamento{background:var(--black);padding:32px 24px;border-top:2px solid rgba(197,169,69,.2)}
+.ritual-steps{display:flex;flex-direction:column;gap:16px;margin:20px 0}
+.ritual-step{display:flex;gap:16px;align-items:flex-start}
+.ritual-dot{width:36px;height:36px;border-radius:50%;border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Oswald',sans-serif;font-weight:900;font-size:14px;color:var(--gold)}
+.ritual-content strong{font-family:'Oswald',sans-serif;font-size:15px;text-transform:uppercase;letter-spacing:.5px;display:block;margin-bottom:4px;color:var(--paper)}
+.ritual-content p{font-size:14px;color:rgba(240,234,214,.65);margin:0;line-height:1.6}
+
+.bonus-section-page{background:var(--card);border-top:4px solid var(--gold);padding:32px 24px}
+.bonus-badge{display:inline-block;background:var(--gold);color:var(--black);font-family:'Oswald',sans-serif;font-weight:900;font-size:11px;letter-spacing:3px;text-transform:uppercase;padding:4px 14px;margin-bottom:14px}
+.bonus-title{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(22px,6vw,30px);text-transform:uppercase;color:var(--paper);line-height:1;margin-bottom:16px}
+
+/* === ORDER BUMPS === */
+.ob-section{background:#000;border-top:4px solid var(--gold);padding:36px 24px;position:relative}
+.ob-section::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(197,169,69,.05) 1px,transparent 1px);background-size:16px 16px;pointer-events:none}
+.ob-header{margin-bottom:24px;position:relative;z-index:1}
+.ob-eyebrow{font-family:'Courier Prime',monospace;font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:8px}
+.ob-title{font-family:'Oswald',sans-serif;font-weight:900;font-size:clamp(22px,6vw,30px);text-transform:uppercase;color:var(--paper);line-height:.95;margin-bottom:8px}
+.ob-sub{font-size:13px;color:rgba(240,234,214,.5);line-height:1.55}
+.ob-card{background:rgba(240,234,214,.03);border:1px solid rgba(197,169,69,.2);padding:20px 18px;margin-bottom:12px;display:flex;flex-direction:column;position:relative;z-index:1;transition:border-color .15s}
+.ob-card:hover{border-color:rgba(197,169,69,.55)}
+.ob-card__row{display:flex;align-items:flex-start;gap:14px;margin-bottom:12px}
+.ob-card__icon{font-size:32px;flex-shrink:0;line-height:1;margin-top:2px}
+.ob-card__meta{flex:1}
+.ob-card__tag{font-family:'Courier Prime',monospace;font-size:8px;letter-spacing:3px;text-transform:uppercase;color:rgba(197,169,69,.5);display:block;margin-bottom:4px}
+.ob-card__title{font-family:'Oswald',sans-serif;font-weight:900;font-size:18px;text-transform:uppercase;color:var(--paper);line-height:1;margin-bottom:4px}
+.ob-card__mechanism{display:inline-block;background:rgba(197,169,69,.1);color:var(--gold);font-family:'Courier Prime',monospace;font-size:8px;letter-spacing:2px;text-transform:uppercase;padding:2px 7px}
+.ob-card__text{font-size:13px;color:rgba(240,234,214,.6);line-height:1.6;margin-bottom:14px}
+.ob-card__connects{font-family:'Courier Prime',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(220,20,60,.55);margin-bottom:14px;display:flex;align-items:center;gap:5px}
+.ob-card__connects::before{content:'â³';color:var(--red);font-size:11px}
+.ob-card__footer{border-top:1px solid rgba(197,169,69,.12);padding-top:14px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.ob-card__price{font-family:'Oswald',sans-serif;font-weight:900;font-size:30px;color:var(--gold);line-height:1}
+.ob-card__price sup{font-size:13px;vertical-align:super;opacity:.7}
+.ob-btn{display:inline-block;background:rgba(197,169,69,.1);border:1px solid var(--gold);color:var(--gold);font-family:'Oswald',sans-serif;font-weight:900;font-size:12px;letter-spacing:2px;text-transform:uppercase;padding:10px 18px;cursor:pointer;text-decoration:none;transition:background .1s,color .1s;flex-shrink:0}
+.ob-btn:hover,.ob-btn:active{background:var(--gold);color:var(--black)}
+.ob-total{background:rgba(197,169,69,.06);border:1px solid rgba(197,169,69,.2);padding:18px;display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:8px;flex-wrap:wrap;position:relative;z-index:1}
+.ob-total__label{font-family:'Courier Prime',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(240,234,214,.45)}
+.ob-total__price{font-family:'Oswald',sans-serif;font-weight:900;font-size:34px;color:var(--gold)}
+.ob-total__note{font-family:'Courier Prime',monospace;font-size:9px;letter-spacing:1px;text-transform:uppercase;color:rgba(240,234,214,.3);display:block;margin-top:2px}
+
+.guide-footer{background:#000;border-top:2px solid var(--red);padding:32px 24px;text-align:center}
+.guide-footer__title{font-family:'Oswald',sans-serif;font-weight:900;font-size:28px;text-transform:uppercase;color:var(--red);margin-bottom:8px}
+.guide-footer__sub{font-family:'Dancing Script',cursive;font-size:20px;color:var(--gold);margin-bottom:20px}
+.guide-footer__text{font-size:13px;color:rgba(240,234,214,.35);letter-spacing:1px;line-height:1.6}
+
+.nav-bar{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:520px;background:rgba(10,10,10,.96);border-top:2px solid rgba(220,20,60,.3);display:none;justify-content:space-around;padding:10px 0;z-index:1000;backdrop-filter:blur(8px)}
+.nav-bar.visible{display:flex}
+.nav-item{display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;padding:0 8px;opacity:.45;transition:opacity .15s;text-decoration:none}
+.nav-item.active{opacity:1}
+.nav-item svg{width:20px;height:20px}
+.nav-item span{font-family:'Courier Prime',monospace;font-size:8px;letter-spacing:1px;text-transform:uppercase;color:var(--paper)}
+
+.progress-bar{position:fixed;top:0;left:0;width:0%;height:3px;background:var(--red);z-index:9998;transition:width .1s;display:none}
+.progress-bar.visible{display:block}
+
+.spacer{height:80px}
 </style>
 </head>
 <body>
 
-<!-- TICKER GOLD (diferencia do ticker vermelho da landing) -->
-<div class="ticker-wrap" aria-hidden="true">
-  <div class="ticker-inner">
-    <span>oferta especial</span><span>só aparece aqui</span><span>três complementos</span><span>R$30 no total</span><span>acesso imediato</span><span>expira logo</span><span>complemento do roteiro</span><span>não aparece de novo</span>
-    <span>oferta especial</span><span>só aparece aqui</span><span>três complementos</span><span>R$30 no total</span><span>acesso imediato</span><span>expira logo</span><span>complemento do roteiro</span><span>não aparece de novo</span>
+<!-- =============================================
+     QUIZ OVERLAY
+     ============================================= -->
+<div id="quiz-overlay">
+
+  <div class="quiz-logo">Dia dos Namorados do Liso</div>
+
+  <!-- dots -->
+  <div class="quiz-dots">
+    <div class="quiz-dot active" id="dot-1"></div>
+    <div class="quiz-dot" id="dot-2"></div>
   </div>
+
+  <!-- PASSO 1: gÃªnero do parceiro -->
+  <div class="quiz-step visible" id="step-1">
+    <div class="quiz-eyebrow">// diagnÃ³stico â passo 1 de 2</div>
+    <h2 class="quiz-question display">Seu amor<br>Ã©...</h2>
+    <p class="quiz-sub">Vou adaptar todas as mensagens, pronomes e dicas pra vocÃª.</p>
+    <div class="quiz-options">
+      <div class="quiz-card" onclick="selectGender('f')">
+        <span class="quiz-card__icon">â</span>
+        <span class="quiz-card__label">Mulher</span>
+        <span class="quiz-card__sub">namorada / esposa</span>
+      </div>
+      <div class="quiz-card" onclick="selectGender('m')">
+        <span class="quiz-card__icon">â</span>
+        <span class="quiz-card__label">Homem</span>
+        <span class="quiz-card__sub">namorado / marido</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PASSO 2: moram juntos? -->
+  <div class="quiz-step" id="step-2">
+    <div class="quiz-eyebrow">// diagnÃ³stico â passo 2 de 2</div>
+    <h2 class="quiz-question display">VocÃªs<br>moram...</h2>
+    <p class="quiz-sub">Vou destacar as dicas certas pro seu caso.</p>
+    <div class="quiz-options">
+      <div class="quiz-card" onclick="selectLiving('together')">
+        <span class="quiz-card__icon">ð </span>
+        <span class="quiz-card__label">Juntos</span>
+        <span class="quiz-card__sub">mesma casa / cidade</span>
+      </div>
+      <div class="quiz-card" onclick="selectLiving('distance')">
+        <span class="quiz-card__icon">ð</span>
+        <span class="quiz-card__label">Ã distÃ¢ncia</span>
+        <span class="quiz-card__sub">cidades diferentes</span>
+      </div>
+    </div>
+  </div>
+
 </div>
 
-<!-- =========================================================
-     BARRA DE CONFIRMAÇÃO
-     ========================================================= -->
-<div class="confirm-bar">
-  <div class="wrap">
-    <div class="confirm-bar__check">
-      <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-        <path d="M3 9l4.5 4.5L15 5" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="50" stroke-dashoffset="50" style="animation:checkDraw .6s ease-out .3s forwards"/>
-      </svg>
-    </div>
-    <div class="confirm-bar__text">
-      <strong>Compra confirmada!</strong> Seu roteiro já está a caminho do e-mail.
-    </div>
-  </div>
+<!-- =============================================
+     LOADING SCREEN
+     ============================================= -->
+<div id="quiz-loading">
+  <svg class="loading-heart" width="72" height="64" viewBox="0 0 72 64" fill="none">
+    <path d="M36 60S6 44 6 22A16 16 0 0 1 36 10a16 16 0 0 1 30 12c0 22-30 38-30 38z" fill="rgba(220,20,60,.3)" stroke="#DC143C" stroke-width="2"/>
+  </svg>
+  <div class="loading-label">Personalizando seu roteiro...</div>
+  <div class="loading-sub script">Tudo certo. Vamos lÃ¡.</div>
 </div>
 
-<!-- =========================================================
-     HERO
-     ========================================================= -->
-<section class="hero">
-  <div class="hero__bg" aria-hidden="true">MAIS</div>
+<!-- =============================================
+     GUIA (conteÃºdo principal)
+     ============================================= -->
+<div id="guide-content">
 
-  <div style="max-width:760px;margin:0 auto;position:relative;z-index:2">
-    <div class="hero__eyebrow">⚠ espera — não feche essa página</div>
+<!-- Progress bar -->
+<div class="progress-bar" id="progressBar"></div>
 
-    <h1 class="hero__h1 display">
-      Você comprou o roteiro.
-      <em>E o resto do dia?</em>
-    </h1>
+<!-- CAPA -->
+<section class="cover" id="capa">
+  <div class="cover__bg" aria-hidden="true">LISO</div>
+  <div class="cover__date">12 de junho Â· Dia dos Namorados</div>
 
-    <p class="hero__sub">
-      Seu roteiro está pronto. Mas tem três peças que faltam — e que só aparecem aqui, uma única vez, pelo menor preço possível.
-    </p>
+  <svg class="cover__heart" width="80" height="72" viewBox="0 0 80 72" fill="none" style="animation:jitter 3s infinite">
+    <path d="M40 68S4 48 4 24A18 18 0 0 1 40 12a18 18 0 0 1 36 12c0 24-36 44-36 44z" fill="rgba(220,20,60,.25)" stroke="#DC143C" stroke-width="2"/>
+    <path d="M62 18l1.5 3 3 .4-2.2 2.2.5 3-2.8-1.5-2.8 1.5.5-3-2.2-2.2 3-.4z" fill="#C5A945" opacity=".8"/>
+    <path d="M20 14l1 2 2 .3-1.5 1.5.4 2-1.9-1-1.9 1 .4-2-1.5-1.5 2-.3z" fill="#C5A945" opacity=".6"/>
+  </svg>
 
-    <a href="#oferta" class="btn-yes" style="max-width:480px;margin:0 auto 16px;display:block">
-      Sim, quero completar meu kit →
-    </a>
-    <a href="#nao" class="btn-no">não, prefiro deixar o roteiro incompleto</a>
+  <!-- profile badge personalizado -->
+  <div class="profile-badge" id="profile-badge">
+    roteiro para Â· <span id="badge-text">seu amor</span>
+  </div>
+
+  <h1 class="cover__title display">Dia dos<br>Namorados<br><span>do Liso</span></h1>
+  <div class="cover__sub script">Seu Roteiro Completo</div>
+  <div class="cover__tag">7 momentos Â· do amanhecer Ã  meia-noite</div>
+  <p class="cover__welcome">
+    Tudo que vocÃª precisa estÃ¡ aqui. Siga passo a passo, use os modelos prontos e prepare-se pra <span id="cover-desc">o</span> Dia dos Namorados mais inesquecÃ­vel que vocÃªs jÃ¡ tiveram.
+  </p>
+  <a href="#momento-1" class="cover__scroll">â¼ comeÃ§ar o roteiro â¼</a>
+</section>
+
+<!-- CURVA INTRO -->
+<section class="curva-section" id="intro">
+  <span class="label">// antes de comeÃ§ar</span>
+  <div class="curva-title display">A Curva da EmoÃ§Ã£o</div>
+  <p class="curva-text">
+    Este roteiro foi construÃ­do em torno de um mÃ©todo chamado <strong>Curva da EmoÃ§Ã£o</strong>: em vez de um Ãºnico gesto caro, vocÃª distribui <em>7 micro-momentos</em> ao longo do dia â cada um subindo um pouco a temperatura emocional.
+  </p>
+  <span class="curva-quote">"Dinheiro compra um momento.<br>A Curva compra o dia inteiro."</span>
+  <p class="curva-text" style="margin-bottom:4px">Siga a ordem. Cada momento foi calibrado para o horÃ¡rio certo. NÃ£o pule etapas â cada uma prepara o terreno para a prÃ³xima.</p>
+  <div class="timeline-strip">
+    <div class="tl-item"><div class="tl-dot"></div><div class="tl-label">manhÃ£<br>bom dia</div></div>
+    <div class="tl-line"></div>
+    <div class="tl-item"><div class="tl-dot"></div><div class="tl-label">dia<br>bilhetes</div></div>
+    <div class="tl-line"></div>
+    <div class="tl-item"><div class="tl-dot"></div><div class="tl-label">tarde<br>Ã¡udio</div></div>
+    <div class="tl-line"></div>
+    <div class="tl-item"><div class="tl-dot"></div><div class="tl-label">17h<br>ambiente</div></div>
+    <div class="tl-line"></div>
+    <div class="tl-item"><div class="tl-dot"></div><div class="tl-label">jantar<br>chef</div></div>
+    <div class="tl-line"></div>
+    <div class="tl-item"><div class="tl-dot"></div><div class="tl-label">noite<br>carta</div></div>
+    <div class="tl-line"></div>
+    <div class="tl-item"><div class="tl-dot peak"></div><div class="tl-label">00:00<br>pico</div></div>
   </div>
 </section>
 
-<!-- URGENCY BAR -->
-<div class="urgency-bar">
-  <p>⚡ <strong>Oferta única</strong> — esta página some quando você sair. Não aparece no checkout, não aparece depois.</p>
-</div>
+<!-- =============================================
+     MOMENTO 1
+     ============================================= -->
+<section class="chapter" id="momento-1">
+  <div class="chapter__header chapter__header--dark">
+    <div class="chapter__bg-num" aria-hidden="true">1</div>
+    <span class="chapter__num">Momento 01</span>
+    <div class="chapter__time">6h â 8h da manhÃ£ Â· antes <span class="gn" data-f="dela" data-m="dele">dela</span> acordar</div>
+    <h2 class="chapter__title display">O Bom Dia<br>que Desarma</h2>
+    <p class="chapter__desc">O dia comeÃ§a antes <span class="gn" data-f="dela" data-m="dele">dela</span> abrir os olhos. Uma mensagem no celular que vai fazer <span class="gn" data-f="ela" data-m="ele">ela</span> sorrir sem entender por quÃª ainda.</p>
+  </div>
+  <div class="content">
+    <span class="label">// o que fazer</span>
+    <ul class="steps">
+      <li><div class="step-num">1</div>Programe ou acorde antes <span class="gn" data-f="dela" data-m="dele">dela</span> â mande a mensagem antes que <span class="gn" data-f="ela" data-m="ele">ela</span> veja o celular pela primeira vez.</li>
+      <li><div class="step-num">2</div>NÃ£o mencione "Dia dos Namorados" ainda. Deixe parecer um bom dia normal â sÃ³ muito mais caloroso.</li>
+      <li class="tip-together"><div class="step-num">3</div>Se morar junto: deixe uma anotaÃ§Ã£o no lugar onde <span class="gn" data-f="ela" data-m="ele">ela</span> costuma pegar o celular ou no espelho do banheiro.</li>
+    </ul>
 
-<!-- =========================================================
-     BRIDGE
-     ========================================================= -->
-<section class="bridge">
-  <div class="wrap">
-    <p class="drop">
-      Você já tem o roteiro. Os 7 momentos, as frases prontas, o cardápio, o fechamento da meia-noite. Está tudo lá.
-    </p>
-    <p>
-      Mas quem comprou sabe: depois que você lê o Momento 6, a primeira coisa que passa pela cabeça é <em>"e se eu quiser mandar outras cartas depois?"</em>. Depois do Momento 5: <em>"e se eu quiser variar o jantar nos próximos meses?"</em>. Depois de tudo: <em>"como faço um presente físico pra dar além do roteiro?"</em>
-    </p>
-    <p>
-      São três lacunas reais. Três complementos que foram feitos exatamente pra isso.
-    </p>
-
-    <div class="big-quote">
-      O roteiro cobre o dia 12.<br>
-      O Kit Completo cobre o <em>resto do ano.</em>
+    <span class="label">// mensagem modelo â copie e adapte</span>
+    <div class="template">
+      <span class="template__label">modelo Â· WhatsApp / mensagem de texto</span>
+      Bom dia, <span class="blank">[nome <span class="gn" data-f="dela" data-m="dele">dela</span>]</span>. âï¸<br><br>
+      Acordei hoje pensando que sou <span class="gn" data-f="a pessoa mais sortuda" data-m="o cara mais sortudo">a pessoa mais sortuda</span> do mundo por ter vocÃª. NÃ£o Ã© todo dia que isso passa pela minha cabeÃ§a de um jeito tÃ£o claro â mas hoje passou.<br><br>
+      Boa sorte tentando ter um dia normal depois de ler isso. ð<br><br>
+      Te amo.
+      <span class="sent">enviado Â· 06:47</span>
     </div>
 
-    <p>
-      E o preço conjunto não existe fora daqui. Cada um separado soma R$30. Aqui, agora, você pega os três por <strong>R$27</strong> — e não volta a ver essa oferta.
-    </p>
+    <div class="tip">
+      <span class="tip-icon">ð¡</span>
+      <span>Personalize com algo que Ã© de vocÃªs â um lugar, um momento, uma lembranÃ§a. Uma frase especÃ­fica vale 10x mais que qualquer texto genÃ©rico.</span>
+    </div>
+    <div class="tip">
+      <span class="tip-icon">ð</span>
+      <span><strong>VersÃ£o ligaÃ§Ã£o:</strong> ligue assim que <span class="gn" data-f="ela" data-m="ele">ela</span> acordar. Diga "SÃ³ liguei pra te dar bom dia de verdade hoje." E desliga. <span class="gn" data-f="Ela" data-m="Ele">Ela</span> vai sorrir o dia todo.</span>
+    </div>
   </div>
 </section>
 
-<hr class="div">
+<div class="chapter-divider"></div>
 
-<!-- =========================================================
-     OS 3 ITENS
-     ========================================================= -->
-<section class="items-section">
-  <div class="bg-word" aria-hidden="true">KIT</div>
-  <div class="wrap">
+<!-- =============================================
+     MOMENTO 2
+     ============================================= -->
+<section class="chapter" id="momento-2">
+  <div class="chapter__header chapter__header--card">
+    <div class="chapter__bg-num" aria-hidden="true">2</div>
+    <span class="chapter__num">Momento 02</span>
+    <div class="chapter__time">manhÃ£ e tarde Â· ao longo do dia</div>
+    <h2 class="chapter__title display">A CaÃ§a<br>aos Bilhetes</h2>
+    <p class="chapter__desc">Cinco bilhetinhos â escondidos pela casa ou enviados digitalmente. <span class="gn" data-f="Ela" data-m="Ele">Ela</span> vai passando o dia encontrando pedacinhos de vocÃª.</p>
+  </div>
+  <div class="content">
 
-    <div class="sec-header">
-      <span class="section-label" style="color:var(--gold);text-align:center;display:block">O que você recebe agora</span>
-      <h2 class="section-title display" style="color:var(--paper);text-align:center">
-        Três complementos.<br><span style="color:var(--gold)">Um preço.</span>
-      </h2>
+    <div class="tip-together">
+      <div class="tip" style="margin:0 0 16px;width:100%">
+        <span class="tip-icon">ð </span>
+        <span><strong>VocÃªs moram juntos:</strong> esconda os bilhetes fÃ­sicos antes de <span class="gn" data-f="ela" data-m="ele">ela</span> acordar.</span>
+      </div>
+    </div>
+    <div class="tip-distance">
+      <div class="tip" style="margin:0 0 16px;width:100%">
+        <span class="tip-icon">ð±</span>
+        <span><strong>Ã distÃ¢ncia:</strong> agende o envio de cada bilhete como mensagem, espaÃ§ado em 1h30. Use rascunhos no WhatsApp.</span>
+      </div>
     </div>
 
-    <!-- ITEM 1 -->
-    <div class="item-card">
-      <div class="item-card__tag">Incluso 01</div>
-      <div class="item-card__layout">
-        <span class="item-card__icon">💌</span>
-        <div class="item-card__body">
-          <span class="item-card__mech">// Estrutura 4 Camadas</span>
-          <div class="item-card__title">Pacote Cartas<br>que Derretem</div>
-          <p class="item-card__text">
-            20 modelos prontos de cartas e declarações — pra Dia dos Namorados, aniversário, sem motivo nenhum. É só preencher o nome e a memória. Mata de vez o medo de "não sei escrever" — pra sempre.
-          </p>
-          <p class="item-card__text" style="margin-bottom:0">
-            <strong style="color:var(--gold)">Conecta ao:</strong> Momento 6 do roteiro (A Carta) — e vai muito além dele.
-          </p>
-          <div class="item-card__price-line">
-            <span class="item-card__price-strike">R$9</span>
-            <span class="item-card__price-real"><sup>R$</sup>9</span>
-            <span class="item-card__tag-inc">incluso no kit</span>
+    <span class="label tip-together">// onde esconder (morando junto)</span>
+    <ul class="items-list tip-together">
+      <li><span class="item-bullet">â</span><span><strong>Bilhete 1</strong> â dentro da xÃ­cara de cafÃ© ou embaixo da chaleira</span></li>
+      <li><span class="item-bullet">â</span><span><strong>Bilhete 2</strong> â na bolsa <span class="gn" data-f="dela" data-m="dele">dela</span> (dentro de um bolsinho que <span class="gn" data-f="ela" data-m="ele">ela</span> usa)</span></li>
+      <li><span class="item-bullet">â</span><span><strong>Bilhete 3</strong> â no espelho do banheiro com fita crepe</span></li>
+      <li><span class="item-bullet">â</span><span><strong>Bilhete 4</strong> â no bolso de uma roupa que <span class="gn" data-f="ela" data-m="ele">ela</span> vai usar hoje</span></li>
+      <li><span class="item-bullet">â</span><span><strong>Bilhete 5</strong> â embaixo do travesseiro <span class="gn" data-f="dela" data-m="dele">dela</span> â pra encontrar Ã  noite</span></li>
+    </ul>
+
+    <span class="label">// 5 modelos prontos â imprima ou escreva Ã  mÃ£o</span>
+    <div class="bilhetes-grid">
+      <div class="bilhete">
+        <span class="bilhete__num">Bilhete 01 Â· abertura</span>
+        Hoje tem um segredo se desdobrando sÃ³ pra vocÃª.<br>Fique de olho. O dia inteiro. ð
+        <div class="bilhete__local tip-together">xÃ­cara de cafÃ© / chaleira</div>
+        <div class="bilhete__local tip-distance" style="display:none">enviar Ã s 8h</div>
+      </div>
+      <div class="bilhete">
+        <span class="bilhete__num">Bilhete 02 Â· memÃ³ria</span>
+        Lembra quando a gente <span class="blank">[memÃ³ria especÃ­fica de vocÃªs]</span>?<br>Eu lembro. E toda vez que lembro, sorrio igual a um idiota. ð
+        <div class="bilhete__local tip-together">bolsa / bolso</div>
+        <div class="bilhete__local tip-distance" style="display:none">enviar Ã s 9h30</div>
+      </div>
+      <div class="bilhete">
+        <span class="bilhete__num">Bilhete 03 Â· declaraÃ§Ã£o</span>
+        VocÃª jÃ¡ <span class="gn" data-f="se olhou" data-m="se olhou">se olhou</span> no espelho hoje?<br>EntÃ£o vocÃª jÃ¡ viu minha parte favorita do dia. ð¤
+        <div class="bilhete__local tip-together">espelho do banheiro</div>
+        <div class="bilhete__local tip-distance" style="display:none">enviar Ã s 11h</div>
+      </div>
+      <div class="bilhete">
+        <span class="bilhete__num">Bilhete 04 Â· antecipaÃ§Ã£o</span>
+        Ainda tem mais. Muito mais.<br>Te encontro hoje. Deixa o restante do dia comigo. â¤ï¸
+        <div class="bilhete__local tip-together">armÃ¡rio / bolso de roupa</div>
+        <div class="bilhete__local tip-distance" style="display:none">enviar Ã s 13h</div>
+      </div>
+      <div class="bilhete">
+        <span class="bilhete__num">Bilhete 05 Â· noite</span>
+        Chegou atÃ© aqui.<br>O melhor ainda estÃ¡ por vir.<br>Feliz Dia dos Namorados, <span class="blank">[nome <span class="gn" data-f="dela" data-m="dele">dela</span>]</span>. ð
+        <div class="bilhete__local tip-together">travesseiro Â· encontrar Ã  noite</div>
+        <div class="bilhete__local tip-distance" style="display:none">enviar Ã s 22h</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="band-red"><div class="band-inner">Subindo a temperatura</div></div>
+
+<!-- =============================================
+     MOMENTO 3
+     ============================================= -->
+<section class="chapter" id="momento-3">
+  <div class="chapter__header chapter__header--dark">
+    <div class="chapter__bg-num" aria-hidden="true">3</div>
+    <span class="chapter__num">Momento 03</span>
+    <div class="chapter__time">14h â 16h Â· Ã¡pice da tarde</div>
+    <h2 class="chapter__title display">A DeclaraÃ§Ã£o<br>de Ãudio</h2>
+    <p class="chapter__desc">Sua voz fazendo o que nenhum texto consegue. Um Ã¡udio gravado com calma, usando este script â vai chegar no momento certo.</p>
+  </div>
+  <div class="content">
+    <span class="label">// como gravar</span>
+    <ul class="steps">
+      <li><div class="step-num">1</div>VÃ¡ pra um lugar silencioso â banheiro, carro, qualquer canto com pouco ruÃ­do.</li>
+      <li><div class="step-num">2</div>Leia o script uma vez antes de gravar e personalize os colchetes.</li>
+      <li><div class="step-num">3</div>Grave devagar. NÃ£o precisa ser perfeito â a voz com emoÃ§Ã£o real vale mais que qualquer coisa ensaiada.</li>
+      <li><div class="step-num">4</div>Mande sem aviso prÃ©vio. A surpresa faz parte.</li>
+    </ul>
+
+    <span class="label">// script completo â palavra por palavra</span>
+    <div class="audio-script">
+      <div class="audio-script__wave">
+        <div class="wave-bar" style="height:10px"></div>
+        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+        <div class="wave-bar" style="height:10px"></div>
+      </div>
+      <span class="audio-label">â¶ script Â· grave este texto</span>
+      <div class="audio-text">
+        <span class="blank">[nome <span class="gn" data-f="dela" data-m="dele">dela</span>]</span>...<br><br>
+        Eu podia ter mandado uma mensagem de texto. Mas texto nÃ£o tem a minha voz. E hoje eu queria que vocÃª ouvisse a minha voz.<br><br>
+        Eu nÃ£o sou bom de palavras. Mas tem uma coisa que eu sei:<br><br>
+        VocÃª nÃ£o Ã© sÃ³ <span class="gn" data-f="a pessoa" data-m="a pessoa">a pessoa</span> que eu amo. VocÃª Ã© o motivo pelo qual o dia tem sentido. Ã a primeira coisa que eu penso quando acordo, e a Ãºltima antes de dormir.<br><br>
+        <span class="blank">[acrescente uma memÃ³ria especÃ­fica de vocÃªs]</span>.<br><br>
+        Eu me lembro disso sempre. E cada vez que lembro, eu penso: que sorte a minha.<br><br>
+        Hoje eu quero que o dia inteiro fale por mim. Fica de olho.<br><br>
+        Te amo.
+      </div>
+      <span class="audio-timer">duraÃ§Ã£o estimada: ~55 segundos</span>
+    </div>
+    <div class="tip">
+      <span class="tip-icon">ðï¸</span>
+      <span>NÃ£o refaÃ§a mais de 3 vezes. A naturalidade do primeiro ou segundo take Ã© o que <span class="gn" data-f="ela" data-m="ele">ela</span> vai sentir. ImperfeiÃ§Ãµes sÃ£o parte da emoÃ§Ã£o.</span>
+    </div>
+  </div>
+</section>
+
+<div class="chapter-divider"></div>
+
+<!-- =============================================
+     MOMENTO 4
+     ============================================= -->
+<section class="chapter" id="momento-4">
+  <div class="chapter__header chapter__header--card">
+    <div class="chapter__bg-num" aria-hidden="true">4</div>
+    <span class="chapter__num">Momento 04</span>
+    <div class="chapter__time">17h â 18h30 Â· antes <span class="gn" data-f="dela" data-m="dele">dela</span> chegar</div>
+    <h2 class="chapter__title display">A TransformaÃ§Ã£o<br>do Ambiente</h2>
+    <p class="chapter__desc">Qualquer cÃ´modo vira um lugar especial. O truque nÃ£o Ã© gastar â Ã© criar atmosfera com o que vocÃª jÃ¡ tem.</p>
+  </div>
+  <div class="content">
+    <span class="label">// itens de casa â custo zero</span>
+    <ul class="items-list">
+      <li><span class="item-bullet">â¦</span><span>Velas ou luzinhas de natal guardadas em algum canto</span><span class="item-free">GRÃTIS</span></li>
+      <li><span class="item-bullet">â¦</span><span>LenÃ§ol limpo â trocar o lenÃ§ol jÃ¡ transforma o quarto</span><span class="item-free">GRÃTIS</span></li>
+      <li><span class="item-bullet">â¦</span><span>Apague as luzes do teto â sÃ³ abajur ou velas</span><span class="item-free">GRÃTIS</span></li>
+      <li><span class="item-bullet">â¦</span><span>Playlist no Spotify no fundo (coloque antes <span class="gn" data-f="dela" data-m="dele">dela</span> chegar)</span><span class="item-free">GRÃTIS</span></li>
+      <li><span class="item-bullet">â¦</span><span>Flores de jardim ou ervas frescas num copo</span><span class="item-free">GRÃTIS</span></li>
+    </ul>
+
+    <span class="label tip-together">// passo a passo da montagem</span>
+    <ul class="steps tip-together">
+      <li><div class="step-num">1</div>Apague a luz do teto. Posicione 3 a 5 velas em lugares seguros.</li>
+      <li><div class="step-num">2</div>Mesa do jantar: duas velas no centro, toalha de pano, dois copos iguais.</li>
+      <li><div class="step-num">3</div>Abra uma janela 10 minutos antes <span class="gn" data-f="dela" data-m="dele">dela</span> chegar â o ar fresco Ã© subestimado.</li>
+      <li><div class="step-num">4</div>Playlist: "Bossa Nova RomÃ¢ntica" ou "Lo-fi Romance" no repeat antes <span class="gn" data-f="dela" data-m="dele">dele</span> entrar pela porta.</li>
+    </ul>
+
+    <div class="tip-distance">
+      <div class="warn" style="margin-top:8px">
+        <span class="warn-icon">ð¸</span>
+        <span>Ã distÃ¢ncia: monte o ambiente mesmo assim e <strong>mande uma foto</strong> pra <span class="gn" data-f="ela" data-m="ele">ela</span> com a mensagem: "Montei isso aqui pensando em quando vocÃª estiver aqui de novo."</span>
+      </div>
+    </div>
+
+    <div class="tip" style="margin-top:14px">
+      <span class="tip-icon">ð¯ï¸</span>
+      <span><strong>Regra de ouro:</strong> menos luz elÃ©trica = mais intimidade. SÃ³ isso jÃ¡ transforma qualquer espaÃ§o.</span>
+    </div>
+  </div>
+</section>
+
+<div class="band-red"><div class="band-inner">O pico se aproxima</div></div>
+
+<!-- =============================================
+     MOMENTO 5
+     ============================================= -->
+<section class="chapter" id="momento-5">
+  <div class="chapter__header chapter__header--dark">
+    <div class="chapter__bg-num" aria-hidden="true">5</div>
+    <span class="chapter__num">Momento 05</span>
+    <div class="chapter__time">19h â 21h Â· o jantar completo</div>
+    <h2 class="chapter__title display">O Jantar<br>Engana-Chef</h2>
+    <p class="chapter__desc">Entrada, prato e sobremesa â parece de restaurante, sai por menos de R$30. Receitas passo a passo, sem mistÃ©rio.</p>
+  </div>
+  <div class="content">
+
+    <div class="tip-distance">
+      <div class="warn" style="margin-bottom:16px">
+        <span class="warn-icon">ð¹</span>
+        <span>Ã distÃ¢ncia: combine de jantarem no mesmo horÃ¡rio em videochamada. Cada um prepara o seu â mas juntos, na mesma "mesa".</span>
+      </div>
+    </div>
+
+    <div class="menu-section">
+      <div class="menu-course">
+        <span class="menu-course__label">Entrada</span>
+        <div class="menu-course__name">Bruschetta de Alho e Tomate</div>
+        <p class="menu-course__text">Elegante, fÃ¡cil e inesperada. Em 10 minutos tÃ¡ pronto.</p>
+        <span class="menu-course__cost">â R$5â6</span>
+        <button class="recipe-toggle" onclick="toggleRecipe(this)">â¶ Ver receita completa</button>
+        <div class="recipe-content">
+          <div class="ingredients">
+            <span class="ingredient-tag">4 fatias de pÃ£o italiano</span><span class="ingredient-tag">2 tomates</span><span class="ingredient-tag">3 dentes de alho</span><span class="ingredient-tag">azeite</span><span class="ingredient-tag">sal e pimenta</span><span class="ingredient-tag">orÃ©gano</span>
           </div>
+          <div class="recipe-step"><span class="recipe-step-num">1</span><span>Corte os tomates em cubinhos. Tempere com sal, pimenta e azeite. Deixe marinar 10 minutos.</span></div>
+          <div class="recipe-step"><span class="recipe-step-num">2</span><span>Torre as fatias de pÃ£o na frigideira atÃ© dourar.</span></div>
+          <div class="recipe-step"><span class="recipe-step-num">3</span><span>Esfregue o alho cru sobre o pÃ£o quente â isso faz toda a diferenÃ§a.</span></div>
+          <div class="recipe-step"><span class="recipe-step-num">4</span><span>Coloque os tomates por cima, regue com azeite e polvilhe orÃ©gano. Sirva imediatamente.</span></div>
+        </div>
+      </div>
+
+      <div class="menu-course">
+        <span class="menu-course__label">Prato Principal</span>
+        <div class="menu-course__name">Frango ao Mel e Mostarda com Arroz de AÃ§afrÃ£o</div>
+        <p class="menu-course__text">O prato que todo mundo acha que deu trabalho. NÃ£o deu. 25 minutos.</p>
+        <span class="menu-course__cost">â R$14â16</span>
+        <button class="recipe-toggle" onclick="toggleRecipe(this)">â¶ Ver receita completa</button>
+        <div class="recipe-content">
+          <div class="ingredients">
+            <span class="ingredient-tag">2 filÃ©s de frango</span><span class="ingredient-tag">2 col. mel</span><span class="ingredient-tag">1 col. mostarda</span><span class="ingredient-tag">alho</span><span class="ingredient-tag">manteiga</span><span class="ingredient-tag">1 xÃ­c. arroz</span><span class="ingredient-tag">aÃ§afrÃ£o ou cÃºrcuma</span>
+          </div>
+          <div class="recipe-step"><span class="recipe-step-num">1</span><span>Tempere o frango com sal, pimenta e alho. Deixe 15 minutos.</span></div>
+          <div class="recipe-step"><span class="recipe-step-num">2</span><span>Misture o mel com a mostarda â o molho estÃ¡ pronto.</span></div>
+          <div class="recipe-step"><span class="recipe-step-num">3</span><span>Sele o frango na frigideira com manteiga â 4 min de cada lado atÃ© dourar.</span></div>
+          <div class="recipe-step"><span class="recipe-step-num">4</span><span>Baixe o fogo, despeje o molho e tampe por 5 minutos.</span></div>
+          <div class="recipe-step"><span class="recipe-step-num">5</span><span>Arroz: cozinhe com uma pitada de aÃ§afrÃ£o ou cÃºrcuma na Ã¡gua â fica dourado e elegante.</span></div>
+        </div>
+      </div>
+
+      <div class="menu-course">
+        <span class="menu-course__label">Sobremesa</span>
+        <div class="menu-course__name">Mousse de Chocolate de 3 Ingredientes</div>
+        <p class="menu-course__text">FaÃ§a de manhÃ£, fica na geladeira, serve gelado Ã  noite. ImpossÃ­vel errar.</p>
+        <span class="menu-course__cost">â R$6â8</span>
+        <button class="recipe-toggle" onclick="toggleRecipe(this)">â¶ Ver receita completa</button>
+        <div class="recipe-content">
+          <div class="ingredients">
+            <span class="ingredient-tag">200g chocolate meio amargo</span><span class="ingredient-tag">3 ovos</span><span class="ingredient-tag">1 col. aÃ§Ãºcar</span>
+          </div>
+          <div class="recipe-step"><span class="recipe-step-num">1</span><span>Derreta o chocolate em banho-maria ou micro-ondas (30s + mexe + 30s).</span></div>
+          <div class="recipe-step"><span class="recipe-step-num">2</span><span>Separe claras das gemas. Misture as gemas no chocolate derretido.</span></div>
+          <div class="recipe-step"><span class="recipe-step-num">3</span><span>Bata as claras em neve com o aÃ§Ãºcar atÃ© ficar firme.</span></div>
+          <div class="recipe-step"><span class="recipe-step-num">4</span><span>Incorpore as claras ao chocolate <strong>delicadamente</strong>, mexendo de baixo pra cima. Divida em duas taÃ§as e leve Ã  geladeira por 3 horas.</span></div>
         </div>
       </div>
     </div>
 
-    <!-- ITEM 2 -->
-    <div class="item-card">
-      <div class="item-card__tag">Incluso 02</div>
-      <div class="item-card__layout">
-        <span class="item-card__icon">🎟️</span>
-        <div class="item-card__body">
-          <span class="item-card__mech">// Sistema de Vales</span>
-          <div class="item-card__title">Talão de Vales<br>do Amor</div>
-          <p class="item-card__text">
-            Vales imprimíveis prontos — café na cama, massagem, "um dia inteiro do seu jeito", jantar surpresa. É o presente físico que o roteiro não tem, que você entrega no dia 12 e que <strong style="color:var(--paper)">dura o ano inteiro.</strong>
-          </p>
-          <p class="item-card__text" style="margin-bottom:0">
-            <strong style="color:var(--gold)">Conecta ao:</strong> qualquer momento em que você quiser surpreender depois do dia 12.
-          </p>
-          <div class="item-card__price-line">
-            <span class="item-card__price-strike">R$9</span>
-            <span class="item-card__price-real"><sup>R$</sup>9</span>
-            <span class="item-card__tag-inc">incluso no kit</span>
-          </div>
-        </div>
-      </div>
+    <div class="total-cost">
+      <span class="total-cost__label">Total estimado</span>
+      <span class="total-cost__price">â R$28</span>
     </div>
-
-    <!-- ITEM 3 -->
-    <div class="item-card">
-      <div class="item-card__tag">Incluso 03</div>
-      <div class="item-card__layout">
-        <span class="item-card__icon">🍽️</span>
-        <div class="item-card__body">
-          <span class="item-card__mech">// Truque do Prato Caro</span>
-          <div class="item-card__title">Cardápio<br>Engana-Chef</div>
-          <p class="item-card__text">
-            5 jantares românticos completos — entrada, prato principal, sobremesa e drink — que parecem de restaurante e saem por até R$15 cada. Lista de compras pronta e o truque de emplatamento que transforma qualquer prato num prato de chef.
-          </p>
-          <p class="item-card__text" style="margin-bottom:0">
-            <strong style="color:var(--gold)">Conecta ao:</strong> Momento 5 do roteiro — e dá pra usar em qualquer data especial do ano.
-          </p>
-          <div class="item-card__price-line">
-            <span class="item-card__price-strike">R$12</span>
-            <span class="item-card__price-real"><sup>R$</sup>12</span>
-            <span class="item-card__tag-inc">incluso no kit</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
   </div>
 </section>
 
-<!-- =========================================================
-     VALUE STACK
-     ========================================================= -->
-<section class="value-section">
-  <div class="wrap">
+<div class="chapter-divider"></div>
 
-    <div class="sec-header">
-      <span class="section-label" style="text-align:center;display:block">Quanto vale</span>
-      <h2 class="section-title display" style="text-align:center">
-        O que você leva<br><span style="color:var(--red)">vs. o que paga</span>
-      </h2>
+<!-- =============================================
+     MOMENTO 6
+     ============================================= -->
+<section class="chapter" id="momento-6">
+  <div class="chapter__header chapter__header--card">
+    <div class="chapter__bg-num" aria-hidden="true">6</div>
+    <span class="chapter__num">Momento 06</span>
+    <div class="chapter__time">durante ou apÃ³s o jantar</div>
+    <h2 class="chapter__title display">A Carta</h2>
+    <p class="chapter__desc"><span class="gn" data-f="Ela" data-m="Ele">Ela</span> vai guardar essa carta pra sempre. Um papel. Uma caneta. Suas palavras â com este modelo.</p>
+  </div>
+  <div class="content">
+    <span class="label">// modelo â escreva Ã  mÃ£o nos espaÃ§os</span>
+    <div class="carta">
+      <div class="carta-inner">
+        <span class="carta date">12 de junho</span>
+        <span class="carta greeting">Para <span class="blank">[nome <span class="gn" data-f="dela" data-m="dele">dela</span>]</span>,</span>
+        Tem coisas que eu penso sobre vocÃª que nunca saem direito quando eu tento falar. Hoje eu quis tentar escrever.<br><br>
+        Eu me lembro do dia que <span class="blank">[primeira memÃ³ria marcante entre vocÃªs]</span>. Esse foi um dos dias mais importantes da minha vida.<br><br>
+        O que eu mais gosto em vocÃª Ã© <span class="blank">[algo especÃ­fico â jeito de rir, de cuidar, de olhar]</span>. VocÃª provavelmente nÃ£o faz ideia de quanto isso importa pra mim.<br><br>
+        Com vocÃª, eu aprendi <span class="blank">[algo que <span class="gn" data-f="ela" data-m="ele">ela</span> te ensinou ou que aprenderam juntos]</span>. E isso fica comigo pra sempre.<br><br>
+        Obrigado por existir no mesmo mundo que eu.<br>
+        <span class="carta sign">Com amor, <span class="blank">[seu nome]</span></span>
+      </div>
+    </div>
+    <div class="warn">
+      <span class="warn-icon">âï¸</span>
+      <span>NÃ£o copie literalmente. Mude pelo menos dois trechos com algo que Ã© genuinamente de vocÃªs. A especificidade Ã© o que transforma texto em emoÃ§Ã£o.</span>
     </div>
 
-    <table class="value-table">
-      <tr>
-        <td>Pacote Cartas que Derretem (20 modelos)</td>
-        <td>R$9</td>
-      </tr>
-      <tr>
-        <td>Talão de Vales do Amor (imprimível)</td>
-        <td>R$9</td>
-      </tr>
-      <tr>
-        <td>Cardápio Engana-Chef (5 jantares completos)</td>
-        <td>R$12</td>
-      </tr>
-      <tr class="strike">
-        <td style="font-family:'Courier Prime',monospace;font-size:13px;letter-spacing:1px">Total separado</td>
-        <td>R$30</td>
-      </tr>
-      <tr class="total-row">
-        <td>Kit Completo — aqui e agora</td>
-        <td>R$27</td>
-      </tr>
-    </table>
+    <div class="tip-distance">
+      <div class="tip" style="margin-top:0">
+        <span class="tip-icon">ð·</span>
+        <span>Ã distÃ¢ncia: escreva Ã  mÃ£o, fotografe e mande. O impacto Ã© o mesmo â e <span class="gn" data-f="ela" data-m="ele">ela</span> vai salvar a foto.</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <p style="text-align:center;font-size:14px;opacity:.6;margin-top:4px">
-      R$3 de desconto pode parecer pouco — mas essa oferta não existe mais depois que você sair desta página.
+<div class="band-red"><div class="band-inner">O fechamento que ficarÃ¡ pra sempre</div></div>
+
+<!-- =============================================
+     MOMENTO 7
+     ============================================= -->
+<section class="chapter" id="momento-7">
+  <div class="chapter__header chapter__header--dark">
+    <div class="chapter__bg-num" aria-hidden="true">7</div>
+    <span class="chapter__num">Momento 07</span>
+    <div class="chapter__time">00:00 Â· meia-noite exata</div>
+    <h2 class="chapter__title display">O Fechamento<br>Ã  Meia-Noite</h2>
+    <p class="chapter__desc">Este Ã© o pico da Curva. Um ritual simples que vai gravar na memÃ³ria dos dois â pra sempre.</p>
+  </div>
+  <div class="fechamento">
+    <span class="label">// o ritual</span>
+    <div class="ritual-steps">
+      <div class="ritual-step">
+        <div class="ritual-dot">1</div>
+        <div class="ritual-content">
+          <strong>23h50 â posicione</strong>
+          <p>Fique com <span class="gn" data-f="ela" data-m="ele">ela</span> num cÃ´modo quieto. Sem celular. Playlist no baixo.</p>
+        </div>
+      </div>
+      <div class="ritual-step">
+        <div class="ritual-dot">2</div>
+        <div class="ritual-content">
+          <strong>23h57 â olho no olho</strong>
+          <p>Vire pra <span class="gn" data-f="ela" data-m="ele">ela</span>. Olhe nos olhos de verdade â o olhar de quem estÃ¡ presente. Segure a mÃ£o.</p>
+        </div>
+      </div>
+      <div class="ritual-step">
+        <div class="ritual-dot">3</div>
+        <div class="ritual-content">
+          <strong>Meia-noite â as trÃªs perguntas</strong>
+          <p>Diga: <em>"Antes do dia acabar, eu quero te perguntar trÃªs coisas."</em></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="template" style="margin-top:0">
+      <span class="template__label">as trÃªs perguntas â diga em voz alta</span>
+      <strong style="color:var(--red)">1.</strong> "Qual foi o momento do dia que mais te tocou?"<br><br>
+      <strong style="color:var(--red)">2.</strong> "O que vocÃª ainda quer viver comigo?"<br><br>
+      <strong style="color:var(--red)">3.</strong> "Tem alguma coisa que vocÃª queria que eu soubesse?"
+    </div>
+
+    <div class="tip">
+      <span class="tip-icon">ð</span>
+      <span>NÃ£o tenha pressa pra preencher o silÃªncio. Deixe <span class="gn" data-f="ela" data-m="ele">ela</span> falar. OuÃ§a de verdade. Esse Ã© o presente mais raro que existe.</span>
+    </div>
+
+    <div class="template" style="margin-top:16px">
+      <span class="template__label">frase de encerramento</span>
+      "Hoje eu quis que o dia todo dissesse o que Ã s vezes eu nÃ£o sei como falar.<br>VocÃª Ã© o melhor que jÃ¡ aconteceu pra mim."
+    </div>
+
+    <div class="tip-distance">
+      <div class="tip" style="margin-top:0">
+        <span class="tip-icon">ð±</span>
+        <span>Ã distÃ¢ncia: abre a videochamada Ã s 23h55. Faz as trÃªs perguntas pelo celular. Durmam na chamada se quiserem.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     BÃNUS 1 â VERSÃO Ã DISTÃNCIA
+     ============================================= -->
+<section class="bonus-section-page" id="bonus-distancia">
+  <div class="bonus-badge">BÃ´nus 1</div>
+  <h2 class="bonus-title display">VersÃ£o<br>Ã  DistÃ¢ncia</h2>
+  <p style="font-size:15px;color:rgba(240,234,214,.75);margin-bottom:20px;line-height:1.65">
+    Cada momento do roteiro foi adaptado para funcionar por celular e videochamada â com a mesma carga emocional, ou mais.
+  </p>
+  <ul class="steps">
+    <li><div class="step-num">1</div>Bom Dia: Ã¡udio curto logo ao acordar. Mais pessoal que texto.</li>
+    <li><div class="step-num">2</div>Bilhetes: mensagens agendadas, uma a cada 1h30. Desligue as notificaÃ§Ãµes de leitura.</li>
+    <li><div class="step-num">3</div>Ãudio: funciona igual. Mande sem aviso Ã s 15h.</li>
+    <li><div class="step-num">4</div>Ambiente: monte e mande uma foto com a mensagem "montei isso pra quando vocÃª estiver aqui."</li>
+    <li><div class="step-num">5</div>Jantar: combinem o horÃ¡rio e jantam em videochamada ao mesmo tempo.</li>
+    <li><div class="step-num">6</div>Carta: fotografe e mande. <span class="gn" data-f="Ela" data-m="Ele">Ela</span> vai salvar a foto.</li>
+    <li><div class="step-num">7</div>Meia-noite: videochamada. As trÃªs perguntas pela tela. Olho no olho ainda Ã© olho no olho.</li>
+  </ul>
+</section>
+
+<!-- =============================================
+     BÃNUS 2 â EMERGÃNCIA
+     ============================================= -->
+<section class="bonus-section-page" id="bonus-emergencia" style="border-top-color:var(--red)">
+  <div class="bonus-badge" style="background:var(--red);color:var(--paper)">BÃ´nus 2</div>
+  <h2 class="bonus-title display">Kit de<br>EmergÃªncia<br>do Liso</h2>
+  <p style="font-size:15px;color:rgba(240,234,214,.75);margin-bottom:20px;line-height:1.65">
+    <strong>Acordou no dia 12 sem ter feito nada?</strong> Este Ã© o plano de resgate em <em>1 hora</em>.
+  </p>
+  <ul class="steps">
+    <li><div class="step-num">9h</div><span><strong>Mande o bom dia agora.</strong> Use o modelo do Momento 1. Mande jÃ¡.</span></li>
+    <li><div class="step-num">9h15</div><span><strong>Compre o bÃ¡sico:</strong> 1 flor ou chocolate. AtÃ© R$15. Qualquer mercado.</span></li>
+    <li><div class="step-num">9h30</div><span><strong>Escreva a carta.</strong> 10 minutos. Modelo no Momento 6. Prioridade mÃ¡xima.</span></li>
+    <li><div class="step-num">9h45</div><span><strong>Grave o Ã¡udio.</strong> Script no Momento 3. Mande com: "Precisava te falar isso hoje."</span></li>
+    <li><div class="step-num">10h</div><span><strong>Prepare o ambiente:</strong> velas, luz baixa, playlist. 15 minutos e o espaÃ§o estÃ¡ transformado.</span></li>
+  </ul>
+  <div class="template" style="margin-top:8px">
+    <span class="template__label">mensagem de emergÃªncia â mande agora</span>
+    Bom dia, <span class="blank">[nome <span class="gn" data-f="dela" data-m="dele">dela</span>]</span>. Hoje Ã© nosso dia. E hoje eu quero que vocÃª saiba que nÃ£o existe ninguÃ©m que eu prefira amar. Aguarda â hoje vai ter coisa. â¤ï¸
+    <span class="sent">enviado Â· agora</span>
+  </div>
+</section>
+
+<!-- =============================================
+     ORDER BUMPS
+     ============================================= -->
+<section class="ob-section" id="complementos">
+  <div class="ob-header">
+    <span class="ob-eyebrow">// gostou do roteiro? tem mais</span>
+    <h2 class="ob-title display">Complementos<br><span style="color:var(--gold)">do Roteiro</span></h2>
+    <p class="ob-sub">Cada item encaixa direto em um momento especÃ­fico do seu dia. Compre separado, no seu ritmo.</p>
+  </div>
+
+  <!-- OB 1 -->
+  <div class="ob-card">
+    <div class="ob-card__row">
+      <span class="ob-card__icon">ð</span>
+      <div class="ob-card__meta">
+        <span class="ob-card__tag">Complemento 01</span>
+        <div class="ob-card__title">Pacote Cartas<br>que Derretem</div>
+        <span class="ob-card__mechanism">Estrutura 4 Camadas</span>
+      </div>
+    </div>
+    <p class="ob-card__text">
+      20 modelos prontos de cartas e declaraÃ§Ãµes â Ã© sÃ³ preencher o nome e a memÃ³ria. Mata de vez o medo de "nÃ£o sei escrever".
     </p>
-
+    <div class="ob-card__connects">complementa o Momento 6 Â· A Carta</div>
+    <div class="ob-card__footer">
+      <div class="ob-card__price"><sup>R$</sup>9</div>
+      <a href="https://pay.cakto.com.br/jywgonc_911260" class="ob-btn" target="_blank" rel="noopener" onclick="fbq('track','AddToCart',{value:9.00,currency:'BRL',content_name:'Pacote Cartas que Derretem',num_items:1})">Adicionar â</a>
+    </div>
   </div>
-</section>
 
-<!-- =========================================================
-     OFFER BOX + CTA
-     ========================================================= -->
-<section class="offer-section" id="oferta">
-  <div class="wrap">
-
-    <div class="offer-box">
-      <span class="offer-box__eyebrow">// Kit Complementar — Entrega Imediata por E-mail</span>
-      <div class="offer-box__title display">
-        Kit Completo<br>do Dia dos Namorados
+  <!-- OB 2 -->
+  <div class="ob-card">
+    <div class="ob-card__row">
+      <span class="ob-card__icon">ðï¸</span>
+      <div class="ob-card__meta">
+        <span class="ob-card__tag">Complemento 02</span>
+        <div class="ob-card__title">TalÃ£o de Vales<br>do Amor</div>
+        <span class="ob-card__mechanism">Sistema de Vales</span>
       </div>
+    </div>
+    <p class="ob-card__text">
+      Vales imprimÃ­veis prontos â cafÃ© na cama, massagem, "um dia inteiro do seu jeito". O presente fÃ­sico que dura o ano todo, nÃ£o sÃ³ o dia 12.
+    </p>
+    <div class="ob-card__connects">presente fÃ­sico do roteiro completo</div>
+    <div class="ob-card__footer">
+      <div class="ob-card__price"><sup>R$</sup>9</div>
+      <a href="https://pay.cakto.com.br/jywgonc_911260" class="ob-btn" target="_blank" rel="noopener" onclick="fbq('track','AddToCart',{value:9.00,currency:'BRL',content_name:'TalÃ£o de Vales do Amor',num_items:1})">Adicionar â</a>
+    </div>
+  </div>
 
-      <span class="offer-box__was">De <span>R$30</span> por apenas</span>
-      <div class="offer-box__price display"><sup>R$</sup>27</div>
-
-      <div class="offer-box__includes">
-        <div class="offer-box__item">Pacote Cartas que Derretem — 20 modelos</div>
-        <div class="offer-box__item">Talão de Vales do Amor — imprimível</div>
-        <div class="offer-box__item">Cardápio Engana-Chef — 5 jantares</div>
-        <div class="offer-box__item">Acesso imediato junto ao roteiro principal</div>
-        <div class="offer-box__item">Garantia de 7 dias</div>
+  <!-- OB 3 -->
+  <div class="ob-card">
+    <div class="ob-card__row">
+      <span class="ob-card__icon">ð½ï¸</span>
+      <div class="ob-card__meta">
+        <span class="ob-card__tag">Complemento 03</span>
+        <div class="ob-card__title">CardÃ¡pio<br>Engana-Chef</div>
+        <span class="ob-card__mechanism">Truque do Prato Caro</span>
       </div>
-
-      <a href="https://pay.cakto.com.br/jywgonc_911260" class="btn-yes" onclick="(function(){var _e=_fbqEventId('ic');fbq('track','InitiateCheckout',{value:27.00,currency:'BRL',content_name:'Kit Complementos Namorados do Liso',num_items:3},{eventID:_e});})()" target="_blank" rel="noopener">
-        SIM — Quero o Kit Completo por R$27 →
-      </a>
-      <span class="btn-note">Pagamento seguro · Pix, Cartão, Boleto · Acesso imediato</span>
     </div>
-
-    <!-- Botão NÃO (âncora para saída) -->
-    <div id="nao" style="text-align:center;padding:28px 0">
-      <a href="#" class="btn-no" style="color:rgba(26,26,26,.35)">
-        Não, obrigado — prefiro ficar só com o roteiro principal
-      </a>
-      <p style="font-size:12px;opacity:.4;margin-top:8px;font-family:'Courier Prime',monospace;letter-spacing:1px;text-transform:uppercase">Entendido. Seu roteiro já chegou no e-mail.</p>
+    <p class="ob-card__text">
+      5 jantares romÃ¢nticos completos â entrada, prato, sobremesa e drink â que parecem de restaurante e saem por atÃ© R$15. Lista de compras pronta e truque de emplatamento inclusos.
+    </p>
+    <div class="ob-card__connects">expande o Momento 5 Â· Jantar Engana-Chef</div>
+    <div class="ob-card__footer">
+      <div class="ob-card__price"><sup>R$</sup>12</div>
+      <a href="https://pay.cakto.com.br/jywgonc_911260" class="ob-btn" target="_blank" rel="noopener" onclick="fbq('track','AddToCart',{value:12.00,currency:'BRL',content_name:'CardÃ¡pio Engana-Chef',num_items:1})">Adicionar â</a>
     </div>
+  </div>
 
+  <!-- Levar os 3 -->
+  <div class="ob-total">
+    <div>
+      <span class="ob-total__label">Os 3 complementos juntos</span>
+      <div class="ob-total__price"><sup style="font-size:15px;opacity:.6">R$</sup>30</div>
+      <span class="ob-total__note">tudo por menos que um buquÃª</span>
+    </div>
+    <a href="https://pay.cakto.com.br/jywgonc_911260" class="ob-btn" style="padding:14px 20px;font-size:13px" target="_blank" rel="noopener" onclick="fbq('track','AddToCart',{value:30.00,currency:'BRL',content_name:'Kit Complementos Completo',num_items:3})">Levar os 3 â</a>
   </div>
 </section>
 
-<!-- =========================================================
-     GARANTIA
-     ========================================================= -->
-<section class="guarantee-strip">
-  <div class="wrap">
-    <div class="guarantee-badge">
-      <div class="guarantee-badge__days display">7</div>
-      <div class="guarantee-badge__label">dias de<br>garantia</div>
-    </div>
-    <div class="guarantee-text">
-      <h3 class="display">Risco zero.</h3>
-      <p>Não gostou de qualquer item do kit? Manda um e-mail em até 7 dias e eu devolvo tudo, sem perguntas.</p>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER TICKER GOLD -->
-<div class="ticker-wrap" aria-hidden="true">
-  <div class="ticker-inner">
-    <span>kit completo</span><span>R$27</span><span>acesso imediato</span><span>três produtos</span><span>oferta única</span><span>não aparece de novo</span><span>garantia 7 dias</span><span>complemento do roteiro</span>
-    <span>kit completo</span><span>R$27</span><span>acesso imediato</span><span>três produtos</span><span>oferta única</span><span>não aparece de novo</span><span>garantia 7 dias</span><span>complemento do roteiro</span>
-  </div>
+<!-- FOOTER -->
+<div class="guide-footer">
+  <div class="guide-footer__title display">Dia dos Namorados do Liso</div>
+  <div class="guide-footer__sub script">Feito com intenÃ§Ã£o. NÃ£o com dinheiro.</div>
+  <p class="guide-footer__text">
+    Agora vai lÃ¡. O dia 12 espera.<br><br>â¦ Feliz Dia dos Namorados â¦
+  </p>
 </div>
 
-<div class="footer-bar">
-  © 2026 Dia dos Namorados do Liso &nbsp;·&nbsp; Produto Digital &nbsp;·&nbsp; Suporte: [seu-email@dominio.com]
-</div>
+<div class="spacer"></div>
 
+</div><!-- /guide-content -->
+
+<!-- NAV BAR -->
+<nav class="nav-bar" id="navBar" role="navigation">
+  <a class="nav-item active" href="#momento-1">
+    <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="5" stroke="currentColor" stroke-width="1.5"/><line x1="10" y1="1" x2="10" y2="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="10" y1="16" x2="10" y2="19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="10" x2="4" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="16" y1="10" x2="19" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    <span>ManhÃ£</span>
+  </a>
+  <a class="nav-item" href="#momento-3">
+    <svg viewBox="0 0 20 20" fill="none"><rect x="6" y="3" width="8" height="12" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 11c0 3.3 2.7 6 6 6s6-2.7 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/><line x1="10" y1="17" x2="10" y2="19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    <span>Ãudio</span>
+  </a>
+  <a class="nav-item" href="#momento-5">
+    <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="12" r="6" stroke="currentColor" stroke-width="1.5"/><line x1="10" y1="6" x2="10" y2="2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    <span>Jantar</span>
+  </a>
+  <a class="nav-item" href="#momento-7">
+    <svg viewBox="0 0 20 20" fill="none"><path d="M10 17C4 17 2 10 2 7a5 5 0 0 1 10 0 5 5 0 0 1 6 2.7c0 3-4 7.3-8 7.3z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+    <span>Final</span>
+  </a>
+  <a class="nav-item" href="#bonus-emergencia">
+    <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M10 4l-2 8h4L8 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+    <span>SOS</span>
+  </a>
+</nav>
+
+<!-- =============================================
+     JAVASCRIPT
+     ============================================= -->
 <script>
-// Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    const href = a.getAttribute('href');
-    if (href === '#') return;
-    e.preventDefault();
-    const t = document.querySelector(href);
-    if (t) t.scrollIntoView({ behavior:'smooth', block:'start' });
-  });
-});
+// ââ State ââââââââââââââââââââââââââââââââââââââ
+let gender  = null; // 'f' | 'm'
+let living  = null; // 'together' | 'distance'
 
-// Animate check icon on load
-const checkPath = document.querySelector('.confirm-bar__check path');
-if (checkPath) {
-  checkPath.style.strokeDashoffset = '50';
-  requestAnimationFrame(() => {
-    checkPath.style.transition = 'stroke-dashoffset .5s ease-out .4s';
-    checkPath.style.strokeDashoffset = '0';
-  });
+// ââ Quiz: Step 1 â GÃªnero ââââââââââââââââââââââ
+function selectGender(g) {
+  gender = g;
+  document.querySelectorAll('#step-1 .quiz-card').forEach(c => c.classList.remove('selected'));
+  event.currentTarget.classList.add('selected');
+
+  // avanÃ§a para passo 2 apÃ³s breve pausa
+  setTimeout(() => {
+    document.getElementById('dot-1').classList.remove('active');
+    document.getElementById('dot-1').classList.add('done');
+    document.getElementById('dot-2').classList.add('active');
+
+    document.getElementById('step-1').classList.remove('visible');
+    setTimeout(() => {
+      document.getElementById('step-2').classList.add('visible');
+    }, 200);
+  }, 350);
 }
 
-// Random jitter delays
-document.querySelectorAll('.item-card__icon, .guarantee-badge').forEach((el, i) => {
-  el.style.animationDelay = (i * 0.4) + 's';
-  el.style.animationDuration = (2.5 + Math.random() * 2.5) + 's';
-});
+// ââ Quiz: Step 2 â Moradia âââââââââââââââââââââ
+function selectLiving(l) {
+  living = l;
+  document.querySelectorAll('#step-2 .quiz-card').forEach(c => c.classList.remove('selected'));
+  event.currentTarget.classList.add('selected');
 
-// Glitch on hero headline
-const h1 = document.querySelector('.hero__h1');
-if (h1) {
-  setInterval(() => {
-    h1.style.filter = 'hue-rotate(180deg) saturate(2)';
-    setTimeout(() => h1.style.filter = '', 70);
-  }, 5800 + Math.random() * 3000);
+  setTimeout(() => {
+    document.getElementById('dot-2').classList.remove('active');
+    document.getElementById('dot-2').classList.add('done');
+    showLoading();
+  }, 350);
 }
 
-// Fade-up on scroll
-const obs = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.style.animation = 'fadeUp 0.45s ease-out both';
-      obs.unobserve(e.target);
-    }
+// ââ Loading â Guide ââââââââââââââââââââââââââââ
+function showLoading() {
+  const overlay  = document.getElementById('quiz-overlay');
+  const loading  = document.getElementById('quiz-loading');
+  const guide    = document.getElementById('guide-content');
+
+  overlay.classList.add('hiding');
+
+  setTimeout(() => {
+    overlay.style.display = 'none';
+    loading.classList.add('visible');
+
+    setTimeout(() => {
+      applyGender();
+      applyLiving();
+
+      loading.style.opacity = '0';
+      loading.style.transition = 'opacity .5s';
+
+      setTimeout(() => {
+        loading.style.display = 'none';
+        guide.classList.add('visible');
+        document.getElementById('navBar').classList.add('visible');
+        document.getElementById('progressBar').classList.add('visible');
+        initScroll();
+      }, 500);
+    }, 1600);
+  }, 600);
+}
+
+// ââ Gender replacement âââââââââââââââââââââââââ
+const GENDER = {
+  f: {
+    pronoun:    'ela',
+    pronoun_c:  'Ela',
+    poss:       'dela',
+    poss_c:     'Dela',
+    title:      'namorada',
+    title_c:    'Namorada',
+    art:        'a',
+    art_c:      'A',
+    sortudo:    'a pessoa mais sortuda',
+    badge:      'sua namorada â',
+  },
+  m: {
+    pronoun:    'ele',
+    pronoun_c:  'Ele',
+    poss:       'dele',
+    poss_c:     'Dele',
+    title:      'namorado',
+    title_c:    'Namorado',
+    art:        'o',
+    art_c:      'O',
+    sortudo:    'o cara mais sortudo',
+    badge:      'seu namorado â',
+  }
+};
+
+function applyGender() {
+  const G = GENDER[gender];
+
+  // Replace all .gn spans using data attributes
+  document.querySelectorAll('.gn').forEach(el => {
+    const key = gender === 'f' ? el.dataset.f : el.dataset.m;
+    if (key !== undefined) el.textContent = key;
   });
-}, { threshold: 0.08 });
-document.querySelectorAll('.item-card, .offer-box').forEach(el => {
-  el.style.opacity = '0';
-  obs.observe(el);
-});
+
+  // Profile badge
+  document.getElementById('badge-text').textContent = G.badge;
+}
+
+// ââ Living replacement âââââââââââââââââââââââââ
+function applyLiving() {
+  if (living === 'distance') {
+    // show distance tips, hide together-only
+    document.querySelectorAll('.tip-distance').forEach(el => {
+      el.style.display = 'flex';
+    });
+    document.querySelectorAll('.tip-together').forEach(el => {
+      el.style.display = 'none';
+    });
+    // Bilhete locals: show distance version
+    document.querySelectorAll('.bilhete__local.tip-distance').forEach(el => {
+      el.style.display = 'flex';
+    });
+    document.querySelectorAll('.bilhete__local.tip-together').forEach(el => {
+      el.style.display = 'none';
+    });
+  }
+  // 'together' is the default (already visible)
+}
+
+// ââ Scroll behaviours ââââââââââââââââââââââââââ
+function initScroll() {
+  const bar = document.getElementById('progressBar');
+  const sections = ['momento-1','momento-3','momento-5','momento-7','bonus-emergencia'];
+  const navItems = document.querySelectorAll('.nav-item');
+
+  window.addEventListener('scroll', () => {
+    const max = document.body.scrollHeight - window.innerHeight;
+    bar.style.width = (window.scrollY / max * 100) + '%';
+
+    let cur = 0;
+    sections.forEach((id, i) => {
+      const el = document.getElementById(id);
+      if (el && window.scrollY >= el.offsetTop - 200) cur = i;
+    });
+    navItems.forEach((n, i) => n.classList.toggle('active', i === cur));
+  });
+
+  // Fade-up observer
+  const fadeEls = document.querySelectorAll('.chapter, .bonus-section-page, .bilhete, .template, .audio-script, .carta, .menu-course');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.animation = 'fadeUp 0.45s ease-out both';
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  fadeEls.forEach(el => { el.style.opacity = '0'; obs.observe(el); });
+}
+
+// ââ Recipe toggle ââââââââââââââââââââââââââââââ
+function toggleRecipe(btn) {
+  const content = btn.nextElementSibling;
+  const open = content.classList.toggle('open');
+  btn.textContent = open ? 'â¼ Fechar receita' : 'â¶ Ver receita completa';
+}
 </script>
 
 </body>
