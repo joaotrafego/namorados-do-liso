@@ -23,6 +23,7 @@ fbq('track', 'ViewContent', {
   value: 19.00,
   currency: 'BRL'
 });
+window._fbqEventId=function(p){return p+'_'+Date.now()+'_'+Math.random().toString(36).substr(2,9);};
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1015593400900909&ev=PageView&noscript=1"
@@ -954,7 +955,7 @@ hr.div::before{content:'✦';position:absolute;left:50%;top:50%;transform:transl
         <div class="offer-box__item">Garantia de 7 dias</div>
       </div>
 
-      <a href="https://pay.cakto.com.br/35yum9i_911197" class="btn" onclick="fbq('track','InitiateCheckout',{value:19.00,currency:'BRL',content_name:'Roteiro Dia dos Namorados do Liso',num_items:1})" style="width:100%;text-align:center;display:block;font-size:clamp(18px,3.5vw,26px)" target="_blank" rel="noopener">
+      <a href="https://pay.cakto.com.br/35yum9i_911197" class="btn" onclick="(function(){var _e=_fbqEventId('ic');fbq('track','InitiateCheckout',{value:19.00,currency:'BRL',content_name:'Roteiro Dia dos Namorados do Liso',num_items:1},{eventID:_e});})()" style="width:100%;text-align:center;display:block;font-size:clamp(18px,3.5vw,26px)" target="_blank" rel="noopener">
         COMPRAR AGORA POR R$19 →
       </a>
       <span style="display:block;font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(240,234,214,.4);margin-top:14px">
@@ -978,7 +979,7 @@ hr.div::before{content:'✦';position:absolute;left:50%;top:50%;transform:transl
     <p style="font-size:16px;max-width:480px;margin:0 auto 32px;color:rgba(240,234,214,.75);line-height:1.65">
       Cada dia que passa é um dia a menos pra preparar com calma. Mas depois do dia 12, esse produto fecha. Ele foi feito pra esta data — e esta data não se repete.
     </p>
-    <a href="https://pay.cakto.com.br/35yum9i_911197" class="btn" onclick="fbq('track','InitiateCheckout',{value:19.00,currency:'BRL',content_name:'Roteiro Dia dos Namorados do Liso',num_items:1})" target="_blank" rel="noopener">Garantir Meu Acesso Agora →</a>
+    <a href="https://pay.cakto.com.br/35yum9i_911197" class="btn" onclick="(function(){var _e=_fbqEventId('ic');fbq('track','InitiateCheckout',{value:19.00,currency:'BRL',content_name:'Roteiro Dia dos Namorados do Liso',num_items:1},{eventID:_e});})()" target="_blank" rel="noopener">Garantir Meu Acesso Agora →</a>
   </div>
 </section>
 
@@ -997,7 +998,7 @@ hr.div::before{content:'✦';position:absolute;left:50%;top:50%;transform:transl
     </p>
     <p style="text-align:center;max-width:460px;margin:0 auto;font-size:14px;opacity:.6">Você só perde se não tentar. E com garantia, nem isso.</p>
     <div class="btn-wrap">
-      <a href="https://pay.cakto.com.br/35yum9i_911197" class="btn" onclick="fbq('track','InitiateCheckout',{value:19.00,currency:'BRL',content_name:'Roteiro Dia dos Namorados do Liso',num_items:1})" target="_blank" rel="noopener">Comprar com Garantia — R$19 →</a>
+      <a href="https://pay.cakto.com.br/35yum9i_911197" class="btn" onclick="(function(){var _e=_fbqEventId('ic');fbq('track','InitiateCheckout',{value:19.00,currency:'BRL',content_name:'Roteiro Dia dos Namorados do Liso',num_items:1},{eventID:_e});})()" target="_blank" rel="noopener">Comprar com Garantia — R$19 →</a>
     </div>
   </div>
 </section>
@@ -1132,5 +1133,13 @@ const fadeObs = new IntersectionObserver((entries) => {
 fadeEls.forEach(el => { el.style.opacity = '0'; fadeObs.observe(el); });
 </script>
 
+
+<script>
+(function(){
+  var _lf=false,el=document.getElementById('oferta');
+  if(!el||!window.IntersectionObserver)return;
+  new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting&&!_lf){_lf=true;fbq('track','Lead',{content_name:'Roteiro Dia dos Namorados do Liso',value:19.00,currency:'BRL'});}});},{threshold:0.1}).observe(el);
+})();
+</script>
 </body>
 </html>
